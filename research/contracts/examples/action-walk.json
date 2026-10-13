@@ -1,0 +1,40 @@
+{
+  "schemaVersion": "0.1.0",
+  "documentType": "action",
+  "projectId": "project_handover_fixture",
+  "actionId": "act_walk",
+  "sceneId": "scene_courtyard",
+  "actorId": "char_ren",
+  "actionType": "walk_to",
+  "frameRange": {
+    "start": 0,
+    "end": 96
+  },
+  "resourceClaims": [
+    {
+      "entityId": "char_ren",
+      "channels": [
+        "root",
+        "legs",
+        "torso",
+        "left_arm",
+        "right_arm"
+      ]
+    }
+  ],
+  "composition": {
+    "policy": "exclusive"
+  },
+  "preconditions": [],
+  "postconditions": [],
+  "parameters": {
+    "destinationM": [
+      0.8,
+      0,
+      0
+    ],
+    "facingTargetEntityId": "char_aya",
+    "speedMps": 0.25,
+    "motionAssetId": "asset_motion_library"
+  }
+}

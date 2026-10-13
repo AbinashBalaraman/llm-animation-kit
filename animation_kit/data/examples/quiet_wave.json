@@ -1,0 +1,51 @@
+{
+  "schema_version": "kit.scene/1.0",
+  "title": "A quiet hello",
+  "subtitle": "Let the gesture breathe.",
+  "fps": 24,
+  "frames": 96,
+  "sound": "none",
+  "actors": [
+    {
+      "id": "pip",
+      "x": 480,
+      "y": 445,
+      "scale": 0.95,
+      "color": "#9bd4c8",
+      "accent": "#f7c66c",
+      "rig": "pip2d_v1"
+    }
+  ],
+  "props": [],
+  "actions": [
+    {
+      "id": "wave",
+      "actor": "pip",
+      "start": 20,
+      "end": 76,
+      "type": "gesture",
+      "variant": "wave"
+    },
+    {
+      "id": "smile",
+      "actor": "pip",
+      "start": 28,
+      "end": 60,
+      "type": "expression",
+      "emotion": "happy",
+      "intensity": 0.7
+    }
+  ],
+  "shots": [
+    {
+      "id": "wide",
+      "start": 0,
+      "end": 96,
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      }
+    }
+  ]
+}

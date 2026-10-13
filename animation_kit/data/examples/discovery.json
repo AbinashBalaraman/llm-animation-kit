@@ -1,0 +1,114 @@
+{
+  "schema_version": "kit.scene/1.0",
+  "title": "The little discovery",
+  "subtitle": "A glance. A pause. A little wonder.",
+  "fps": 24,
+  "frames": 192,
+  "sound": "chime",
+  "actors": [
+    {
+      "id": "pip",
+      "x": 370,
+      "y": 445,
+      "scale": 0.95,
+      "color": "#9bd4c8",
+      "accent": "#f7c66c",
+      "rig": "pip2d_v1"
+    }
+  ],
+  "props": [
+    {
+      "id": "spark",
+      "kind": "star",
+      "x": 650,
+      "y": 267,
+      "size": 30,
+      "color": "#f7c66c"
+    }
+  ],
+  "actions": [
+    {
+      "id": "notice",
+      "actor": "pip",
+      "start": 16,
+      "end": 42,
+      "type": "look_at",
+      "target": "spark"
+    },
+    {
+      "id": "question",
+      "actor": "pip",
+      "start": 24,
+      "end": 57,
+      "type": "expression",
+      "emotion": "curious",
+      "intensity": 0.8
+    },
+    {
+      "id": "wonder",
+      "actor": "pip",
+      "start": 64,
+      "end": 96,
+      "type": "expression",
+      "emotion": "surprised",
+      "intensity": 1
+    },
+    {
+      "id": "reach",
+      "actor": "pip",
+      "start": 76,
+      "end": 112,
+      "type": "gesture",
+      "variant": "reach"
+    },
+    {
+      "id": "delight",
+      "actor": "pip",
+      "start": 113,
+      "end": 144,
+      "type": "expression",
+      "emotion": "happy",
+      "intensity": 1
+    },
+    {
+      "id": "celebrate",
+      "actor": "pip",
+      "start": 120,
+      "end": 184,
+      "type": "gesture",
+      "variant": "celebrate"
+    }
+  ],
+  "shots": [
+    {
+      "id": "wide",
+      "start": 0,
+      "end": 64,
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "reaction",
+      "start": 64,
+      "end": 112,
+      "camera": {
+        "x": 455,
+        "y": 315,
+        "zoom": 1.35
+      }
+    },
+    {
+      "id": "release",
+      "start": 112,
+      "end": 192,
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      }
+    }
+  ]
+}

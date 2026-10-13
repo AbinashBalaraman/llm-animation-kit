@@ -1,0 +1,32 @@
+{
+  "schemaVersion": "0.1.0",
+  "documentType": "action",
+  "projectId": "project_handover_fixture",
+  "actionId": "act_expression",
+  "sceneId": "scene_courtyard",
+  "actorId": "char_ren",
+  "actionType": "expression",
+  "frameRange": {
+    "start": 184,
+    "end": 240
+  },
+  "resourceClaims": [
+    {
+      "entityId": "char_ren",
+      "channels": [
+        "face"
+      ]
+    }
+  ],
+  "composition": {
+    "policy": "exclusive"
+  },
+  "preconditions": [],
+  "postconditions": [],
+  "parameters": {
+    "expression": "happy",
+    "intensity": 0.6,
+    "easeInFrames": 8,
+    "easeOutFrames": 8
+  }
+}

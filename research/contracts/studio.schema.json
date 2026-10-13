@@ -1,0 +1,2452 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.invalid/animation-studio/0.1.0/studio.schema.json",
+  "title": "Animation Studio proposed contract bundle v0.1.0",
+  "description": "Proposal only. Root accepts one project, characterRef, scene, shot, action, revision, or validationReport document. Not an animation executor.",
+  "oneOf": [
+    {
+      "$ref": "#/$defs/project"
+    },
+    {
+      "$ref": "#/$defs/characterRef"
+    },
+    {
+      "$ref": "#/$defs/scene"
+    },
+    {
+      "$ref": "#/$defs/shot"
+    },
+    {
+      "$ref": "#/$defs/action"
+    },
+    {
+      "$ref": "#/$defs/revision"
+    },
+    {
+      "$ref": "#/$defs/validationReport"
+    }
+  ],
+  "$defs": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_]{2,63}$"
+    },
+    "frameRange": {
+      "type": "object",
+      "properties": {
+        "start": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "end": {
+          "type": "integer",
+          "minimum": 1
+        }
+      },
+      "required": [
+        "start",
+        "end"
+      ],
+      "additionalProperties": false,
+      "description": "Scene-local integer frames, zero-based, half-open [start,end). Semantic check: end > start."
+    },
+    "transform": {
+      "type": "object",
+      "properties": {
+        "positionM": {
+          "type": "array",
+          "items": {
+            "type": "number"
+          },
+          "minItems": 3,
+          "maxItems": 3
+        },
+        "rotationXyzw": {
+          "type": "array",
+          "items": {
+            "type": "number"
+          },
+          "minItems": 4,
+          "maxItems": 4,
+          "description": "Unit quaternion x,y,z,w. Normalization is a semantic check."
+        },
+        "scale": {
+          "type": "array",
+          "items": {
+            "type": "number",
+            "exclusiveMinimum": 0
+          },
+          "minItems": 3,
+          "maxItems": 3
+        }
+      },
+      "required": [
+        "positionM",
+        "rotationXyzw",
+        "scale"
+      ],
+      "additionalProperties": false,
+      "description": "World space, meters, right-handed Z-up, character forward +Y, except attachment localTransform is parent-socket relative."
+    },
+    "assetRef": {
+      "type": "object",
+      "properties": {
+        "assetId": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9_]{2,63}$"
+        },
+        "uri": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "assetType": {
+          "type": "string",
+          "enum": [
+            "character_rig",
+            "motion_library",
+            "environment",
+            "prop",
+            "audio"
+          ]
+        },
+        "rigProfileId": {
+          "oneOf": [
+            {
+              "const": "rig_humanoid_v1"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "mediaType": {
+          "type": "string",
+          "minLength": 1
+        },
+        "materialization": {
+          "type": "string",
+          "enum": [
+            "synthetic_fixture",
+            "production"
+          ]
+        }
+      },
+      "required": [
+        "assetId",
+        "uri",
+        "sha256",
+        "assetType",
+        "rigProfileId",
+        "mediaType",
+        "materialization"
+      ],
+      "additionalProperties": false,
+      "description": "Hash exact bytes before decoding. URI is project-relative. Rigged assets require selected profile; nonrigged assets use null (semantic check)."
+    },
+    "localBox": {
+      "type": "object",
+      "properties": {
+        "centerM": {
+          "type": "array",
+          "items": {
+            "type": "number"
+          },
+          "minItems": 3,
+          "maxItems": 3
+        },
+        "rotationXyzw": {
+          "type": "array",
+          "items": {
+            "type": "number"
+          },
+          "minItems": 4,
+          "maxItems": 4,
+          "description": "Unit quaternion x,y,z,w. Normalization is a semantic check."
+        },
+        "halfExtentsM": {
+          "type": "array",
+          "items": {
+            "type": "number",
+            "exclusiveMinimum": 0
+          },
+          "minItems": 3,
+          "maxItems": 3
+        }
+      },
+      "required": [
+        "centerM",
+        "rotationXyzw",
+        "halfExtentsM"
+      ],
+      "additionalProperties": false,
+      "description": "Box in the owning entity local coordinates. Not a collision mesh."
+    },
+    "affordance": {
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "affordanceId": {
+              "type": "string",
+              "pattern": "^[a-z][a-z0-9_]{2,63}$"
+            },
+            "kind": {
+              "const": "grasp"
+            },
+            "localPositionM": {
+              "type": "array",
+              "items": {
+                "type": "number"
+              },
+              "minItems": 3,
+              "maxItems": 3
+            },
+            "localRotationXyzw": {
+              "type": "array",
+              "items": {
+                "type": "number"
+              },
+              "minItems": 4,
+              "maxItems": 4,
+              "description": "Unit quaternion x,y,z,w. Normalization is a semantic check."
+            },
+            "allowedEffectors": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "enum": [
+                  "left_hand",
+                  "right_hand"
+                ]
+              },
+              "minItems": 1,
+              "uniqueItems": true
+            },
+            "positionToleranceM": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
+            "angleToleranceDegrees": {
+              "type": "number",
+              "exclusiveMinimum": 0,
+              "maximum": 180
+            }
+          },
+          "required": [
+            "affordanceId",
+            "kind",
+            "localPositionM",
+            "localRotationXyzw",
+            "allowedEffectors",
+            "positionToleranceM",
+            "angleToleranceDegrees"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "affordanceId": {
+              "type": "string",
+              "pattern": "^[a-z][a-z0-9_]{2,63}$"
+            },
+            "kind": {
+              "const": "seat"
+            },
+            "localPositionM": {
+              "type": "array",
+              "items": {
+                "type": "number"
+              },
+              "minItems": 3,
+              "maxItems": 3
+            },
+            "localRotationXyzw": {
+              "type": "array",
+              "items": {
+                "type": "number"
+              },
+              "minItems": 4,
+              "maxItems": 4,
+              "description": "Unit quaternion x,y,z,w. Normalization is a semantic check."
+            },
+            "footZone": {
+              "$ref": "#/$defs/localBox"
+            },
+            "clearanceBox": {
+              "$ref": "#/$defs/localBox"
+            },
+            "maxOccupants": {
+              "const": 1
+            }
+          },
+          "required": [
+            "affordanceId",
+            "kind",
+            "localPositionM",
+            "localRotationXyzw",
+            "footZone",
+            "clearanceBox",
+            "maxOccupants"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "affordanceId": {
+              "type": "string",
+              "pattern": "^[a-z][a-z0-9_]{2,63}$"
+            },
+            "kind": {
+              "const": "support"
+            },
+            "localPositionM": {
+              "type": "array",
+              "items": {
+                "type": "number"
+              },
+              "minItems": 3,
+              "maxItems": 3
+            },
+            "localRotationXyzw": {
+              "type": "array",
+              "items": {
+                "type": "number"
+              },
+              "minItems": 4,
+              "maxItems": 4,
+              "description": "Unit quaternion x,y,z,w. Normalization is a semantic check."
+            },
+            "halfExtentsM": {
+              "type": "array",
+              "items": {
+                "type": "number",
+                "exclusiveMinimum": 0
+              },
+              "minItems": 2,
+              "maxItems": 2
+            }
+          },
+          "required": [
+            "affordanceId",
+            "kind",
+            "localPositionM",
+            "localRotationXyzw",
+            "halfExtentsM"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "contact": {
+      "type": "object",
+      "properties": {
+        "actorId": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9_]{2,63}$"
+        },
+        "effector": {
+          "type": "string",
+          "enum": [
+            "left_hand",
+            "right_hand",
+            "left_foot",
+            "right_foot"
+          ]
+        },
+        "targetEntityId": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9_]{2,63}$"
+        },
+        "affordanceId": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9_]{2,63}$"
+        }
+      },
+      "required": [
+        "actorId",
+        "effector",
+        "targetEntityId",
+        "affordanceId"
+      ],
+      "additionalProperties": false
+    },
+    "ownership": {
+      "type": "object",
+      "properties": {
+        "propId": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9_]{2,63}$"
+        },
+        "ownerId": {
+          "oneOf": [
+            {
+              "type": "string",
+              "pattern": "^[a-z][a-z0-9_]{2,63}$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "propId",
+        "ownerId"
+      ],
+      "additionalProperties": false
+    },
+    "attachment": {
+      "type": "object",
+      "properties": {
+        "propId": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9_]{2,63}$"
+        },
+        "parentEntityId": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9_]{2,63}$"
+        },
+        "parentSocketId": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9_]{2,63}$"
+        },
+        "localTransform": {
+          "$ref": "#/$defs/transform"
+        }
+      },
+      "required": [
+        "propId",
+        "parentEntityId",
+        "parentSocketId",
+        "localTransform"
+      ],
+      "additionalProperties": false,
+      "description": "Transform parent, distinct from logical ownership. localTransform is relative to named parent socket."
+    },
+    "seatOccupancy": {
+      "type": "object",
+      "properties": {
+        "actorId": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9_]{2,63}$"
+        },
+        "seatEntityId": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9_]{2,63}$"
+        },
+        "seatAffordanceId": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9_]{2,63}$"
+        }
+      },
+      "required": [
+        "actorId",
+        "seatEntityId",
+        "seatAffordanceId"
+      ],
+      "additionalProperties": false
+    },
+    "condition": {
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "conditionType": {
+              "const": "ownership"
+            },
+            "propId": {
+              "type": "string",
+              "pattern": "^[a-z][a-z0-9_]{2,63}$"
+            },
+            "ownerId": {
+              "oneOf": [
+                {
+                  "type": "string",
+                  "pattern": "^[a-z][a-z0-9_]{2,63}$"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            }
+          },
+          "required": [
+            "conditionType",
+            "propId",
+            "ownerId"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "conditionType": {
+              "const": "contact"
+            },
+            "actorId": {
+              "type": "string",
+              "pattern": "^[a-z][a-z0-9_]{2,63}$"
+            },
+            "effector": {
+              "type": "string",
+              "enum": [
+                "left_hand",
+                "right_hand",
+                "left_foot",
+                "right_foot"
+              ]
+            },
+            "targetEntityId": {
+              "type": "string",
+              "pattern": "^[a-z][a-z0-9_]{2,63}$"
+            },
+            "affordanceId": {
+              "type": "string",
+              "pattern": "^[a-z][a-z0-9_]{2,63}$"
+            },
+            "active": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "conditionType",
+            "actorId",
+            "effector",
+            "targetEntityId",
+            "affordanceId",
+            "active"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "conditionType": {
+              "const": "hand_free"
+            },
+            "actorId": {
+              "type": "string",
+              "pattern": "^[a-z][a-z0-9_]{2,63}$"
+            },
+            "hand": {
+              "type": "string",
+              "enum": [
+                "left_hand",
+                "right_hand"
+              ]
+            }
+          },
+          "required": [
+            "conditionType",
+            "actorId",
+            "hand"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "conditionType": {
+              "const": "proximity"
+            },
+            "actorId": {
+              "type": "string",
+              "pattern": "^[a-z][a-z0-9_]{2,63}$"
+            },
+            "targetEntityId": {
+              "type": "string",
+              "pattern": "^[a-z][a-z0-9_]{2,63}$"
+            },
+            "maxDistanceM": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            }
+          },
+          "required": [
+            "conditionType",
+            "actorId",
+            "targetEntityId",
+            "maxDistanceM"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "conditionType": {
+              "const": "seated"
+            },
+            "actorId": {
+              "type": "string",
+              "pattern": "^[a-z][a-z0-9_]{2,63}$"
+            },
+            "seatEntityId": {
+              "type": "string",
+              "pattern": "^[a-z][a-z0-9_]{2,63}$"
+            },
+            "seatAffordanceId": {
+              "type": "string",
+              "pattern": "^[a-z][a-z0-9_]{2,63}$"
+            },
+            "active": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "conditionType",
+            "actorId",
+            "seatEntityId",
+            "seatAffordanceId",
+            "active"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "resourceClaim": {
+      "type": "object",
+      "properties": {
+        "entityId": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9_]{2,63}$"
+        },
+        "channels": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "root",
+              "legs",
+              "torso",
+              "left_arm",
+              "right_arm",
+              "head",
+              "gaze",
+              "face",
+              "voice"
+            ]
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "entityId",
+        "channels"
+      ],
+      "additionalProperties": false
+    },
+    "composition": {
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "policy": {
+              "const": "exclusive"
+            }
+          },
+          "required": [
+            "policy"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "policy": {
+              "const": "compatible"
+            },
+            "compatibilityProfileId": {
+              "type": "string",
+              "pattern": "^[a-z][a-z0-9_]{2,63}$"
+            }
+          },
+          "required": [
+            "policy",
+            "compatibilityProfileId"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "camera": {
+      "type": "object",
+      "properties": {
+        "projection": {
+          "type": "string",
+          "enum": [
+            "perspective",
+            "orthographic"
+          ]
+        },
+        "positionM": {
+          "type": "array",
+          "items": {
+            "type": "number"
+          },
+          "minItems": 3,
+          "maxItems": 3
+        },
+        "targetM": {
+          "type": "array",
+          "items": {
+            "type": "number"
+          },
+          "minItems": 3,
+          "maxItems": 3
+        },
+        "up": {
+          "const": [
+            0,
+            0,
+            1
+          ]
+        },
+        "verticalFovDegrees": {
+          "type": "number",
+          "exclusiveMinimum": 0,
+          "exclusiveMaximum": 180
+        },
+        "orthographicHeightM": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "nearM": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "farM": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        }
+      },
+      "required": [
+        "projection",
+        "positionM",
+        "targetM",
+        "up",
+        "nearM",
+        "farM"
+      ],
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "projection": {
+                "const": "perspective"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "verticalFovDegrees"
+            ],
+            "not": {
+              "required": [
+                "orthographicHeightM"
+              ]
+            }
+          },
+          "else": {
+            "required": [
+              "orthographicHeightM"
+            ],
+            "not": {
+              "required": [
+                "verticalFovDegrees"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "documentRef": {
+      "type": "object",
+      "properties": {
+        "documentId": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9_]{2,63}$"
+        },
+        "documentType": {
+          "type": "string",
+          "enum": [
+            "characterRef",
+            "scene",
+            "shot",
+            "action"
+          ]
+        },
+        "path": {
+          "type": "string",
+          "pattern": "^(?!/)(?!.*(?:^|/)\\.\\.(?:/|$))[A-Za-z0-9._/-]+$"
+        }
+      },
+      "required": [
+        "documentId",
+        "documentType",
+        "path"
+      ],
+      "additionalProperties": false
+    },
+    "project": {
+      "type": "object",
+      "properties": {
+        "schemaVersion": {
+          "const": "0.1.0"
+        },
+        "documentType": {
+          "const": "project"
+        },
+        "projectId": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9_]{2,63}$"
+        },
+        "revision": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "fps": {
+          "type": "object",
+          "properties": {
+            "numerator": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "denominator": {
+              "type": "integer",
+              "minimum": 1
+            }
+          },
+          "required": [
+            "numerator",
+            "denominator"
+          ],
+          "additionalProperties": false
+        },
+        "audioSampleRateHz": {
+          "const": 48000
+        },
+        "coordinates": {
+          "type": "object",
+          "properties": {
+            "lengthUnit": {
+              "const": "meter"
+            },
+            "handedness": {
+              "const": "right"
+            },
+            "up": {
+              "const": "+Z"
+            },
+            "characterForward": {
+              "const": "+Y"
+            },
+            "quaternionOrder": {
+              "const": "xyzw"
+            }
+          },
+          "required": [
+            "lengthUnit",
+            "handedness",
+            "up",
+            "characterForward",
+            "quaternionOrder"
+          ],
+          "additionalProperties": false
+        },
+        "frameConvention": {
+          "const": "zero_based_half_open"
+        },
+        "selectedRigProfileId": {
+          "const": "rig_humanoid_v1"
+        },
+        "motionLibraryAssetId": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9_]{2,63}$"
+        },
+        "assets": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/assetRef"
+          },
+          "minItems": 1
+        },
+        "documents": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/documentRef"
+          },
+          "minItems": 1
+        },
+        "shotOrder": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9_]{2,63}$"
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "renderProfile": {
+          "type": "object",
+          "properties": {
+            "widthPx": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "heightPx": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "colorSpace": {
+              "const": "Rec.709"
+            },
+            "styleProfileId": {
+              "type": "string",
+              "pattern": "^[a-z][a-z0-9_]{2,63}$"
+            }
+          },
+          "required": [
+            "widthPx",
+            "heightPx",
+            "colorSpace",
+            "styleProfileId"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "schemaVersion",
+        "documentType",
+        "projectId",
+        "revision",
+        "title",
+        "fps",
+        "audioSampleRateHz",
+        "coordinates",
+        "frameConvention",
+        "selectedRigProfileId",
+        "motionLibraryAssetId",
+        "assets",
+        "documents",
+        "shotOrder",
+        "renderProfile"
+      ],
+      "additionalProperties": false
+    },
+    "characterRef": {
+      "type": "object",
+      "properties": {
+        "schemaVersion": {
+          "const": "0.1.0"
+        },
+        "documentType": {
+          "const": "characterRef"
+        },
+        "projectId": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9_]{2,63}$"
+        },
+        "characterId": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9_]{2,63}$"
+        },
+        "displayName": {
+          "type": "string",
+          "minLength": 1
+        },
+        "rigProfileId": {
+          "const": "rig_humanoid_v1"
+        },
+        "rigAsset": {
+          "$ref": "#/$defs/assetRef"
+        },
+        "appearanceProfileId": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9_]{2,63}$"
+        },
+        "voiceProfileId": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9_]{2,63}$"
+        },
+        "supportedActions": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "walk_to",
+              "look_at",
+              "gesture",
+              "speak",
+              "handover",
+              "sit",
+              "expression"
+            ]
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "schemaVersion",
+        "documentType",
+        "projectId",
+        "characterId",
+        "displayName",
+        "rigProfileId",
+        "rigAsset",
+        "appearanceProfileId",
+        "voiceProfileId",
+        "supportedActions"
+      ],
+      "additionalProperties": false
+    },
+    "entity": {
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "entityId": {
+              "type": "string",
+              "pattern": "^[a-z][a-z0-9_]{2,63}$"
+            },
+            "entityType": {
+              "const": "character"
+            },
+            "characterRefId": {
+              "type": "string",
+              "pattern": "^[a-z][a-z0-9_]{2,63}$"
+            },
+            "transform": {
+              "$ref": "#/$defs/transform"
+            }
+          },
+          "required": [
+            "entityId",
+            "entityType",
+            "characterRefId",
+            "transform"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "entityId": {
+              "type": "string",
+              "pattern": "^[a-z][a-z0-9_]{2,63}$"
+            },
+            "entityType": {
+              "type": "string",
+              "enum": [
+                "prop",
+                "environment"
+              ]
+            },
+            "assetId": {
+              "type": "string",
+              "pattern": "^[a-z][a-z0-9_]{2,63}$"
+            },
+            "transform": {
+              "$ref": "#/$defs/transform"
+            },
+            "affordances": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/affordance"
+              },
+              "minItems": 0
+            }
+          },
+          "required": [
+            "entityId",
+            "entityType",
+            "assetId",
+            "transform",
+            "affordances"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "scene": {
+      "type": "object",
+      "properties": {
+        "schemaVersion": {
+          "const": "0.1.0"
+        },
+        "documentType": {
+          "const": "scene"
+        },
+        "projectId": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9_]{2,63}$"
+        },
+        "sceneId": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9_]{2,63}$"
+        },
+        "durationFrames": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "entities": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/entity"
+          },
+          "minItems": 1
+        },
+        "initialState": {
+          "type": "object",
+          "properties": {
+            "ownership": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/ownership"
+              },
+              "minItems": 0
+            },
+            "contacts": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/contact"
+              },
+              "minItems": 0
+            },
+            "attachments": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/attachment"
+              },
+              "minItems": 0
+            },
+            "seatOccupancy": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/seatOccupancy"
+              },
+              "minItems": 0
+            }
+          },
+          "required": [
+            "ownership",
+            "contacts",
+            "attachments",
+            "seatOccupancy"
+          ],
+          "additionalProperties": false
+        },
+        "actionIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9_]{2,63}$"
+          },
+          "minItems": 0,
+          "uniqueItems": true
+        },
+        "lightingProfileId": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9_]{2,63}$"
+        }
+      },
+      "required": [
+        "schemaVersion",
+        "documentType",
+        "projectId",
+        "sceneId",
+        "durationFrames",
+        "entities",
+        "initialState",
+        "actionIds",
+        "lightingProfileId"
+      ],
+      "additionalProperties": false
+    },
+    "shot": {
+      "type": "object",
+      "properties": {
+        "schemaVersion": {
+          "const": "0.1.0"
+        },
+        "documentType": {
+          "const": "shot"
+        },
+        "projectId": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9_]{2,63}$"
+        },
+        "shotId": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9_]{2,63}$"
+        },
+        "sceneId": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9_]{2,63}$"
+        },
+        "frameRange": {
+          "$ref": "#/$defs/frameRange"
+        },
+        "camera": {
+          "$ref": "#/$defs/camera"
+        },
+        "compositionIntent": {
+          "type": "string",
+          "minLength": 1
+        },
+        "renderOverrides": {
+          "type": "object",
+          "properties": {
+            "seed": {
+              "type": "integer",
+              "minimum": 0
+            }
+          },
+          "required": [],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "schemaVersion",
+        "documentType",
+        "projectId",
+        "shotId",
+        "sceneId",
+        "frameRange",
+        "camera",
+        "compositionIntent"
+      ],
+      "additionalProperties": false
+    },
+    "action_walk_to": {
+      "type": "object",
+      "properties": {
+        "schemaVersion": {
+          "const": "0.1.0"
+        },
+        "documentType": {
+          "const": "action"
+        },
+        "projectId": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9_]{2,63}$"
+        },
+        "actionId": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9_]{2,63}$"
+        },
+        "sceneId": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9_]{2,63}$"
+        },
+        "actorId": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9_]{2,63}$"
+        },
+        "actionType": {
+          "const": "walk_to"
+        },
+        "frameRange": {
+          "$ref": "#/$defs/frameRange"
+        },
+        "resourceClaims": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/resourceClaim"
+          },
+          "minItems": 1
+        },
+        "composition": {
+          "$ref": "#/$defs/composition"
+        },
+        "preconditions": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/condition"
+          },
+          "minItems": 0
+        },
+        "postconditions": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/condition"
+          },
+          "minItems": 0
+        },
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "destinationM": {
+              "type": "array",
+              "items": {
+                "type": "number"
+              },
+              "minItems": 3,
+              "maxItems": 3
+            },
+            "facingTargetEntityId": {
+              "type": "string",
+              "pattern": "^[a-z][a-z0-9_]{2,63}$"
+            },
+            "speedMps": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
+            "motionAssetId": {
+              "type": "string",
+              "pattern": "^[a-z][a-z0-9_]{2,63}$"
+            }
+          },
+          "required": [
+            "destinationM",
+            "facingTargetEntityId",
+            "speedMps",
+            "motionAssetId"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "schemaVersion",
+        "documentType",
+        "projectId",
+        "actionId",
+        "sceneId",
+        "actorId",
+        "actionType",
+        "frameRange",
+        "resourceClaims",
+        "composition",
+        "preconditions",
+        "postconditions",
+        "parameters"
+      ],
+      "additionalProperties": false
+    },
+    "action_look_at": {
+      "type": "object",
+      "properties": {
+        "schemaVersion": {
+          "const": "0.1.0"
+        },
+        "documentType": {
+          "const": "action"
+        },
+        "projectId": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9_]{2,63}$"
+        },
+        "actionId": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9_]{2,63}$"
+        },
+        "sceneId": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9_]{2,63}$"
+        },
+        "actorId": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9_]{2,63}$"
+        },
+        "actionType": {
+          "const": "look_at"
+        },
+        "frameRange": {
+          "$ref": "#/$defs/frameRange"
+        },
+        "resourceClaims": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/resourceClaim"
+          },
+          "minItems": 1
+        },
+        "composition": {
+          "$ref": "#/$defs/composition"
+        },
+        "preconditions": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/condition"
+          },
+          "minItems": 0
+        },
+        "postconditions": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/condition"
+          },
+          "minItems": 0
+        },
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "targetEntityId": {
+              "type": "string",
+              "pattern": "^[a-z][a-z0-9_]{2,63}$"
+            },
+            "targetAffordanceId": {
+              "type": "string",
+              "pattern": "^[a-z][a-z0-9_]{2,63}$"
+            },
+            "influence": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "easeInFrames": {
+              "type": "integer",
+              "minimum": 0
+            }
+          },
+          "required": [
+            "targetEntityId",
+            "influence",
+            "easeInFrames"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "schemaVersion",
+        "documentType",
+        "projectId",
+        "actionId",
+        "sceneId",
+        "actorId",
+        "actionType",
+        "frameRange",
+        "resourceClaims",
+        "composition",
+        "preconditions",
+        "postconditions",
+        "parameters"
+      ],
+      "additionalProperties": false
+    },
+    "action_gesture": {
+      "type": "object",
+      "properties": {
+        "schemaVersion": {
+          "const": "0.1.0"
+        },
+        "documentType": {
+          "const": "action"
+        },
+        "projectId": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9_]{2,63}$"
+        },
+        "actionId": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9_]{2,63}$"
+        },
+        "sceneId": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9_]{2,63}$"
+        },
+        "actorId": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9_]{2,63}$"
+        },
+        "actionType": {
+          "const": "gesture"
+        },
+        "frameRange": {
+          "$ref": "#/$defs/frameRange"
+        },
+        "resourceClaims": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/resourceClaim"
+          },
+          "minItems": 1
+        },
+        "composition": {
+          "$ref": "#/$defs/composition"
+        },
+        "preconditions": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/condition"
+          },
+          "minItems": 0
+        },
+        "postconditions": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/condition"
+          },
+          "minItems": 0
+        },
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "gestureId": {
+              "type": "string",
+              "pattern": "^[a-z][a-z0-9_]{2,63}$"
+            },
+            "hand": {
+              "type": "string",
+              "enum": [
+                "left_hand",
+                "right_hand",
+                "both"
+              ]
+            },
+            "intensity": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "motionAssetId": {
+              "type": "string",
+              "pattern": "^[a-z][a-z0-9_]{2,63}$"
+            }
+          },
+          "required": [
+            "gestureId",
+            "hand",
+            "intensity",
+            "motionAssetId"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "schemaVersion",
+        "documentType",
+        "projectId",
+        "actionId",
+        "sceneId",
+        "actorId",
+        "actionType",
+        "frameRange",
+        "resourceClaims",
+        "composition",
+        "preconditions",
+        "postconditions",
+        "parameters"
+      ],
+      "additionalProperties": false
+    },
+    "action_speak": {
+      "type": "object",
+      "properties": {
+        "schemaVersion": {
+          "const": "0.1.0"
+        },
+        "documentType": {
+          "const": "action"
+        },
+        "projectId": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9_]{2,63}$"
+        },
+        "actionId": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9_]{2,63}$"
+        },
+        "sceneId": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9_]{2,63}$"
+        },
+        "actorId": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9_]{2,63}$"
+        },
+        "actionType": {
+          "const": "speak"
+        },
+        "frameRange": {
+          "$ref": "#/$defs/frameRange"
+        },
+        "resourceClaims": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/resourceClaim"
+          },
+          "minItems": 1
+        },
+        "composition": {
+          "$ref": "#/$defs/composition"
+        },
+        "preconditions": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/condition"
+          },
+          "minItems": 0
+        },
+        "postconditions": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/condition"
+          },
+          "minItems": 0
+        },
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "text": {
+              "type": "string",
+              "minLength": 1
+            },
+            "language": {
+              "type": "string",
+              "minLength": 1
+            },
+            "audioAssetId": {
+              "type": "string",
+              "pattern": "^[a-z][a-z0-9_]{2,63}$"
+            },
+            "audioRangeSamples": {
+              "type": "object",
+              "properties": {
+                "start": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "end": {
+                  "type": "integer",
+                  "minimum": 1
+                }
+              },
+              "required": [
+                "start",
+                "end"
+              ],
+              "additionalProperties": false
+            },
+            "visemes": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "atSample": {
+                    "type": "integer",
+                    "minimum": 0
+                  },
+                  "visemeId": {
+                    "type": "string",
+                    "pattern": "^[a-z][a-z0-9_]{2,63}$"
+                  },
+                  "weight": {
+                    "type": "number",
+                    "minimum": 0,
+                    "maximum": 1
+                  }
+                },
+                "required": [
+                  "atSample",
+                  "visemeId",
+                  "weight"
+                ],
+                "additionalProperties": false
+              },
+              "minItems": 0
+            }
+          },
+          "required": [
+            "text",
+            "language",
+            "audioAssetId",
+            "audioRangeSamples",
+            "visemes"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "schemaVersion",
+        "documentType",
+        "projectId",
+        "actionId",
+        "sceneId",
+        "actorId",
+        "actionType",
+        "frameRange",
+        "resourceClaims",
+        "composition",
+        "preconditions",
+        "postconditions",
+        "parameters"
+      ],
+      "additionalProperties": false
+    },
+    "action_handover": {
+      "type": "object",
+      "properties": {
+        "schemaVersion": {
+          "const": "0.1.0"
+        },
+        "documentType": {
+          "const": "action"
+        },
+        "projectId": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9_]{2,63}$"
+        },
+        "actionId": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9_]{2,63}$"
+        },
+        "sceneId": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9_]{2,63}$"
+        },
+        "actorId": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9_]{2,63}$"
+        },
+        "actionType": {
+          "const": "handover"
+        },
+        "frameRange": {
+          "$ref": "#/$defs/frameRange"
+        },
+        "resourceClaims": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/resourceClaim"
+          },
+          "minItems": 1
+        },
+        "composition": {
+          "$ref": "#/$defs/composition"
+        },
+        "preconditions": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/condition"
+          },
+          "minItems": 0
+        },
+        "postconditions": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/condition"
+          },
+          "minItems": 0
+        },
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "propId": {
+              "type": "string",
+              "pattern": "^[a-z][a-z0-9_]{2,63}$"
+            },
+            "receiverId": {
+              "type": "string",
+              "pattern": "^[a-z][a-z0-9_]{2,63}$"
+            },
+            "giverHand": {
+              "type": "string",
+              "enum": [
+                "left_hand",
+                "right_hand"
+              ]
+            },
+            "receiverHand": {
+              "type": "string",
+              "enum": [
+                "left_hand",
+                "right_hand"
+              ]
+            },
+            "giverGraspAffordanceId": {
+              "type": "string",
+              "pattern": "^[a-z][a-z0-9_]{2,63}$"
+            },
+            "receiverGraspAffordanceId": {
+              "type": "string",
+              "pattern": "^[a-z][a-z0-9_]{2,63}$"
+            },
+            "receiverContactFrame": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "transferFrame": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "giverReleaseFrame": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "style": {
+              "type": "string",
+              "enum": [
+                "neutral",
+                "hesitant",
+                "gentle"
+              ]
+            },
+            "motionAssetId": {
+              "type": "string",
+              "pattern": "^[a-z][a-z0-9_]{2,63}$"
+            }
+          },
+          "required": [
+            "propId",
+            "receiverId",
+            "giverHand",
+            "receiverHand",
+            "giverGraspAffordanceId",
+            "receiverGraspAffordanceId",
+            "receiverContactFrame",
+            "transferFrame",
+            "giverReleaseFrame",
+            "style",
+            "motionAssetId"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "schemaVersion",
+        "documentType",
+        "projectId",
+        "actionId",
+        "sceneId",
+        "actorId",
+        "actionType",
+        "frameRange",
+        "resourceClaims",
+        "composition",
+        "preconditions",
+        "postconditions",
+        "parameters"
+      ],
+      "additionalProperties": false
+    },
+    "action_sit": {
+      "type": "object",
+      "properties": {
+        "schemaVersion": {
+          "const": "0.1.0"
+        },
+        "documentType": {
+          "const": "action"
+        },
+        "projectId": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9_]{2,63}$"
+        },
+        "actionId": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9_]{2,63}$"
+        },
+        "sceneId": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9_]{2,63}$"
+        },
+        "actorId": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9_]{2,63}$"
+        },
+        "actionType": {
+          "const": "sit"
+        },
+        "frameRange": {
+          "$ref": "#/$defs/frameRange"
+        },
+        "resourceClaims": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/resourceClaim"
+          },
+          "minItems": 1
+        },
+        "composition": {
+          "$ref": "#/$defs/composition"
+        },
+        "preconditions": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/condition"
+          },
+          "minItems": 0
+        },
+        "postconditions": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/condition"
+          },
+          "minItems": 0
+        },
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "seatEntityId": {
+              "type": "string",
+              "pattern": "^[a-z][a-z0-9_]{2,63}$"
+            },
+            "seatAffordanceId": {
+              "type": "string",
+              "pattern": "^[a-z][a-z0-9_]{2,63}$"
+            },
+            "seatContactFrame": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "motionAssetId": {
+              "type": "string",
+              "pattern": "^[a-z][a-z0-9_]{2,63}$"
+            }
+          },
+          "required": [
+            "seatEntityId",
+            "seatAffordanceId",
+            "seatContactFrame",
+            "motionAssetId"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "schemaVersion",
+        "documentType",
+        "projectId",
+        "actionId",
+        "sceneId",
+        "actorId",
+        "actionType",
+        "frameRange",
+        "resourceClaims",
+        "composition",
+        "preconditions",
+        "postconditions",
+        "parameters"
+      ],
+      "additionalProperties": false
+    },
+    "action_expression": {
+      "type": "object",
+      "properties": {
+        "schemaVersion": {
+          "const": "0.1.0"
+        },
+        "documentType": {
+          "const": "action"
+        },
+        "projectId": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9_]{2,63}$"
+        },
+        "actionId": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9_]{2,63}$"
+        },
+        "sceneId": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9_]{2,63}$"
+        },
+        "actorId": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9_]{2,63}$"
+        },
+        "actionType": {
+          "const": "expression"
+        },
+        "frameRange": {
+          "$ref": "#/$defs/frameRange"
+        },
+        "resourceClaims": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/resourceClaim"
+          },
+          "minItems": 1
+        },
+        "composition": {
+          "$ref": "#/$defs/composition"
+        },
+        "preconditions": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/condition"
+          },
+          "minItems": 0
+        },
+        "postconditions": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/condition"
+          },
+          "minItems": 0
+        },
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "expression": {
+              "type": "string",
+              "enum": [
+                "neutral",
+                "happy",
+                "sad",
+                "angry",
+                "surprised",
+                "suspicious"
+              ]
+            },
+            "intensity": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "easeInFrames": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "easeOutFrames": {
+              "type": "integer",
+              "minimum": 0
+            }
+          },
+          "required": [
+            "expression",
+            "intensity",
+            "easeInFrames",
+            "easeOutFrames"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "schemaVersion",
+        "documentType",
+        "projectId",
+        "actionId",
+        "sceneId",
+        "actorId",
+        "actionType",
+        "frameRange",
+        "resourceClaims",
+        "composition",
+        "preconditions",
+        "postconditions",
+        "parameters"
+      ],
+      "additionalProperties": false
+    },
+    "action": {
+      "oneOf": [
+        {
+          "$ref": "#/$defs/action_walk_to"
+        },
+        {
+          "$ref": "#/$defs/action_look_at"
+        },
+        {
+          "$ref": "#/$defs/action_gesture"
+        },
+        {
+          "$ref": "#/$defs/action_speak"
+        },
+        {
+          "$ref": "#/$defs/action_handover"
+        },
+        {
+          "$ref": "#/$defs/action_sit"
+        },
+        {
+          "$ref": "#/$defs/action_expression"
+        }
+      ]
+    },
+    "operation": {
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "operationId": {
+              "type": "string",
+              "pattern": "^[a-z][a-z0-9_]{2,63}$"
+            },
+            "operation": {
+              "const": "shift_action"
+            },
+            "actionId": {
+              "type": "string",
+              "pattern": "^[a-z][a-z0-9_]{2,63}$"
+            },
+            "deltaFrames": {
+              "type": "integer",
+              "not": {
+                "const": 0
+              }
+            }
+          },
+          "required": [
+            "operationId",
+            "operation",
+            "actionId",
+            "deltaFrames"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "operationId": {
+              "type": "string",
+              "pattern": "^[a-z][a-z0-9_]{2,63}$"
+            },
+            "operation": {
+              "const": "set_expression"
+            },
+            "actionId": {
+              "type": "string",
+              "pattern": "^[a-z][a-z0-9_]{2,63}$"
+            },
+            "expression": {
+              "type": "string",
+              "enum": [
+                "neutral",
+                "happy",
+                "sad",
+                "angry",
+                "surprised",
+                "suspicious"
+              ]
+            },
+            "intensity": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            }
+          },
+          "required": [
+            "operationId",
+            "operation",
+            "actionId",
+            "expression",
+            "intensity"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "operationId": {
+              "type": "string",
+              "pattern": "^[a-z][a-z0-9_]{2,63}$"
+            },
+            "operation": {
+              "const": "replace_shot_camera"
+            },
+            "shotId": {
+              "type": "string",
+              "pattern": "^[a-z][a-z0-9_]{2,63}$"
+            },
+            "camera": {
+              "$ref": "#/$defs/camera"
+            }
+          },
+          "required": [
+            "operationId",
+            "operation",
+            "shotId",
+            "camera"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "operationId": {
+              "type": "string",
+              "pattern": "^[a-z][a-z0-9_]{2,63}$"
+            },
+            "operation": {
+              "const": "replace_action"
+            },
+            "actionId": {
+              "type": "string",
+              "pattern": "^[a-z][a-z0-9_]{2,63}$"
+            },
+            "value": {
+              "$ref": "#/$defs/action"
+            }
+          },
+          "required": [
+            "operationId",
+            "operation",
+            "actionId",
+            "value"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "operationId": {
+              "type": "string",
+              "pattern": "^[a-z][a-z0-9_]{2,63}$"
+            },
+            "operation": {
+              "const": "add_action"
+            },
+            "sceneId": {
+              "type": "string",
+              "pattern": "^[a-z][a-z0-9_]{2,63}$"
+            },
+            "value": {
+              "$ref": "#/$defs/action"
+            }
+          },
+          "required": [
+            "operationId",
+            "operation",
+            "sceneId",
+            "value"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "operationId": {
+              "type": "string",
+              "pattern": "^[a-z][a-z0-9_]{2,63}$"
+            },
+            "operation": {
+              "const": "remove_action"
+            },
+            "actionId": {
+              "type": "string",
+              "pattern": "^[a-z][a-z0-9_]{2,63}$"
+            }
+          },
+          "required": [
+            "operationId",
+            "operation",
+            "actionId"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "operationId": {
+              "type": "string",
+              "pattern": "^[a-z][a-z0-9_]{2,63}$"
+            },
+            "operation": {
+              "const": "replace_entity_transform"
+            },
+            "sceneId": {
+              "type": "string",
+              "pattern": "^[a-z][a-z0-9_]{2,63}$"
+            },
+            "entityId": {
+              "type": "string",
+              "pattern": "^[a-z][a-z0-9_]{2,63}$"
+            },
+            "value": {
+              "$ref": "#/$defs/transform"
+            }
+          },
+          "required": [
+            "operationId",
+            "operation",
+            "sceneId",
+            "entityId",
+            "value"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "revision": {
+      "type": "object",
+      "properties": {
+        "schemaVersion": {
+          "const": "0.1.0"
+        },
+        "documentType": {
+          "const": "revision"
+        },
+        "projectId": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9_]{2,63}$"
+        },
+        "revisionId": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9_]{2,63}$"
+        },
+        "expectedRevision": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "atomic": {
+          "const": true
+        },
+        "intent": {
+          "type": "string",
+          "minLength": 1
+        },
+        "operations": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/operation"
+          },
+          "minItems": 1
+        }
+      },
+      "required": [
+        "schemaVersion",
+        "documentType",
+        "projectId",
+        "revisionId",
+        "expectedRevision",
+        "atomic",
+        "intent",
+        "operations"
+      ],
+      "additionalProperties": false
+    },
+    "validationIssue": {
+      "type": "object",
+      "properties": {
+        "code": {
+          "type": "string",
+          "pattern": "^[A-Z][A-Z0-9_]+$"
+        },
+        "severity": {
+          "type": "string",
+          "enum": [
+            "error",
+            "warning",
+            "info"
+          ]
+        },
+        "document_id": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9_]{2,63}$"
+        },
+        "json_pointer": {
+          "type": "string",
+          "pattern": "^(?:|/.*)$"
+        },
+        "message": {
+          "type": "string",
+          "minLength": 1
+        },
+        "repair_hint": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "code",
+        "severity",
+        "document_id",
+        "json_pointer",
+        "message",
+        "repair_hint"
+      ],
+      "additionalProperties": false
+    },
+    "validationReport": {
+      "type": "object",
+      "properties": {
+        "schemaVersion": {
+          "const": "0.1.0"
+        },
+        "documentType": {
+          "const": "validationReport"
+        },
+        "projectId": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9_]{2,63}$"
+        },
+        "reportId": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9_]{2,63}$"
+        },
+        "stage": {
+          "type": "string",
+          "enum": [
+            "schema",
+            "resolve",
+            "semantic",
+            "compile",
+            "render",
+            "review"
+          ]
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "passed",
+            "failed",
+            "not_run"
+          ]
+        },
+        "issues": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/validationIssue"
+          },
+          "minItems": 0
+        },
+        "checksRun": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 0,
+          "uniqueItems": true
+        },
+        "checksNotRun": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 0,
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "schemaVersion",
+        "documentType",
+        "projectId",
+        "reportId",
+        "stage",
+        "status",
+        "issues",
+        "checksRun",
+        "checksNotRun"
+      ],
+      "additionalProperties": false
+    },
+    "jobStatus": {
+      "type": "string",
+      "enum": [
+        "planned",
+        "running",
+        "succeeded",
+        "failed",
+        "cancelled"
+      ]
+    }
+  }
+}

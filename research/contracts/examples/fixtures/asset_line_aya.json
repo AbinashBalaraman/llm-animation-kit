@@ -1,0 +1,9 @@
+{
+  "fixtureVersion": "0.1.0",
+  "synthetic": true,
+  "label": "Speech metadata fixture",
+  "sampleRateHz": 48000,
+  "sampleCount": 96000,
+  "text": "Here, take it.",
+  "containsAudio": false
+}

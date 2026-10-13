@@ -1,0 +1,93 @@
+{
+  "schema_version": "kit.scene/1.0",
+  "title": "An unexpected hello",
+  "subtitle": "Two friends. One shared moment.",
+  "fps": 24,
+  "frames": 144,
+  "sound": "chime",
+  "actors": [
+    {
+      "id": "pip",
+      "x": 310,
+      "y": 445,
+      "scale": 0.95,
+      "color": "#9bd4c8",
+      "accent": "#f7c66c",
+      "rig": "pip2d_v1"
+    },
+    {
+      "id": "poppy",
+      "x": 665,
+      "y": 445,
+      "scale": 0.95,
+      "color": "#ee9d96",
+      "accent": "#b7cedd",
+      "rig": "pip2d_v1"
+    }
+  ],
+  "props": [],
+  "actions": [
+    {
+      "id": "glance",
+      "actor": "pip",
+      "start": 10,
+      "end": 34,
+      "type": "look_at",
+      "target": "poppy"
+    },
+    {
+      "id": "hello",
+      "actor": "pip",
+      "start": 30,
+      "end": 80,
+      "type": "gesture",
+      "variant": "wave"
+    },
+    {
+      "id": "reply",
+      "actor": "poppy",
+      "start": 56,
+      "end": 100,
+      "type": "gesture",
+      "variant": "wave"
+    },
+    {
+      "id": "smile_a",
+      "actor": "pip",
+      "start": 34,
+      "end": 70,
+      "type": "expression",
+      "emotion": "happy",
+      "intensity": 0.9
+    },
+    {
+      "id": "smile_b",
+      "actor": "poppy",
+      "start": 68,
+      "end": 100,
+      "type": "expression",
+      "emotion": "happy",
+      "intensity": 0.8
+    },
+    {
+      "id": "return_glance",
+      "actor": "poppy",
+      "start": 24,
+      "end": 48,
+      "type": "look_at",
+      "target": "pip"
+    }
+  ],
+  "shots": [
+    {
+      "id": "wide",
+      "start": 0,
+      "end": 144,
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      }
+    }
+  ]
+}

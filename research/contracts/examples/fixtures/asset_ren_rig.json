@@ -1,0 +1,10 @@
+{
+  "fixtureVersion": "0.1.0",
+  "synthetic": true,
+  "label": "Ren rig fixture",
+  "sockets": [
+    "left_hand",
+    "right_hand"
+  ],
+  "containsRig": false
+}

@@ -1,0 +1,33 @@
+{
+  "schemaVersion": "0.1.0",
+  "documentType": "shot",
+  "projectId": "project_handover_fixture",
+  "shotId": "shot_offer_b",
+  "sceneId": "scene_courtyard",
+  "frameRange": {
+    "start": 240,
+    "end": 480
+  },
+  "camera": {
+    "projection": "perspective",
+    "positionM": [
+      3,
+      -2.6,
+      1.5
+    ],
+    "targetM": [
+      1,
+      0,
+      1.1
+    ],
+    "up": [
+      0,
+      0,
+      1
+    ],
+    "nearM": 0.1,
+    "farM": 100,
+    "verticalFovDegrees": 34
+  },
+  "compositionIntent": "Hold on Ren taking a seat with the same cup after the cut."
+}

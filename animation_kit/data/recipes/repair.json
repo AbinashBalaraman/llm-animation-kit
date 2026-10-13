@@ -1,0 +1,26 @@
+{
+  "id": "repair",
+  "version": "1.0",
+  "backend": "puppet2d_v1",
+  "purpose": "Repair from evidence",
+  "keywords": [
+    "error",
+    "repair",
+    "overlap",
+    "missing",
+    "invalid",
+    "failure",
+    "unsupported"
+  ],
+  "rules": [
+    "Schema error: inspect the exact tool/scene schema instead of guessing another field.",
+    "Channel conflict: sequence that actor's actions on the indicated channel; do not disable validation.",
+    "Framing warning: adjust the affected shot's camera and compare its boundary frames.",
+    "Weak acting: inspect the temporal contact sheet/clip, then adjust gaze lead, pause, expression intensity or gesture timing.",
+    "Missing capability: report it and retain valid work. Never call a video-generation fallback or execute model-supplied Python.",
+    "Stop at workflow limits; record unresolved issues rather than declaring quality from a valid export."
+  ],
+  "example": "discovery",
+  "inspection": "Playable preview plus contact sheet/action-boundary frames; human or vision review for appeal.",
+  "stop": "Stop when requested effect is reviewed or workflow budget is exhausted."
+}

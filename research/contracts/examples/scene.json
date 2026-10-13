@@ -1,0 +1,325 @@
+{
+  "schemaVersion": "0.1.0",
+  "documentType": "scene",
+  "projectId": "project_handover_fixture",
+  "sceneId": "scene_courtyard",
+  "durationFrames": 480,
+  "entities": [
+    {
+      "entityId": "char_aya",
+      "entityType": "character",
+      "characterRefId": "char_aya",
+      "transform": {
+        "positionM": [
+          0,
+          0,
+          0
+        ],
+        "rotationXyzw": [
+          0,
+          0,
+          -0.7071067811865476,
+          0.7071067811865476
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "entityId": "char_ren",
+      "entityType": "character",
+      "characterRefId": "char_ren",
+      "transform": {
+        "positionM": [
+          1.8,
+          0,
+          0
+        ],
+        "rotationXyzw": [
+          0,
+          0,
+          0.7071067811865476,
+          0.7071067811865476
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "entityId": "env_courtyard",
+      "entityType": "environment",
+      "assetId": "asset_courtyard",
+      "transform": {
+        "positionM": [
+          0,
+          0,
+          0
+        ],
+        "rotationXyzw": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "affordances": []
+    },
+    {
+      "entityId": "prop_table",
+      "entityType": "prop",
+      "assetId": "asset_table",
+      "transform": {
+        "positionM": [
+          0.8,
+          1.6,
+          0
+        ],
+        "rotationXyzw": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "affordances": [
+        {
+          "affordanceId": "table_surface",
+          "kind": "support",
+          "localPositionM": [
+            0,
+            0,
+            0.75
+          ],
+          "localRotationXyzw": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "halfExtentsM": [
+            0.5,
+            0.35
+          ]
+        }
+      ]
+    },
+    {
+      "entityId": "prop_chair",
+      "entityType": "prop",
+      "assetId": "asset_chair",
+      "transform": {
+        "positionM": [
+          1.4,
+          -0.5,
+          0
+        ],
+        "rotationXyzw": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "affordances": [
+        {
+          "affordanceId": "chair_seat",
+          "kind": "seat",
+          "localPositionM": [
+            0,
+            0,
+            0.45
+          ],
+          "localRotationXyzw": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "footZone": {
+            "centerM": [
+              0,
+              0.4,
+              0.05
+            ],
+            "rotationXyzw": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "halfExtentsM": [
+              0.3,
+              0.25,
+              0.05
+            ]
+          },
+          "clearanceBox": {
+            "centerM": [
+              0,
+              0.25,
+              0.9
+            ],
+            "rotationXyzw": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "halfExtentsM": [
+              0.5,
+              0.7,
+              0.9
+            ]
+          },
+          "maxOccupants": 1
+        }
+      ]
+    },
+    {
+      "entityId": "prop_cup",
+      "entityType": "prop",
+      "assetId": "asset_cup",
+      "transform": {
+        "positionM": [
+          0.35,
+          0,
+          1
+        ],
+        "rotationXyzw": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "affordances": [
+        {
+          "affordanceId": "cup_handle",
+          "kind": "grasp",
+          "localPositionM": [
+            0.05,
+            0,
+            0
+          ],
+          "localRotationXyzw": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "allowedEffectors": [
+            "right_hand"
+          ],
+          "positionToleranceM": 0.005,
+          "angleToleranceDegrees": 5
+        },
+        {
+          "affordanceId": "cup_body",
+          "kind": "grasp",
+          "localPositionM": [
+            0,
+            0,
+            0
+          ],
+          "localRotationXyzw": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "allowedEffectors": [
+            "left_hand"
+          ],
+          "positionToleranceM": 0.005,
+          "angleToleranceDegrees": 5
+        }
+      ]
+    }
+  ],
+  "initialState": {
+    "ownership": [
+      {
+        "propId": "prop_table",
+        "ownerId": null
+      },
+      {
+        "propId": "prop_chair",
+        "ownerId": null
+      },
+      {
+        "propId": "prop_cup",
+        "ownerId": "char_aya"
+      }
+    ],
+    "contacts": [
+      {
+        "actorId": "char_aya",
+        "effector": "right_hand",
+        "targetEntityId": "prop_cup",
+        "affordanceId": "cup_handle"
+      }
+    ],
+    "attachments": [
+      {
+        "propId": "prop_cup",
+        "parentEntityId": "char_aya",
+        "parentSocketId": "right_hand",
+        "localTransform": {
+          "positionM": [
+            0,
+            0,
+            0
+          ],
+          "rotationXyzw": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        }
+      }
+    ],
+    "seatOccupancy": []
+  },
+  "actionIds": [
+    "act_walk",
+    "act_look",
+    "act_gesture",
+    "act_speak",
+    "act_handover",
+    "act_expression",
+    "act_sit"
+  ],
+  "lightingProfileId": "lighting_courtyard_soft_v1"
+}

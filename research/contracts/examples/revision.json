@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "0.1.0",
+  "documentType": "revision",
+  "projectId": "project_handover_fixture",
+  "revisionId": "revision_delay_handover",
+  "expectedRevision": 7,
+  "atomic": true,
+  "intent": "Delay the handover and corresponding facial reaction by one second. Keep cameras unchanged.",
+  "operations": [
+    {
+      "operationId": "op_shift_handover",
+      "operation": "shift_action",
+      "actionId": "act_handover",
+      "deltaFrames": 24
+    },
+    {
+      "operationId": "op_shift_expression",
+      "operation": "shift_action",
+      "actionId": "act_expression",
+      "deltaFrames": 24
+    }
+  ]
+}

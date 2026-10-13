@@ -1,0 +1,94 @@
+{
+  "schemaVersion": "0.1.0",
+  "documentType": "action",
+  "projectId": "project_handover_fixture",
+  "actionId": "act_handover",
+  "sceneId": "scene_courtyard",
+  "actorId": "char_aya",
+  "actionType": "handover",
+  "frameRange": {
+    "start": 144,
+    "end": 216
+  },
+  "resourceClaims": [
+    {
+      "entityId": "char_aya",
+      "channels": [
+        "right_arm",
+        "torso"
+      ]
+    },
+    {
+      "entityId": "char_ren",
+      "channels": [
+        "left_arm",
+        "torso"
+      ]
+    }
+  ],
+  "composition": {
+    "policy": "exclusive"
+  },
+  "preconditions": [
+    {
+      "conditionType": "ownership",
+      "propId": "prop_cup",
+      "ownerId": "char_aya"
+    },
+    {
+      "conditionType": "contact",
+      "actorId": "char_aya",
+      "effector": "right_hand",
+      "targetEntityId": "prop_cup",
+      "affordanceId": "cup_handle",
+      "active": true
+    },
+    {
+      "conditionType": "hand_free",
+      "actorId": "char_ren",
+      "hand": "left_hand"
+    },
+    {
+      "conditionType": "proximity",
+      "actorId": "char_aya",
+      "targetEntityId": "char_ren",
+      "maxDistanceM": 1.2
+    }
+  ],
+  "postconditions": [
+    {
+      "conditionType": "ownership",
+      "propId": "prop_cup",
+      "ownerId": "char_ren"
+    },
+    {
+      "conditionType": "contact",
+      "actorId": "char_ren",
+      "effector": "left_hand",
+      "targetEntityId": "prop_cup",
+      "affordanceId": "cup_body",
+      "active": true
+    },
+    {
+      "conditionType": "contact",
+      "actorId": "char_aya",
+      "effector": "right_hand",
+      "targetEntityId": "prop_cup",
+      "affordanceId": "cup_handle",
+      "active": false
+    }
+  ],
+  "parameters": {
+    "propId": "prop_cup",
+    "receiverId": "char_ren",
+    "giverHand": "right_hand",
+    "receiverHand": "left_hand",
+    "giverGraspAffordanceId": "cup_handle",
+    "receiverGraspAffordanceId": "cup_body",
+    "receiverContactFrame": 176,
+    "transferFrame": 180,
+    "giverReleaseFrame": 184,
+    "style": "gentle",
+    "motionAssetId": "asset_motion_library"
+  }
+}

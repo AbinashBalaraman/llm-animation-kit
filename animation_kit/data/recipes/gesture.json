@@ -1,0 +1,24 @@
+{
+  "id": "gesture",
+  "version": "1.0",
+  "backend": "puppet2d_v1",
+  "purpose": "Choose and time a supported gesture",
+  "keywords": [
+    "wave",
+    "gesture",
+    "reach",
+    "celebrate",
+    "movement",
+    "arms"
+  ],
+  "rules": [
+    "Wave, reach and celebrate are the available variants. Reach is expressive posing, not a guaranteed grasp/contact.",
+    "Gesture controls blend from rest and back using an explicit envelope. Leave a hold before the next gesture.",
+    "Longer intervals slow the gesture; do not stretch unsupported physical actions into this vocabulary.",
+    "For a wave, keep the arm silhouette separate from the head and review multiple frames for direction/readability.",
+    "Gesture and expression may overlap, but two gestures on one actor may not."
+  ],
+  "example": "quiet_wave",
+  "inspection": "Playable preview plus contact sheet/action-boundary frames; human or vision review for appeal.",
+  "stop": "Stop when requested effect is reviewed or workflow budget is exhausted."
+}

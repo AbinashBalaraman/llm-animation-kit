@@ -1,0 +1,60 @@
+{
+  "kit_version": "0.1.0",
+  "backend": "puppet2d_v1",
+  "scene_schema": "kit.scene/1.0",
+  "video_generation_models": false,
+  "rigs": [
+    "pip2d_v1"
+  ],
+  "actions": [
+    "look_at",
+    "expression",
+    "gesture",
+    "move_to"
+  ],
+  "gesture_variants": [
+    "wave",
+    "reach",
+    "celebrate"
+  ],
+  "expressions": [
+    "neutral",
+    "curious",
+    "surprised",
+    "happy",
+    "sad"
+  ],
+  "profiles": {
+    "preview": [
+      640,
+      360
+    ],
+    "final": [
+      1280,
+      720
+    ]
+  },
+  "fps": 24,
+  "max_seconds": 60,
+  "max_actors": 4,
+  "max_props": 8,
+  "sound": [
+    "none",
+    "procedural chime/ambient bed"
+  ],
+  "coordinate_system": "2D design pixels: x right, y down, 960x540 world; actor y is foot baseline",
+  "action_semantics": "Half-open frame intervals; move/gaze/expression persist; gestures return to rest. Same-channel overlap rejected.",
+  "limitations": [
+    "One original 2D puppet rig, front view; no arbitrary art import",
+    "No 3D backend, handover, seating, speech/lip-sync, physics, or contact solver yet",
+    "No measured parity with other models; no trained model shipped",
+    "Render tools synchronous; no running-job cancellation API",
+    "Text-only agents need a disclosed visual reviewer"
+  ],
+  "examples": [
+    "discovery",
+    "two_friends",
+    "quiet_wave"
+  ],
+  "license": "GPL-3.0-or-later runtime; original artwork/examples CC0-1.0"
+}

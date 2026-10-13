@@ -1,0 +1,69 @@
+{
+  "schemaVersion": "0.1.0",
+  "documentType": "action",
+  "projectId": "project_handover_fixture",
+  "actionId": "act_sit",
+  "sceneId": "scene_courtyard",
+  "actorId": "char_ren",
+  "actionType": "sit",
+  "frameRange": {
+    "start": 264,
+    "end": 336
+  },
+  "resourceClaims": [
+    {
+      "entityId": "char_ren",
+      "channels": [
+        "root",
+        "legs",
+        "torso",
+        "left_arm",
+        "right_arm"
+      ]
+    }
+  ],
+  "composition": {
+    "policy": "exclusive"
+  },
+  "preconditions": [
+    {
+      "conditionType": "ownership",
+      "propId": "prop_cup",
+      "ownerId": "char_ren"
+    },
+    {
+      "conditionType": "proximity",
+      "actorId": "char_ren",
+      "targetEntityId": "prop_chair",
+      "maxDistanceM": 1
+    }
+  ],
+  "postconditions": [
+    {
+      "conditionType": "ownership",
+      "propId": "prop_cup",
+      "ownerId": "char_ren"
+    },
+    {
+      "conditionType": "contact",
+      "actorId": "char_ren",
+      "effector": "left_hand",
+      "targetEntityId": "prop_cup",
+      "affordanceId": "cup_body",
+      "active": true
+    },
+    {
+      "conditionType": "seated",
+      "actorId": "char_ren",
+      "seatEntityId": "prop_chair",
+      "seatAffordanceId": "chair_seat",
+      "active": true
+    }
+  ],
+  "parameters": {
+    "seatEntityId": "prop_chair",
+    "seatAffordanceId": "chair_seat",
+    "seatContactFrame": 304,
+    "motionAssetId": "asset_motion_library"
+  }
+}

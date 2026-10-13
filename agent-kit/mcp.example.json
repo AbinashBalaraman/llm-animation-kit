@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "animation-kit": {
+      "command": "/absolute/path/to/venv/python",
+      "args": ["-m", "animation_kit", "--workspace", "/absolute/path/to/animation-workspace", "serve"]
+    }
+  }
+}

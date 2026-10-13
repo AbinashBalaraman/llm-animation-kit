@@ -1,0 +1,32 @@
+{
+  "schemaVersion": "0.1.0",
+  "documentType": "action",
+  "projectId": "project_handover_fixture",
+  "actionId": "act_gesture",
+  "sceneId": "scene_courtyard",
+  "actorId": "char_aya",
+  "actionType": "gesture",
+  "frameRange": {
+    "start": 96,
+    "end": 132
+  },
+  "resourceClaims": [
+    {
+      "entityId": "char_aya",
+      "channels": [
+        "left_arm"
+      ]
+    }
+  ],
+  "composition": {
+    "policy": "exclusive"
+  },
+  "preconditions": [],
+  "postconditions": [],
+  "parameters": {
+    "gestureId": "gesture_open_palm",
+    "hand": "left_hand",
+    "intensity": 0.6,
+    "motionAssetId": "asset_motion_library"
+  }
+}

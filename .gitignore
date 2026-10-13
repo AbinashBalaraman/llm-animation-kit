@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+*.egg-info/
+.venv/
+.kit-workspace/
+build/
+dist/
+/*.zip
+agent-kit/mcp.local.json
+.env
+.env.*

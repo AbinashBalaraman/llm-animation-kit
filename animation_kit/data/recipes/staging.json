@@ -1,0 +1,26 @@
+{
+  "id": "staging",
+  "version": "1.0",
+  "backend": "puppet2d_v1",
+  "purpose": "Make the action legible",
+  "keywords": [
+    "stage",
+    "story",
+    "two",
+    "character",
+    "attention",
+    "layout",
+    "walk",
+    "move"
+  ],
+  "rules": [
+    "Choose one clear shot purpose: establish a target, reveal a reaction, or resolve the beat.",
+    "Keep faces and important props separated in silhouette. Put gaze targets inside the view.",
+    "For two characters, establish a shared wide shot before a closer reaction; front-view rig does not support arbitrary perspective.",
+    "move_to controls a bounded stylized walk. It does not provide collision avoidance or a contact solver.",
+    "Reuse locked colors/rig IDs across shots. Review silent playback for the intended emotional beat."
+  ],
+  "example": "two_friends",
+  "inspection": "Playable preview plus contact sheet/action-boundary frames; human or vision review for appeal.",
+  "stop": "Stop when requested effect is reviewed or workflow budget is exhausted."
+}

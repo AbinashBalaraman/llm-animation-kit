@@ -1,0 +1,31 @@
+{
+  "schemaVersion": "0.1.0",
+  "documentType": "action",
+  "projectId": "project_handover_fixture",
+  "actionId": "act_look",
+  "sceneId": "scene_courtyard",
+  "actorId": "char_aya",
+  "actionType": "look_at",
+  "frameRange": {
+    "start": 96,
+    "end": 240
+  },
+  "resourceClaims": [
+    {
+      "entityId": "char_aya",
+      "channels": [
+        "gaze"
+      ]
+    }
+  ],
+  "composition": {
+    "policy": "exclusive"
+  },
+  "preconditions": [],
+  "postconditions": [],
+  "parameters": {
+    "targetEntityId": "char_ren",
+    "influence": 1,
+    "easeInFrames": 8
+  }
+}

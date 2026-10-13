@@ -1,0 +1,168 @@
+{
+  "schemaVersion": "0.1.0",
+  "documentType": "project",
+  "projectId": "project_handover_fixture",
+  "revision": 7,
+  "title": "Synthetic courtyard handover contract fixture",
+  "fps": {
+    "numerator": 24,
+    "denominator": 1
+  },
+  "audioSampleRateHz": 48000,
+  "coordinates": {
+    "lengthUnit": "meter",
+    "handedness": "right",
+    "up": "+Z",
+    "characterForward": "+Y",
+    "quaternionOrder": "xyzw"
+  },
+  "frameConvention": "zero_based_half_open",
+  "selectedRigProfileId": "rig_humanoid_v1",
+  "motionLibraryAssetId": "asset_motion_library",
+  "assets": [
+    {
+      "assetId": "asset_aya_rig",
+      "uri": "fixtures/asset_aya_rig.json",
+      "sha256": "db16c854c70b01ba88ddaff2b8a485702f4ae995140c445671d5cf2e3af303b2",
+      "assetType": "character_rig",
+      "rigProfileId": "rig_humanoid_v1",
+      "mediaType": "application/json",
+      "materialization": "synthetic_fixture"
+    },
+    {
+      "assetId": "asset_ren_rig",
+      "uri": "fixtures/asset_ren_rig.json",
+      "sha256": "1bfe16acfb62c0776ffef57d5eb53d8a2a0afc4d1bd1148fb23e371d92794acc",
+      "assetType": "character_rig",
+      "rigProfileId": "rig_humanoid_v1",
+      "mediaType": "application/json",
+      "materialization": "synthetic_fixture"
+    },
+    {
+      "assetId": "asset_motion_library",
+      "uri": "fixtures/asset_motion_library.json",
+      "sha256": "77594a15337b944439ec4b940e8f0898b604865f8913b42e6180e4259f1abaa8",
+      "assetType": "motion_library",
+      "rigProfileId": "rig_humanoid_v1",
+      "mediaType": "application/json",
+      "materialization": "synthetic_fixture"
+    },
+    {
+      "assetId": "asset_courtyard",
+      "uri": "fixtures/asset_courtyard.json",
+      "sha256": "43d453de65c4f1e5478432bfdaefa681e12a7ae450187bb51c812ad2d8fd76cd",
+      "assetType": "environment",
+      "rigProfileId": null,
+      "mediaType": "application/json",
+      "materialization": "synthetic_fixture"
+    },
+    {
+      "assetId": "asset_table",
+      "uri": "fixtures/asset_table.json",
+      "sha256": "4f5e532a1fefe9d8fda421d6aeeb9ff706867964040c8a0b1c16f457181f3015",
+      "assetType": "prop",
+      "rigProfileId": null,
+      "mediaType": "application/json",
+      "materialization": "synthetic_fixture"
+    },
+    {
+      "assetId": "asset_chair",
+      "uri": "fixtures/asset_chair.json",
+      "sha256": "156445919872ec0408cdc17bfadfc219ef7cc751981dcfdd553f3743c276b16e",
+      "assetType": "prop",
+      "rigProfileId": null,
+      "mediaType": "application/json",
+      "materialization": "synthetic_fixture"
+    },
+    {
+      "assetId": "asset_cup",
+      "uri": "fixtures/asset_cup.json",
+      "sha256": "78b96c8ec452c5d1f22e42ab537e08b0f2ea1bd50dc1d5b394161997f8e1f54b",
+      "assetType": "prop",
+      "rigProfileId": null,
+      "mediaType": "application/json",
+      "materialization": "synthetic_fixture"
+    },
+    {
+      "assetId": "asset_line_aya",
+      "uri": "fixtures/asset_line_aya.json",
+      "sha256": "58d12ab54635777165afa484bbff76653b317e89aac80ba62e292b5e37047f6c",
+      "assetType": "audio",
+      "rigProfileId": null,
+      "mediaType": "application/json",
+      "materialization": "synthetic_fixture"
+    }
+  ],
+  "documents": [
+    {
+      "documentId": "char_aya",
+      "documentType": "characterRef",
+      "path": "character-aya.json"
+    },
+    {
+      "documentId": "char_ren",
+      "documentType": "characterRef",
+      "path": "character-ren.json"
+    },
+    {
+      "documentId": "scene_courtyard",
+      "documentType": "scene",
+      "path": "scene.json"
+    },
+    {
+      "documentId": "shot_offer_a",
+      "documentType": "shot",
+      "path": "shot-a.json"
+    },
+    {
+      "documentId": "shot_offer_b",
+      "documentType": "shot",
+      "path": "shot-b.json"
+    },
+    {
+      "documentId": "act_walk",
+      "documentType": "action",
+      "path": "action-walk.json"
+    },
+    {
+      "documentId": "act_look",
+      "documentType": "action",
+      "path": "action-look.json"
+    },
+    {
+      "documentId": "act_gesture",
+      "documentType": "action",
+      "path": "action-gesture.json"
+    },
+    {
+      "documentId": "act_speak",
+      "documentType": "action",
+      "path": "action-speak.json"
+    },
+    {
+      "documentId": "act_handover",
+      "documentType": "action",
+      "path": "action-handover.json"
+    },
+    {
+      "documentId": "act_expression",
+      "documentType": "action",
+      "path": "action-expression.json"
+    },
+    {
+      "documentId": "act_sit",
+      "documentType": "action",
+      "path": "action-sit.json"
+    }
+  ],
+  "shotOrder": [
+    "shot_offer_a",
+    "shot_offer_b"
+  ],
+  "renderProfile": {
+    "widthPx": 1280,
+    "heightPx": 720,
+    "colorSpace": "Rec.709",
+    "styleProfileId": "style_cel_fixture_v1"
+  }
+}

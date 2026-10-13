@@ -1,0 +1,6057 @@
+{
+  "frames": [
+    {
+      "frame": 0,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 0.0,
+          "emotion": "neutral",
+          "intensity": 0.0,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": 0.0,
+          "emotion": "neutral",
+          "intensity": 0.0,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 1,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 0.0,
+          "emotion": "neutral",
+          "intensity": 0.0,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": 0.0,
+          "emotion": "neutral",
+          "intensity": 0.0,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 2,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 0.0,
+          "emotion": "neutral",
+          "intensity": 0.0,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": 0.0,
+          "emotion": "neutral",
+          "intensity": 0.0,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 3,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 0.0,
+          "emotion": "neutral",
+          "intensity": 0.0,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": 0.0,
+          "emotion": "neutral",
+          "intensity": 0.0,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 4,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 0.0,
+          "emotion": "neutral",
+          "intensity": 0.0,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": 0.0,
+          "emotion": "neutral",
+          "intensity": 0.0,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 5,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 0.0,
+          "emotion": "neutral",
+          "intensity": 0.0,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": 0.0,
+          "emotion": "neutral",
+          "intensity": 0.0,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 6,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 0.0,
+          "emotion": "neutral",
+          "intensity": 0.0,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": 0.0,
+          "emotion": "neutral",
+          "intensity": 0.0,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 7,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 0.0,
+          "emotion": "neutral",
+          "intensity": 0.0,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": 0.0,
+          "emotion": "neutral",
+          "intensity": 0.0,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 8,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 0.0,
+          "emotion": "neutral",
+          "intensity": 0.0,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": 0.0,
+          "emotion": "neutral",
+          "intensity": 0.0,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 9,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 0.0,
+          "emotion": "neutral",
+          "intensity": 0.0,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": 0.0,
+          "emotion": "neutral",
+          "intensity": 0.0,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 10,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 0.0,
+          "emotion": "neutral",
+          "intensity": 0.0,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": 0.0,
+          "emotion": "neutral",
+          "intensity": 0.0,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 11,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 0.08021698035670255,
+          "emotion": "neutral",
+          "intensity": 0.0,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": 0.0,
+          "emotion": "neutral",
+          "intensity": 0.0,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 12,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 0.27878688255116296,
+          "emotion": "neutral",
+          "intensity": 0.0,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": 0.0,
+          "emotion": "neutral",
+          "intensity": 0.0,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 13,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 0.5325881482699104,
+          "emotion": "neutral",
+          "intensity": 0.0,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": 0.0,
+          "emotion": "neutral",
+          "intensity": 0.0,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 14,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 0.778499219199474,
+          "emotion": "neutral",
+          "intensity": 0.0,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": 0.0,
+          "emotion": "neutral",
+          "intensity": 0.0,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 15,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 0.9533985370263829,
+          "emotion": "neutral",
+          "intensity": 0.0,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": 0.0,
+          "emotion": "neutral",
+          "intensity": 0.0,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 16,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "neutral",
+          "intensity": 0.0,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": 0.0,
+          "emotion": "neutral",
+          "intensity": 0.0,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 17,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "neutral",
+          "intensity": 0.0,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": 0.0,
+          "emotion": "neutral",
+          "intensity": 0.0,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 18,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "neutral",
+          "intensity": 0.0,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": 0.0,
+          "emotion": "neutral",
+          "intensity": 0.0,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 19,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "neutral",
+          "intensity": 0.0,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": 0.0,
+          "emotion": "neutral",
+          "intensity": 0.0,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 20,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "neutral",
+          "intensity": 0.0,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": 0.0,
+          "emotion": "neutral",
+          "intensity": 0.0,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 21,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "neutral",
+          "intensity": 0.0,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": 0.0,
+          "emotion": "neutral",
+          "intensity": 0.0,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 22,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "neutral",
+          "intensity": 0.0,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": 0.0,
+          "emotion": "neutral",
+          "intensity": 0.0,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 23,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "neutral",
+          "intensity": 0.0,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": 0.0,
+          "emotion": "neutral",
+          "intensity": 0.0,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 24,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "neutral",
+          "intensity": 0.0,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": 0.0,
+          "emotion": "neutral",
+          "intensity": 0.0,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 25,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "neutral",
+          "intensity": 0.0,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": -0.08021698035670255,
+          "emotion": "neutral",
+          "intensity": 0.0,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 26,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "neutral",
+          "intensity": 0.0,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": -0.27878688255116296,
+          "emotion": "neutral",
+          "intensity": 0.0,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 27,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "neutral",
+          "intensity": 0.0,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": -0.5325881482699104,
+          "emotion": "neutral",
+          "intensity": 0.0,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 28,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "neutral",
+          "intensity": 0.0,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": -0.778499219199474,
+          "emotion": "neutral",
+          "intensity": 0.0,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 29,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "neutral",
+          "intensity": 0.0,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": -0.9533985370263829,
+          "emotion": "neutral",
+          "intensity": 0.0,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 30,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "neutral",
+          "intensity": 0.0,
+          "gesture": "wave",
+          "phase": 0.0,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": -1.0,
+          "emotion": "neutral",
+          "intensity": 0.0,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 31,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "neutral",
+          "intensity": 0.0,
+          "gesture": "wave",
+          "phase": 0.02040816326530612,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": -1.0,
+          "emotion": "neutral",
+          "intensity": 0.0,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 32,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "neutral",
+          "intensity": 0.0,
+          "gesture": "wave",
+          "phase": 0.04081632653061224,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": -1.0,
+          "emotion": "neutral",
+          "intensity": 0.0,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 33,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "neutral",
+          "intensity": 0.0,
+          "gesture": "wave",
+          "phase": 0.061224489795918366,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": -1.0,
+          "emotion": "neutral",
+          "intensity": 0.0,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 34,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 0.0,
+          "gesture": "wave",
+          "phase": 0.08163265306122448,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": -1.0,
+          "emotion": "neutral",
+          "intensity": 0.0,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 35,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 0.03257842565597668,
+          "gesture": "wave",
+          "phase": 0.10204081632653061,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": -1.0,
+          "emotion": "neutral",
+          "intensity": 0.0,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 36,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 0.11956618075801749,
+          "gesture": "wave",
+          "phase": 0.12244897959183673,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": -1.0,
+          "emotion": "neutral",
+          "intensity": 0.0,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 37,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 0.2448419825072886,
+          "gesture": "wave",
+          "phase": 0.14285714285714285,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": -1.0,
+          "emotion": "neutral",
+          "intensity": 0.0,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 38,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 0.3922845481049563,
+          "gesture": "wave",
+          "phase": 0.16326530612244897,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": -1.0,
+          "emotion": "neutral",
+          "intensity": 0.0,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 39,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 0.5457725947521865,
+          "gesture": "wave",
+          "phase": 0.1836734693877551,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": -1.0,
+          "emotion": "neutral",
+          "intensity": 0.0,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 40,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 0.6891848396501459,
+          "gesture": "wave",
+          "phase": 0.20408163265306123,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": -1.0,
+          "emotion": "neutral",
+          "intensity": 0.0,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 41,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 0.8064000000000001,
+          "gesture": "wave",
+          "phase": 0.22448979591836735,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": -1.0,
+          "emotion": "neutral",
+          "intensity": 0.0,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 42,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 0.8812967930029154,
+          "gesture": "wave",
+          "phase": 0.24489795918367346,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": -1.0,
+          "emotion": "neutral",
+          "intensity": 0.0,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 43,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 0.9,
+          "gesture": "wave",
+          "phase": 0.2653061224489796,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": -1.0,
+          "emotion": "neutral",
+          "intensity": 0.0,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 44,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 0.9,
+          "gesture": "wave",
+          "phase": 0.2857142857142857,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": -1.0,
+          "emotion": "neutral",
+          "intensity": 0.0,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 45,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 0.9,
+          "gesture": "wave",
+          "phase": 0.30612244897959184,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": -1.0,
+          "emotion": "neutral",
+          "intensity": 0.0,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 46,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 0.9,
+          "gesture": "wave",
+          "phase": 0.32653061224489793,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": -1.0,
+          "emotion": "neutral",
+          "intensity": 0.0,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 47,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 0.9,
+          "gesture": "wave",
+          "phase": 0.3469387755102041,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": -1.0,
+          "emotion": "neutral",
+          "intensity": 0.0,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 48,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 0.9,
+          "gesture": "wave",
+          "phase": 0.3673469387755102,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": -1.0,
+          "emotion": "neutral",
+          "intensity": 0.0,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 49,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 0.9,
+          "gesture": "wave",
+          "phase": 0.3877551020408163,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": -1.0,
+          "emotion": "neutral",
+          "intensity": 0.0,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 50,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 0.9,
+          "gesture": "wave",
+          "phase": 0.40816326530612246,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": -1.0,
+          "emotion": "neutral",
+          "intensity": 0.0,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 51,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 0.9,
+          "gesture": "wave",
+          "phase": 0.42857142857142855,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": -1.0,
+          "emotion": "neutral",
+          "intensity": 0.0,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 52,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 0.9,
+          "gesture": "wave",
+          "phase": 0.4489795918367347,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": -1.0,
+          "emotion": "neutral",
+          "intensity": 0.0,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 53,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 0.9,
+          "gesture": "wave",
+          "phase": 0.46938775510204084,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": -1.0,
+          "emotion": "neutral",
+          "intensity": 0.0,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 54,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 0.9,
+          "gesture": "wave",
+          "phase": 0.4897959183673469,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": -1.0,
+          "emotion": "neutral",
+          "intensity": 0.0,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 55,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 0.9,
+          "gesture": "wave",
+          "phase": 0.5102040816326531,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": -1.0,
+          "emotion": "neutral",
+          "intensity": 0.0,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 56,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 0.9,
+          "gesture": "wave",
+          "phase": 0.5306122448979592,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": -1.0,
+          "emotion": "neutral",
+          "intensity": 0.0,
+          "gesture": "wave",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 57,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 0.9,
+          "gesture": "wave",
+          "phase": 0.5510204081632653,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": -1.0,
+          "emotion": "neutral",
+          "intensity": 0.0,
+          "gesture": "wave",
+          "phase": 0.023255813953488372,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 58,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 0.9,
+          "gesture": "wave",
+          "phase": 0.5714285714285714,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": -1.0,
+          "emotion": "neutral",
+          "intensity": 0.0,
+          "gesture": "wave",
+          "phase": 0.046511627906976744,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 59,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 0.9,
+          "gesture": "wave",
+          "phase": 0.5918367346938775,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": -1.0,
+          "emotion": "neutral",
+          "intensity": 0.0,
+          "gesture": "wave",
+          "phase": 0.06976744186046512,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 60,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 0.9,
+          "gesture": "wave",
+          "phase": 0.6122448979591837,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": -1.0,
+          "emotion": "neutral",
+          "intensity": 0.0,
+          "gesture": "wave",
+          "phase": 0.09302325581395349,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 61,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 0.9,
+          "gesture": "wave",
+          "phase": 0.6326530612244898,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": -1.0,
+          "emotion": "neutral",
+          "intensity": 0.0,
+          "gesture": "wave",
+          "phase": 0.11627906976744186,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 62,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 0.9,
+          "gesture": "wave",
+          "phase": 0.6530612244897959,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": -1.0,
+          "emotion": "neutral",
+          "intensity": 0.0,
+          "gesture": "wave",
+          "phase": 0.13953488372093023,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 63,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 0.9,
+          "gesture": "wave",
+          "phase": 0.673469387755102,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": -1.0,
+          "emotion": "neutral",
+          "intensity": 0.0,
+          "gesture": "wave",
+          "phase": 0.16279069767441862,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 64,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 0.9,
+          "gesture": "wave",
+          "phase": 0.6938775510204082,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": -1.0,
+          "emotion": "neutral",
+          "intensity": 0.0,
+          "gesture": "wave",
+          "phase": 0.18604651162790697,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 65,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 0.9,
+          "gesture": "wave",
+          "phase": 0.7142857142857143,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": -1.0,
+          "emotion": "neutral",
+          "intensity": 0.0,
+          "gesture": "wave",
+          "phase": 0.20930232558139536,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 66,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 0.9,
+          "gesture": "wave",
+          "phase": 0.7346938775510204,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": -1.0,
+          "emotion": "neutral",
+          "intensity": 0.0,
+          "gesture": "wave",
+          "phase": 0.23255813953488372,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 67,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 0.9,
+          "gesture": "wave",
+          "phase": 0.7551020408163265,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": -1.0,
+          "emotion": "neutral",
+          "intensity": 0.0,
+          "gesture": "wave",
+          "phase": 0.2558139534883721,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 68,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 0.9,
+          "gesture": "wave",
+          "phase": 0.7755102040816326,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": -1.0,
+          "emotion": "happy",
+          "intensity": 0.0,
+          "gesture": "wave",
+          "phase": 0.27906976744186046,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 69,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 0.9,
+          "gesture": "wave",
+          "phase": 0.7959183673469388,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": -1.0,
+          "emotion": "happy",
+          "intensity": 0.036521096975596655,
+          "gesture": "wave",
+          "phase": 0.3023255813953488,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 70,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 0.9,
+          "gesture": "wave",
+          "phase": 0.8163265306122449,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": -1.0,
+          "emotion": "happy",
+          "intensity": 0.13233526904098553,
+          "gesture": "wave",
+          "phase": 0.32558139534883723,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 71,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 0.9,
+          "gesture": "wave",
+          "phase": 0.8367346938775511,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": -1.0,
+          "emotion": "happy",
+          "intensity": 0.26681883790406496,
+          "gesture": "wave",
+          "phase": 0.3488372093023256,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 72,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 0.9,
+          "gesture": "wave",
+          "phase": 0.8571428571428571,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": -1.0,
+          "emotion": "happy",
+          "intensity": 0.41934812527273335,
+          "gesture": "wave",
+          "phase": 0.37209302325581395,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 73,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 0.9,
+          "gesture": "wave",
+          "phase": 0.8775510204081632,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": -1.0,
+          "emotion": "happy",
+          "intensity": 0.569299452854889,
+          "gesture": "wave",
+          "phase": 0.3953488372093023,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 74,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 0.9,
+          "gesture": "wave",
+          "phase": 0.8979591836734694,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": -1.0,
+          "emotion": "happy",
+          "intensity": 0.6960491423584304,
+          "gesture": "wave",
+          "phase": 0.4186046511627907,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 75,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 0.9,
+          "gesture": "wave",
+          "phase": 0.9183673469387755,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": -1.0,
+          "emotion": "happy",
+          "intensity": 0.7789735154912557,
+          "gesture": "wave",
+          "phase": 0.4418604651162791,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 76,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 0.9,
+          "gesture": "wave",
+          "phase": 0.9387755102040817,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": -1.0,
+          "emotion": "happy",
+          "intensity": 0.8,
+          "gesture": "wave",
+          "phase": 0.46511627906976744,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 77,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 0.9,
+          "gesture": "wave",
+          "phase": 0.9591836734693877,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": -1.0,
+          "emotion": "happy",
+          "intensity": 0.8,
+          "gesture": "wave",
+          "phase": 0.4883720930232558,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 78,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 0.9,
+          "gesture": "wave",
+          "phase": 0.9795918367346939,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": -1.0,
+          "emotion": "happy",
+          "intensity": 0.8,
+          "gesture": "wave",
+          "phase": 0.5116279069767442,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 79,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 0.9,
+          "gesture": "wave",
+          "phase": 1.0,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": -1.0,
+          "emotion": "happy",
+          "intensity": 0.8,
+          "gesture": "wave",
+          "phase": 0.5348837209302325,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 80,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 0.9,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": -1.0,
+          "emotion": "happy",
+          "intensity": 0.8,
+          "gesture": "wave",
+          "phase": 0.5581395348837209,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 81,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 0.9,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": -1.0,
+          "emotion": "happy",
+          "intensity": 0.8,
+          "gesture": "wave",
+          "phase": 0.5813953488372093,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 82,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 0.9,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": -1.0,
+          "emotion": "happy",
+          "intensity": 0.8,
+          "gesture": "wave",
+          "phase": 0.6046511627906976,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 83,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 0.9,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": -1.0,
+          "emotion": "happy",
+          "intensity": 0.8,
+          "gesture": "wave",
+          "phase": 0.627906976744186,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 84,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 0.9,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": -1.0,
+          "emotion": "happy",
+          "intensity": 0.8,
+          "gesture": "wave",
+          "phase": 0.6511627906976745,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 85,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 0.9,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": -1.0,
+          "emotion": "happy",
+          "intensity": 0.8,
+          "gesture": "wave",
+          "phase": 0.6744186046511628,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 86,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 0.9,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": -1.0,
+          "emotion": "happy",
+          "intensity": 0.8,
+          "gesture": "wave",
+          "phase": 0.6976744186046512,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 87,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 0.9,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": -1.0,
+          "emotion": "happy",
+          "intensity": 0.8,
+          "gesture": "wave",
+          "phase": 0.7209302325581395,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 88,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 0.9,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": -1.0,
+          "emotion": "happy",
+          "intensity": 0.8,
+          "gesture": "wave",
+          "phase": 0.7441860465116279,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 89,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 0.9,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": -1.0,
+          "emotion": "happy",
+          "intensity": 0.8,
+          "gesture": "wave",
+          "phase": 0.7674418604651163,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 90,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 0.9,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": -1.0,
+          "emotion": "happy",
+          "intensity": 0.8,
+          "gesture": "wave",
+          "phase": 0.7906976744186046,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 91,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 0.9,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": -1.0,
+          "emotion": "happy",
+          "intensity": 0.8,
+          "gesture": "wave",
+          "phase": 0.813953488372093,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 92,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 0.9,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": -1.0,
+          "emotion": "happy",
+          "intensity": 0.8,
+          "gesture": "wave",
+          "phase": 0.8372093023255814,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 93,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 0.9,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": -1.0,
+          "emotion": "happy",
+          "intensity": 0.8,
+          "gesture": "wave",
+          "phase": 0.8604651162790697,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 94,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 0.9,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": -1.0,
+          "emotion": "happy",
+          "intensity": 0.8,
+          "gesture": "wave",
+          "phase": 0.8837209302325582,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 95,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 0.9,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": -1.0,
+          "emotion": "happy",
+          "intensity": 0.8,
+          "gesture": "wave",
+          "phase": 0.9069767441860465,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 96,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 0.9,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": -1.0,
+          "emotion": "happy",
+          "intensity": 0.8,
+          "gesture": "wave",
+          "phase": 0.9302325581395349,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 97,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 0.9,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": -1.0,
+          "emotion": "happy",
+          "intensity": 0.8,
+          "gesture": "wave",
+          "phase": 0.9534883720930233,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 98,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 0.9,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": -1.0,
+          "emotion": "happy",
+          "intensity": 0.8,
+          "gesture": "wave",
+          "phase": 0.9767441860465116,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 99,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 0.9,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": -1.0,
+          "emotion": "happy",
+          "intensity": 0.8,
+          "gesture": "wave",
+          "phase": 1.0,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 100,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 0.9,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": -1.0,
+          "emotion": "happy",
+          "intensity": 0.8,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 101,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 0.9,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": -1.0,
+          "emotion": "happy",
+          "intensity": 0.8,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 102,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 0.9,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": -1.0,
+          "emotion": "happy",
+          "intensity": 0.8,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 103,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 0.9,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": -1.0,
+          "emotion": "happy",
+          "intensity": 0.8,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 104,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 0.9,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": -1.0,
+          "emotion": "happy",
+          "intensity": 0.8,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 105,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 0.9,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": -1.0,
+          "emotion": "happy",
+          "intensity": 0.8,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 106,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 0.9,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": -1.0,
+          "emotion": "happy",
+          "intensity": 0.8,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 107,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 0.9,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": -1.0,
+          "emotion": "happy",
+          "intensity": 0.8,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 108,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 0.9,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": -1.0,
+          "emotion": "happy",
+          "intensity": 0.8,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 109,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 0.9,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": -1.0,
+          "emotion": "happy",
+          "intensity": 0.8,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 110,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 0.9,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": -1.0,
+          "emotion": "happy",
+          "intensity": 0.8,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 111,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 0.9,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": -1.0,
+          "emotion": "happy",
+          "intensity": 0.8,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 112,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 0.9,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": -1.0,
+          "emotion": "happy",
+          "intensity": 0.8,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 113,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 0.9,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": -1.0,
+          "emotion": "happy",
+          "intensity": 0.8,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 114,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 0.9,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": -1.0,
+          "emotion": "happy",
+          "intensity": 0.8,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 115,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 0.9,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": -1.0,
+          "emotion": "happy",
+          "intensity": 0.8,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 116,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 0.9,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": -1.0,
+          "emotion": "happy",
+          "intensity": 0.8,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 117,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 0.9,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": -1.0,
+          "emotion": "happy",
+          "intensity": 0.8,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 118,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 0.9,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": -1.0,
+          "emotion": "happy",
+          "intensity": 0.8,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 119,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 0.9,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": -1.0,
+          "emotion": "happy",
+          "intensity": 0.8,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 120,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 0.9,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": -1.0,
+          "emotion": "happy",
+          "intensity": 0.8,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 121,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 0.9,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": -1.0,
+          "emotion": "happy",
+          "intensity": 0.8,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 122,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 0.9,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": -1.0,
+          "emotion": "happy",
+          "intensity": 0.8,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 123,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 0.9,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": -1.0,
+          "emotion": "happy",
+          "intensity": 0.8,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 124,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 0.9,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": -1.0,
+          "emotion": "happy",
+          "intensity": 0.8,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 125,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 0.9,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": -1.0,
+          "emotion": "happy",
+          "intensity": 0.8,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 126,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 0.9,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": -1.0,
+          "emotion": "happy",
+          "intensity": 0.8,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 127,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 0.9,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": -1.0,
+          "emotion": "happy",
+          "intensity": 0.8,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 128,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 0.9,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": -1.0,
+          "emotion": "happy",
+          "intensity": 0.8,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 129,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 0.9,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": -1.0,
+          "emotion": "happy",
+          "intensity": 0.8,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 130,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 0.9,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": -1.0,
+          "emotion": "happy",
+          "intensity": 0.8,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 131,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 0.9,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": -1.0,
+          "emotion": "happy",
+          "intensity": 0.8,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 132,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 0.9,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": -1.0,
+          "emotion": "happy",
+          "intensity": 0.8,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 133,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 0.9,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": -1.0,
+          "emotion": "happy",
+          "intensity": 0.8,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 134,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 0.9,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": -1.0,
+          "emotion": "happy",
+          "intensity": 0.8,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 135,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 0.9,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": -1.0,
+          "emotion": "happy",
+          "intensity": 0.8,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 136,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 0.9,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": -1.0,
+          "emotion": "happy",
+          "intensity": 0.8,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 137,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 0.9,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": -1.0,
+          "emotion": "happy",
+          "intensity": 0.8,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 138,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 0.9,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": -1.0,
+          "emotion": "happy",
+          "intensity": 0.8,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 139,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 0.9,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": -1.0,
+          "emotion": "happy",
+          "intensity": 0.8,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 140,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 0.9,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": -1.0,
+          "emotion": "happy",
+          "intensity": 0.8,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 141,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 0.9,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": -1.0,
+          "emotion": "happy",
+          "intensity": 0.8,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 142,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 0.9,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": -1.0,
+          "emotion": "happy",
+          "intensity": 0.8,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 143,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 310,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 0.9,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        },
+        "poppy": {
+          "id": "poppy",
+          "x": 665,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#ee9d96",
+          "accent": "#b7cedd",
+          "rig": "pip2d_v1",
+          "gaze": -1.0,
+          "emotion": "happy",
+          "intensity": 0.8,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    }
+  ],
+  "diagnostics": [],
+  "limits": [
+    "No 3D collision/contact solver",
+    "Technical diagnostics do not certify visual appeal"
+  ]
+}

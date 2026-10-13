@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-13",
+  "runtime_version": "0.1.0",
+  "backend": "puppet2d_v1",
+  "scene_schema": "kit.scene/1.0",
+  "tests": {
+    "command": ".venv/Scripts/python.exe -m unittest discover -s tests -v",
+    "passed": 24,
+    "failed": 0
+  },
+  "skill_validator": {
+    "result": "passed",
+    "validator": "skill-creator/scripts/quick_validate.py"
+  },
+  "examples": [
+    {
+      "backend": "puppet2d_v1",
+      "profile": "preview",
+      "width": 640,
+      "height": 360,
+      "fps": 24,
+      "decoded_frame_count": 192,
+      "seconds": 26.156,
+      "scene_hash": "09c090a8999e740fb8aec0948fa5cc90b518262c5e79d81b850f267e5d2d3b9d",
+      "engine_hash": "e658cac645b60aea2b995fd40ee47b0b004cc3e85b658fac4f641903f05b4515",
+      "id": "discovery-after"
+    },
+    {
+      "backend": "puppet2d_v1",
+      "profile": "preview",
+      "width": 640,
+      "height": 360,
+      "fps": 24,
+      "decoded_frame_count": 192,
+      "seconds": 23.63,
+      "scene_hash": "563ba69237c87f301f35d3f236f9165188ccfe35408f1ce35b2d2becd55bdc35",
+      "engine_hash": "e658cac645b60aea2b995fd40ee47b0b004cc3e85b658fac4f641903f05b4515",
+      "id": "discovery-before"
+    },
+    {
+      "backend": "puppet2d_v1",
+      "profile": "final",
+      "width": 1280,
+      "height": 720,
+      "fps": 24,
+      "decoded_frame_count": 192,
+      "seconds": 55.48,
+      "scene_hash": "09c090a8999e740fb8aec0948fa5cc90b518262c5e79d81b850f267e5d2d3b9d",
+      "engine_hash": "e658cac645b60aea2b995fd40ee47b0b004cc3e85b658fac4f641903f05b4515",
+      "id": "discovery-final"
+    },
+    {
+      "backend": "puppet2d_v1",
+      "profile": "preview",
+      "width": 640,
+      "height": 360,
+      "fps": 24,
+      "decoded_frame_count": 144,
+      "seconds": 18.865,
+      "scene_hash": "4acee07011ee20aa1cb901adf68d3dc9920fb33501e4d514635511e7ebbcf922",
+      "engine_hash": "e658cac645b60aea2b995fd40ee47b0b004cc3e85b658fac4f641903f05b4515",
+      "id": "two-friends"
+    }
+  ],
+  "limitations": [
+    "Authored demos, not actual multi-model comparison",
+    "Model inspected temporal contact sheets; no independent human/audio review",
+    "No Blender/3D, speech, handover or physical contact solver"
+  ]
+}

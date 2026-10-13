@@ -1,0 +1,58 @@
+{
+  "schemaVersion": "0.1.0",
+  "documentType": "action",
+  "projectId": "project_handover_fixture",
+  "actionId": "act_speak",
+  "sceneId": "scene_courtyard",
+  "actorId": "char_aya",
+  "actionType": "speak",
+  "frameRange": {
+    "start": 108,
+    "end": 156
+  },
+  "resourceClaims": [
+    {
+      "entityId": "char_aya",
+      "channels": [
+        "voice",
+        "face"
+      ]
+    }
+  ],
+  "composition": {
+    "policy": "exclusive"
+  },
+  "preconditions": [],
+  "postconditions": [],
+  "parameters": {
+    "text": "Here, take it.",
+    "language": "en",
+    "audioAssetId": "asset_line_aya",
+    "audioRangeSamples": {
+      "start": 0,
+      "end": 96000
+    },
+    "visemes": [
+      {
+        "atSample": 0,
+        "visemeId": "viseme_rest",
+        "weight": 0
+      },
+      {
+        "atSample": 8000,
+        "visemeId": "viseme_aa",
+        "weight": 0.7
+      },
+      {
+        "atSample": 40000,
+        "visemeId": "viseme_ee",
+        "weight": 0.6
+      },
+      {
+        "atSample": 92000,
+        "visemeId": "viseme_rest",
+        "weight": 0
+      }
+    ]
+  }
+}

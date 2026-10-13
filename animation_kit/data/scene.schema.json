@@ -1,0 +1,383 @@
+{
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "kit.scene/1.0"
+    },
+    "title": {
+      "type": "string",
+      "maxLength": 90
+    },
+    "subtitle": {
+      "type": "string",
+      "maxLength": 90
+    },
+    "fps": {
+      "const": 24
+    },
+    "frames": {
+      "type": "integer",
+      "minimum": 24,
+      "maximum": 1440
+    },
+    "sound": {
+      "enum": [
+        "none",
+        "chime"
+      ]
+    },
+    "actors": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9_-]{0,47}$"
+          },
+          "x": {
+            "type": "number",
+            "minimum": 80,
+            "maximum": 880
+          },
+          "y": {
+            "type": "number",
+            "minimum": 300,
+            "maximum": 465
+          },
+          "scale": {
+            "type": "number",
+            "minimum": 0.5,
+            "maximum": 1.2
+          },
+          "color": {
+            "type": "string",
+            "pattern": "^#[0-9a-fA-F]{6}$"
+          },
+          "accent": {
+            "type": "string",
+            "pattern": "^#[0-9a-fA-F]{6}$"
+          },
+          "rig": {
+            "enum": [
+              "pip2d_v1"
+            ]
+          }
+        },
+        "required": [
+          "id",
+          "x",
+          "y",
+          "scale",
+          "color",
+          "accent",
+          "rig"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 1,
+      "maxItems": 4
+    },
+    "props": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9_-]{0,47}$"
+          },
+          "kind": {
+            "enum": [
+              "star",
+              "orb",
+              "box"
+            ]
+          },
+          "x": {
+            "type": "number",
+            "minimum": 40,
+            "maximum": 920
+          },
+          "y": {
+            "type": "number",
+            "minimum": 90,
+            "maximum": 430
+          },
+          "size": {
+            "type": "number",
+            "minimum": 8,
+            "maximum": 50
+          },
+          "color": {
+            "type": "string",
+            "pattern": "^#[0-9a-fA-F]{6}$"
+          }
+        },
+        "required": [
+          "id",
+          "kind",
+          "x",
+          "y",
+          "size",
+          "color"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 0,
+      "maxItems": 8
+    },
+    "actions": {
+      "type": "array",
+      "items": {
+        "oneOf": [
+          {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^[a-z][a-z0-9_-]{0,47}$"
+              },
+              "actor": {
+                "type": "string",
+                "pattern": "^[a-z][a-z0-9_-]{0,47}$"
+              },
+              "start": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 1439
+              },
+              "end": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 1440
+              },
+              "type": {
+                "const": "look_at"
+              },
+              "target": {
+                "type": "string",
+                "pattern": "^[a-z][a-z0-9_-]{0,47}$"
+              }
+            },
+            "required": [
+              "id",
+              "actor",
+              "start",
+              "end",
+              "type",
+              "target"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^[a-z][a-z0-9_-]{0,47}$"
+              },
+              "actor": {
+                "type": "string",
+                "pattern": "^[a-z][a-z0-9_-]{0,47}$"
+              },
+              "start": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 1439
+              },
+              "end": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 1440
+              },
+              "type": {
+                "const": "expression"
+              },
+              "emotion": {
+                "enum": [
+                  "neutral",
+                  "curious",
+                  "surprised",
+                  "happy",
+                  "sad"
+                ]
+              },
+              "intensity": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1
+              }
+            },
+            "required": [
+              "id",
+              "actor",
+              "start",
+              "end",
+              "type",
+              "emotion",
+              "intensity"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^[a-z][a-z0-9_-]{0,47}$"
+              },
+              "actor": {
+                "type": "string",
+                "pattern": "^[a-z][a-z0-9_-]{0,47}$"
+              },
+              "start": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 1439
+              },
+              "end": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 1440
+              },
+              "type": {
+                "const": "gesture"
+              },
+              "variant": {
+                "enum": [
+                  "wave",
+                  "reach",
+                  "celebrate"
+                ]
+              }
+            },
+            "required": [
+              "id",
+              "actor",
+              "start",
+              "end",
+              "type",
+              "variant"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^[a-z][a-z0-9_-]{0,47}$"
+              },
+              "actor": {
+                "type": "string",
+                "pattern": "^[a-z][a-z0-9_-]{0,47}$"
+              },
+              "start": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 1439
+              },
+              "end": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 1440
+              },
+              "type": {
+                "const": "move_to"
+              },
+              "x": {
+                "type": "number",
+                "minimum": 80,
+                "maximum": 880
+              }
+            },
+            "required": [
+              "id",
+              "actor",
+              "start",
+              "end",
+              "type",
+              "x"
+            ],
+            "additionalProperties": false
+          }
+        ]
+      },
+      "minItems": 0,
+      "maxItems": 64
+    },
+    "shots": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9_-]{0,47}$"
+          },
+          "start": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 1439
+          },
+          "end": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 1440
+          },
+          "camera": {
+            "type": "object",
+            "properties": {
+              "x": {
+                "type": "number",
+                "minimum": 80,
+                "maximum": 880
+              },
+              "y": {
+                "type": "number",
+                "minimum": 80,
+                "maximum": 490
+              },
+              "zoom": {
+                "type": "number",
+                "minimum": 0.6,
+                "maximum": 1.7
+              }
+            },
+            "required": [
+              "x",
+              "y",
+              "zoom"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "required": [
+          "id",
+          "start",
+          "end",
+          "camera"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 1,
+      "maxItems": 8
+    }
+  },
+  "required": [
+    "schema_version",
+    "title",
+    "subtitle",
+    "fps",
+    "frames",
+    "sound",
+    "actors",
+    "props",
+    "actions",
+    "shots"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:animation-kit:scene:1.0"
+}

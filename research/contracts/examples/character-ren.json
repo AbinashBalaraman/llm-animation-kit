@@ -1,0 +1,28 @@
+{
+  "schemaVersion": "0.1.0",
+  "documentType": "characterRef",
+  "projectId": "project_handover_fixture",
+  "characterId": "char_ren",
+  "displayName": "Ren",
+  "rigProfileId": "rig_humanoid_v1",
+  "rigAsset": {
+    "assetId": "asset_ren_rig",
+    "uri": "fixtures/asset_ren_rig.json",
+    "sha256": "1bfe16acfb62c0776ffef57d5eb53d8a2a0afc4d1bd1148fb23e371d92794acc",
+    "assetType": "character_rig",
+    "rigProfileId": "rig_humanoid_v1",
+    "mediaType": "application/json",
+    "materialization": "synthetic_fixture"
+  },
+  "appearanceProfileId": "appearance_ren_v1",
+  "voiceProfileId": "voice_ren_v1",
+  "supportedActions": [
+    "walk_to",
+    "look_at",
+    "gesture",
+    "speak",
+    "handover",
+    "sit",
+    "expression"
+  ]
+}

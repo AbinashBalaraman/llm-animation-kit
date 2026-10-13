@@ -1,0 +1,6921 @@
+{
+  "frames": [
+    {
+      "frame": 0,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 0.0,
+          "emotion": "neutral",
+          "intensity": 0.0,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 1,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 0.0,
+          "emotion": "neutral",
+          "intensity": 0.0,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 2,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 0.0,
+          "emotion": "neutral",
+          "intensity": 0.0,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 3,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 0.0,
+          "emotion": "neutral",
+          "intensity": 0.0,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 4,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 0.0,
+          "emotion": "neutral",
+          "intensity": 0.0,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 5,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 0.0,
+          "emotion": "neutral",
+          "intensity": 0.0,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 6,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 0.0,
+          "emotion": "neutral",
+          "intensity": 0.0,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 7,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 0.0,
+          "emotion": "neutral",
+          "intensity": 0.0,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 8,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 0.0,
+          "emotion": "neutral",
+          "intensity": 0.0,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 9,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 0.0,
+          "emotion": "neutral",
+          "intensity": 0.0,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 10,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 0.0,
+          "emotion": "neutral",
+          "intensity": 0.0,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 11,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 0.0,
+          "emotion": "neutral",
+          "intensity": 0.0,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 12,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 0.0,
+          "emotion": "neutral",
+          "intensity": 0.0,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 13,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 0.0,
+          "emotion": "neutral",
+          "intensity": 0.0,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 14,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 0.0,
+          "emotion": "neutral",
+          "intensity": 0.0,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 15,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 0.0,
+          "emotion": "neutral",
+          "intensity": 0.0,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 16,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 0.0,
+          "emotion": "neutral",
+          "intensity": 0.0,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 17,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 0.068608,
+          "emotion": "neutral",
+          "intensity": 0.0,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 18,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 0.241664,
+          "emotion": "neutral",
+          "intensity": 0.0,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 19,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 0.470016,
+          "emotion": "neutral",
+          "intensity": 0.0,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 20,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 0.704512,
+          "emotion": "neutral",
+          "intensity": 0.0,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 21,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 0.8960000000000001,
+          "emotion": "neutral",
+          "intensity": 0.0,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 22,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 0.995328,
+          "emotion": "neutral",
+          "intensity": 0.0,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 23,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "neutral",
+          "intensity": 0.0,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 24,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "curious",
+          "intensity": 0.0,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 25,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "curious",
+          "intensity": 0.034375,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 26,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "curious",
+          "intensity": 0.125,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 27,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "curious",
+          "intensity": 0.253125,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 28,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "curious",
+          "intensity": 0.4,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 29,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "curious",
+          "intensity": 0.546875,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 30,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "curious",
+          "intensity": 0.675,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 31,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "curious",
+          "intensity": 0.765625,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 32,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "curious",
+          "intensity": 0.8,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 33,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "curious",
+          "intensity": 0.8,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 34,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "curious",
+          "intensity": 0.8,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 35,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "curious",
+          "intensity": 0.8,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 36,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "curious",
+          "intensity": 0.8,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 37,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "curious",
+          "intensity": 0.8,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 38,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "curious",
+          "intensity": 0.8,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 39,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "curious",
+          "intensity": 0.8,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 40,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "curious",
+          "intensity": 0.8,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 41,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "curious",
+          "intensity": 0.8,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 42,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "curious",
+          "intensity": 0.8,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 43,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "curious",
+          "intensity": 0.8,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 44,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "curious",
+          "intensity": 0.8,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 45,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "curious",
+          "intensity": 0.8,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 46,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "curious",
+          "intensity": 0.8,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 47,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "curious",
+          "intensity": 0.8,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 48,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "curious",
+          "intensity": 0.8,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 49,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "curious",
+          "intensity": 0.8,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 50,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "curious",
+          "intensity": 0.8,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 51,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "curious",
+          "intensity": 0.8,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 52,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "curious",
+          "intensity": 0.8,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 53,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "curious",
+          "intensity": 0.8,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 54,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "curious",
+          "intensity": 0.8,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 55,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "curious",
+          "intensity": 0.8,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 56,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "curious",
+          "intensity": 0.8,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 57,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "curious",
+          "intensity": 0.8,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 58,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "curious",
+          "intensity": 0.8,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 59,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "curious",
+          "intensity": 0.8,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 60,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "curious",
+          "intensity": 0.8,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 61,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "curious",
+          "intensity": 0.8,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 62,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "curious",
+          "intensity": 0.8,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 63,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "curious",
+          "intensity": 0.8,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "wide"
+    },
+    {
+      "frame": 64,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "curious",
+          "intensity": 0.8,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 285,
+        "zoom": 1.08
+      },
+      "shot": "reaction"
+    },
+    {
+      "frame": 65,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "curious",
+          "intensity": 0.8,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 285,
+        "zoom": 1.08
+      },
+      "shot": "reaction"
+    },
+    {
+      "frame": 66,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "curious",
+          "intensity": 0.8,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 285,
+        "zoom": 1.08
+      },
+      "shot": "reaction"
+    },
+    {
+      "frame": 67,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "curious",
+          "intensity": 0.8,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 285,
+        "zoom": 1.08
+      },
+      "shot": "reaction"
+    },
+    {
+      "frame": 68,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "curious",
+          "intensity": 0.8,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 285,
+        "zoom": 1.08
+      },
+      "shot": "reaction"
+    },
+    {
+      "frame": 69,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "curious",
+          "intensity": 0.8,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 285,
+        "zoom": 1.08
+      },
+      "shot": "reaction"
+    },
+    {
+      "frame": 70,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "curious",
+          "intensity": 0.8,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 285,
+        "zoom": 1.08
+      },
+      "shot": "reaction"
+    },
+    {
+      "frame": 71,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "curious",
+          "intensity": 0.8,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 285,
+        "zoom": 1.08
+      },
+      "shot": "reaction"
+    },
+    {
+      "frame": 72,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "curious",
+          "intensity": 0.8,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 285,
+        "zoom": 1.08
+      },
+      "shot": "reaction"
+    },
+    {
+      "frame": 73,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "curious",
+          "intensity": 0.8,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 285,
+        "zoom": 1.08
+      },
+      "shot": "reaction"
+    },
+    {
+      "frame": 74,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "curious",
+          "intensity": 0.8,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 285,
+        "zoom": 1.08
+      },
+      "shot": "reaction"
+    },
+    {
+      "frame": 75,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "curious",
+          "intensity": 0.8,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 285,
+        "zoom": 1.08
+      },
+      "shot": "reaction"
+    },
+    {
+      "frame": 76,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "surprised",
+          "intensity": 0.8,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 285,
+        "zoom": 1.08
+      },
+      "shot": "reaction"
+    },
+    {
+      "frame": 77,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "surprised",
+          "intensity": 0.8091302742438992,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 285,
+        "zoom": 1.08
+      },
+      "shot": "reaction"
+    },
+    {
+      "frame": 78,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "surprised",
+          "intensity": 0.8330838172602464,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 285,
+        "zoom": 1.08
+      },
+      "shot": "reaction"
+    },
+    {
+      "frame": 79,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "surprised",
+          "intensity": 0.8667047094760163,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 285,
+        "zoom": 1.08
+      },
+      "shot": "reaction"
+    },
+    {
+      "frame": 80,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "surprised",
+          "intensity": 0.9048370313181834,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 285,
+        "zoom": 1.08
+      },
+      "shot": "reaction"
+    },
+    {
+      "frame": 81,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "surprised",
+          "intensity": 0.9423248632137222,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 285,
+        "zoom": 1.08
+      },
+      "shot": "reaction"
+    },
+    {
+      "frame": 82,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "surprised",
+          "intensity": 0.9740122855896076,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 285,
+        "zoom": 1.08
+      },
+      "shot": "reaction"
+    },
+    {
+      "frame": 83,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "surprised",
+          "intensity": 0.9947433788728139,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 285,
+        "zoom": 1.08
+      },
+      "shot": "reaction"
+    },
+    {
+      "frame": 84,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "surprised",
+          "intensity": 1.0,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 285,
+        "zoom": 1.08
+      },
+      "shot": "reaction"
+    },
+    {
+      "frame": 85,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "surprised",
+          "intensity": 1.0,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 285,
+        "zoom": 1.08
+      },
+      "shot": "reaction"
+    },
+    {
+      "frame": 86,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "surprised",
+          "intensity": 1.0,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 285,
+        "zoom": 1.08
+      },
+      "shot": "reaction"
+    },
+    {
+      "frame": 87,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "surprised",
+          "intensity": 1.0,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 285,
+        "zoom": 1.08
+      },
+      "shot": "reaction"
+    },
+    {
+      "frame": 88,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "surprised",
+          "intensity": 1.0,
+          "gesture": "reach",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 285,
+        "zoom": 1.08
+      },
+      "shot": "reaction"
+    },
+    {
+      "frame": 89,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "surprised",
+          "intensity": 1.0,
+          "gesture": "reach",
+          "phase": 0.02857142857142857,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 285,
+        "zoom": 1.08
+      },
+      "shot": "reaction"
+    },
+    {
+      "frame": 90,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "surprised",
+          "intensity": 1.0,
+          "gesture": "reach",
+          "phase": 0.05714285714285714,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 285,
+        "zoom": 1.08
+      },
+      "shot": "reaction"
+    },
+    {
+      "frame": 91,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "surprised",
+          "intensity": 1.0,
+          "gesture": "reach",
+          "phase": 0.08571428571428572,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 285,
+        "zoom": 1.08
+      },
+      "shot": "reaction"
+    },
+    {
+      "frame": 92,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "surprised",
+          "intensity": 1.0,
+          "gesture": "reach",
+          "phase": 0.11428571428571428,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 285,
+        "zoom": 1.08
+      },
+      "shot": "reaction"
+    },
+    {
+      "frame": 93,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "surprised",
+          "intensity": 1.0,
+          "gesture": "reach",
+          "phase": 0.14285714285714285,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 285,
+        "zoom": 1.08
+      },
+      "shot": "reaction"
+    },
+    {
+      "frame": 94,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "surprised",
+          "intensity": 1.0,
+          "gesture": "reach",
+          "phase": 0.17142857142857143,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 285,
+        "zoom": 1.08
+      },
+      "shot": "reaction"
+    },
+    {
+      "frame": 95,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "surprised",
+          "intensity": 1.0,
+          "gesture": "reach",
+          "phase": 0.2,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 285,
+        "zoom": 1.08
+      },
+      "shot": "reaction"
+    },
+    {
+      "frame": 96,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "surprised",
+          "intensity": 1.0,
+          "gesture": "reach",
+          "phase": 0.22857142857142856,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 285,
+        "zoom": 1.08
+      },
+      "shot": "reaction"
+    },
+    {
+      "frame": 97,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "surprised",
+          "intensity": 1.0,
+          "gesture": "reach",
+          "phase": 0.2571428571428571,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 285,
+        "zoom": 1.08
+      },
+      "shot": "reaction"
+    },
+    {
+      "frame": 98,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "surprised",
+          "intensity": 1.0,
+          "gesture": "reach",
+          "phase": 0.2857142857142857,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 285,
+        "zoom": 1.08
+      },
+      "shot": "reaction"
+    },
+    {
+      "frame": 99,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "surprised",
+          "intensity": 1.0,
+          "gesture": "reach",
+          "phase": 0.3142857142857143,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 285,
+        "zoom": 1.08
+      },
+      "shot": "reaction"
+    },
+    {
+      "frame": 100,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "surprised",
+          "intensity": 1.0,
+          "gesture": "reach",
+          "phase": 0.34285714285714286,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 285,
+        "zoom": 1.08
+      },
+      "shot": "reaction"
+    },
+    {
+      "frame": 101,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "surprised",
+          "intensity": 1.0,
+          "gesture": "reach",
+          "phase": 0.37142857142857144,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 285,
+        "zoom": 1.08
+      },
+      "shot": "reaction"
+    },
+    {
+      "frame": 102,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "surprised",
+          "intensity": 1.0,
+          "gesture": "reach",
+          "phase": 0.4,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 285,
+        "zoom": 1.08
+      },
+      "shot": "reaction"
+    },
+    {
+      "frame": 103,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "surprised",
+          "intensity": 1.0,
+          "gesture": "reach",
+          "phase": 0.42857142857142855,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 285,
+        "zoom": 1.08
+      },
+      "shot": "reaction"
+    },
+    {
+      "frame": 104,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "surprised",
+          "intensity": 1.0,
+          "gesture": "reach",
+          "phase": 0.45714285714285713,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 285,
+        "zoom": 1.08
+      },
+      "shot": "reaction"
+    },
+    {
+      "frame": 105,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "surprised",
+          "intensity": 1.0,
+          "gesture": "reach",
+          "phase": 0.4857142857142857,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 285,
+        "zoom": 1.08
+      },
+      "shot": "reaction"
+    },
+    {
+      "frame": 106,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "surprised",
+          "intensity": 1.0,
+          "gesture": "reach",
+          "phase": 0.5142857142857142,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 285,
+        "zoom": 1.08
+      },
+      "shot": "reaction"
+    },
+    {
+      "frame": 107,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "surprised",
+          "intensity": 1.0,
+          "gesture": "reach",
+          "phase": 0.5428571428571428,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 285,
+        "zoom": 1.08
+      },
+      "shot": "reaction"
+    },
+    {
+      "frame": 108,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "surprised",
+          "intensity": 1.0,
+          "gesture": "reach",
+          "phase": 0.5714285714285714,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 285,
+        "zoom": 1.08
+      },
+      "shot": "reaction"
+    },
+    {
+      "frame": 109,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "surprised",
+          "intensity": 1.0,
+          "gesture": "reach",
+          "phase": 0.6,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 285,
+        "zoom": 1.08
+      },
+      "shot": "reaction"
+    },
+    {
+      "frame": 110,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "surprised",
+          "intensity": 1.0,
+          "gesture": "reach",
+          "phase": 0.6285714285714286,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 285,
+        "zoom": 1.08
+      },
+      "shot": "reaction"
+    },
+    {
+      "frame": 111,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "surprised",
+          "intensity": 1.0,
+          "gesture": "reach",
+          "phase": 0.6571428571428571,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 285,
+        "zoom": 1.08
+      },
+      "shot": "reaction"
+    },
+    {
+      "frame": 112,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "surprised",
+          "intensity": 1.0,
+          "gesture": "reach",
+          "phase": 0.6857142857142857,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "release"
+    },
+    {
+      "frame": 113,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 1.0,
+          "gesture": "reach",
+          "phase": 0.7142857142857143,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "release"
+    },
+    {
+      "frame": 114,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 1.0,
+          "gesture": "reach",
+          "phase": 0.7428571428571429,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "release"
+    },
+    {
+      "frame": 115,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 1.0,
+          "gesture": "reach",
+          "phase": 0.7714285714285715,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "release"
+    },
+    {
+      "frame": 116,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 1.0,
+          "gesture": "reach",
+          "phase": 0.8,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "release"
+    },
+    {
+      "frame": 117,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 1.0,
+          "gesture": "reach",
+          "phase": 0.8285714285714286,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "release"
+    },
+    {
+      "frame": 118,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 1.0,
+          "gesture": "reach",
+          "phase": 0.8571428571428571,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "release"
+    },
+    {
+      "frame": 119,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 1.0,
+          "gesture": "reach",
+          "phase": 0.8857142857142857,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "release"
+    },
+    {
+      "frame": 120,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 1.0,
+          "gesture": "reach",
+          "phase": 0.9142857142857143,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "release"
+    },
+    {
+      "frame": 121,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 1.0,
+          "gesture": "reach",
+          "phase": 0.9428571428571428,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "release"
+    },
+    {
+      "frame": 122,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 1.0,
+          "gesture": "reach",
+          "phase": 0.9714285714285714,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "release"
+    },
+    {
+      "frame": 123,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 1.0,
+          "gesture": "reach",
+          "phase": 1.0,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "release"
+    },
+    {
+      "frame": 124,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 1.0,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "release"
+    },
+    {
+      "frame": 125,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 1.0,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "release"
+    },
+    {
+      "frame": 126,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 1.0,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "release"
+    },
+    {
+      "frame": 127,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 1.0,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "release"
+    },
+    {
+      "frame": 128,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 1.0,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "release"
+    },
+    {
+      "frame": 129,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 1.0,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "release"
+    },
+    {
+      "frame": 130,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 1.0,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "release"
+    },
+    {
+      "frame": 131,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 1.0,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "release"
+    },
+    {
+      "frame": 132,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 1.0,
+          "gesture": "celebrate",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "release"
+    },
+    {
+      "frame": 133,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 1.0,
+          "gesture": "celebrate",
+          "phase": 0.017241379310344827,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "release"
+    },
+    {
+      "frame": 134,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 1.0,
+          "gesture": "celebrate",
+          "phase": 0.034482758620689655,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "release"
+    },
+    {
+      "frame": 135,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 1.0,
+          "gesture": "celebrate",
+          "phase": 0.05172413793103448,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "release"
+    },
+    {
+      "frame": 136,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 1.0,
+          "gesture": "celebrate",
+          "phase": 0.06896551724137931,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "release"
+    },
+    {
+      "frame": 137,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 1.0,
+          "gesture": "celebrate",
+          "phase": 0.08620689655172414,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "release"
+    },
+    {
+      "frame": 138,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 1.0,
+          "gesture": "celebrate",
+          "phase": 0.10344827586206896,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "release"
+    },
+    {
+      "frame": 139,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 1.0,
+          "gesture": "celebrate",
+          "phase": 0.1206896551724138,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "release"
+    },
+    {
+      "frame": 140,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 1.0,
+          "gesture": "celebrate",
+          "phase": 0.13793103448275862,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "release"
+    },
+    {
+      "frame": 141,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 1.0,
+          "gesture": "celebrate",
+          "phase": 0.15517241379310345,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "release"
+    },
+    {
+      "frame": 142,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 1.0,
+          "gesture": "celebrate",
+          "phase": 0.1724137931034483,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "release"
+    },
+    {
+      "frame": 143,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 1.0,
+          "gesture": "celebrate",
+          "phase": 0.1896551724137931,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "release"
+    },
+    {
+      "frame": 144,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 1.0,
+          "gesture": "celebrate",
+          "phase": 0.20689655172413793,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "release"
+    },
+    {
+      "frame": 145,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 1.0,
+          "gesture": "celebrate",
+          "phase": 0.22413793103448276,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "release"
+    },
+    {
+      "frame": 146,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 1.0,
+          "gesture": "celebrate",
+          "phase": 0.2413793103448276,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "release"
+    },
+    {
+      "frame": 147,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 1.0,
+          "gesture": "celebrate",
+          "phase": 0.25862068965517243,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "release"
+    },
+    {
+      "frame": 148,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 1.0,
+          "gesture": "celebrate",
+          "phase": 0.27586206896551724,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "release"
+    },
+    {
+      "frame": 149,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 1.0,
+          "gesture": "celebrate",
+          "phase": 0.29310344827586204,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "release"
+    },
+    {
+      "frame": 150,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 1.0,
+          "gesture": "celebrate",
+          "phase": 0.3103448275862069,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "release"
+    },
+    {
+      "frame": 151,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 1.0,
+          "gesture": "celebrate",
+          "phase": 0.3275862068965517,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "release"
+    },
+    {
+      "frame": 152,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 1.0,
+          "gesture": "celebrate",
+          "phase": 0.3448275862068966,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "release"
+    },
+    {
+      "frame": 153,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 1.0,
+          "gesture": "celebrate",
+          "phase": 0.3620689655172414,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "release"
+    },
+    {
+      "frame": 154,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 1.0,
+          "gesture": "celebrate",
+          "phase": 0.3793103448275862,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "release"
+    },
+    {
+      "frame": 155,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 1.0,
+          "gesture": "celebrate",
+          "phase": 0.39655172413793105,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "release"
+    },
+    {
+      "frame": 156,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 1.0,
+          "gesture": "celebrate",
+          "phase": 0.41379310344827586,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "release"
+    },
+    {
+      "frame": 157,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 1.0,
+          "gesture": "celebrate",
+          "phase": 0.43103448275862066,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "release"
+    },
+    {
+      "frame": 158,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 1.0,
+          "gesture": "celebrate",
+          "phase": 0.4482758620689655,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "release"
+    },
+    {
+      "frame": 159,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 1.0,
+          "gesture": "celebrate",
+          "phase": 0.46551724137931033,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "release"
+    },
+    {
+      "frame": 160,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 1.0,
+          "gesture": "celebrate",
+          "phase": 0.4827586206896552,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "release"
+    },
+    {
+      "frame": 161,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 1.0,
+          "gesture": "celebrate",
+          "phase": 0.5,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "release"
+    },
+    {
+      "frame": 162,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 1.0,
+          "gesture": "celebrate",
+          "phase": 0.5172413793103449,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "release"
+    },
+    {
+      "frame": 163,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 1.0,
+          "gesture": "celebrate",
+          "phase": 0.5344827586206896,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "release"
+    },
+    {
+      "frame": 164,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 1.0,
+          "gesture": "celebrate",
+          "phase": 0.5517241379310345,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "release"
+    },
+    {
+      "frame": 165,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 1.0,
+          "gesture": "celebrate",
+          "phase": 0.5689655172413793,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "release"
+    },
+    {
+      "frame": 166,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 1.0,
+          "gesture": "celebrate",
+          "phase": 0.5862068965517241,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "release"
+    },
+    {
+      "frame": 167,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 1.0,
+          "gesture": "celebrate",
+          "phase": 0.603448275862069,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "release"
+    },
+    {
+      "frame": 168,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 1.0,
+          "gesture": "celebrate",
+          "phase": 0.6206896551724138,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "release"
+    },
+    {
+      "frame": 169,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 1.0,
+          "gesture": "celebrate",
+          "phase": 0.6379310344827587,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "release"
+    },
+    {
+      "frame": 170,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 1.0,
+          "gesture": "celebrate",
+          "phase": 0.6551724137931034,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "release"
+    },
+    {
+      "frame": 171,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 1.0,
+          "gesture": "celebrate",
+          "phase": 0.6724137931034483,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "release"
+    },
+    {
+      "frame": 172,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 1.0,
+          "gesture": "celebrate",
+          "phase": 0.6896551724137931,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "release"
+    },
+    {
+      "frame": 173,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 1.0,
+          "gesture": "celebrate",
+          "phase": 0.7068965517241379,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "release"
+    },
+    {
+      "frame": 174,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 1.0,
+          "gesture": "celebrate",
+          "phase": 0.7241379310344828,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "release"
+    },
+    {
+      "frame": 175,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 1.0,
+          "gesture": "celebrate",
+          "phase": 0.7413793103448276,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "release"
+    },
+    {
+      "frame": 176,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 1.0,
+          "gesture": "celebrate",
+          "phase": 0.7586206896551724,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "release"
+    },
+    {
+      "frame": 177,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 1.0,
+          "gesture": "celebrate",
+          "phase": 0.7758620689655172,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "release"
+    },
+    {
+      "frame": 178,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 1.0,
+          "gesture": "celebrate",
+          "phase": 0.7931034482758621,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "release"
+    },
+    {
+      "frame": 179,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 1.0,
+          "gesture": "celebrate",
+          "phase": 0.8103448275862069,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "release"
+    },
+    {
+      "frame": 180,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 1.0,
+          "gesture": "celebrate",
+          "phase": 0.8275862068965517,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "release"
+    },
+    {
+      "frame": 181,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 1.0,
+          "gesture": "celebrate",
+          "phase": 0.8448275862068966,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "release"
+    },
+    {
+      "frame": 182,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 1.0,
+          "gesture": "celebrate",
+          "phase": 0.8620689655172413,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "release"
+    },
+    {
+      "frame": 183,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 1.0,
+          "gesture": "celebrate",
+          "phase": 0.8793103448275862,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "release"
+    },
+    {
+      "frame": 184,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 1.0,
+          "gesture": "celebrate",
+          "phase": 0.896551724137931,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "release"
+    },
+    {
+      "frame": 185,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 1.0,
+          "gesture": "celebrate",
+          "phase": 0.9137931034482759,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "release"
+    },
+    {
+      "frame": 186,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 1.0,
+          "gesture": "celebrate",
+          "phase": 0.9310344827586207,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "release"
+    },
+    {
+      "frame": 187,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 1.0,
+          "gesture": "celebrate",
+          "phase": 0.9482758620689655,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "release"
+    },
+    {
+      "frame": 188,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 1.0,
+          "gesture": "celebrate",
+          "phase": 0.9655172413793104,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "release"
+    },
+    {
+      "frame": 189,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 1.0,
+          "gesture": "celebrate",
+          "phase": 0.9827586206896551,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "release"
+    },
+    {
+      "frame": 190,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 1.0,
+          "gesture": "celebrate",
+          "phase": 1.0,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "release"
+    },
+    {
+      "frame": 191,
+      "actors": {
+        "pip": {
+          "id": "pip",
+          "x": 370,
+          "y": 445,
+          "scale": 0.95,
+          "color": "#9bd4c8",
+          "accent": "#f7c66c",
+          "rig": "pip2d_v1",
+          "gaze": 1.0,
+          "emotion": "happy",
+          "intensity": 1.0,
+          "gesture": "none",
+          "phase": 0.0,
+          "stride": 0.0
+        }
+      },
+      "props": [
+        {
+          "id": "spark",
+          "kind": "star",
+          "x": 650,
+          "y": 267,
+          "size": 30,
+          "color": "#f7c66c"
+        }
+      ],
+      "camera": {
+        "x": 480,
+        "y": 270,
+        "zoom": 1
+      },
+      "shot": "release"
+    }
+  ],
+  "diagnostics": [],
+  "limits": [
+    "No 3D collision/contact solver",
+    "Technical diagnostics do not certify visual appeal"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "schemaVersion": "0.1.0",
+  "documentType": "validationReport",
+  "projectId": "project_handover_fixture",
+  "reportId": "report_fixture_schema",
+  "stage": "schema",
+  "status": "passed",
+  "issues": [
+    {
+      "code": "SYNTHETIC_FIXTURE_ASSETS",
+      "severity": "warning",
+      "document_id": "project_handover_fixture",
+      "json_pointer": "/assets",
+      "message": "Assets are synthetic JSON fixture bytes, not renderable geometry, rigs, motion, or audio.",
+      "repair_hint": "Replace fixtures with licensed production assets; rerun all later validation stages."
+    }
+  ],
+  "checksRun": [
+    "JSON Schema Draft 2020-12 example validation"
+  ],
+  "checksNotRun": [
+    "Geometry, rig, motion, and audio decoding",
+    "Physical contact and reachability",
+    "Compilation, rendering, and visual quality"
+  ]
+}

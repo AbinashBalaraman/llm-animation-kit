@@ -1,0 +1,26 @@
+{
+  "id": "reaction",
+  "version": "1.0",
+  "backend": "puppet2d_v1",
+  "purpose": "Build a readable reaction",
+  "keywords": [
+    "emotion",
+    "expression",
+    "surprise",
+    "react",
+    "acting",
+    "happy",
+    "sad",
+    "curious"
+  ],
+  "rules": [
+    "Give the viewer a clear target and a gaze change before the strongest expression.",
+    "For this rig at 24 fps, begin by testing 8\u201316 frames of attention, a 6\u201312 frame pause, then a 12\u201324 frame expression onset. These are adjustable starting points, not universal timing.",
+    "Use separate gaze, face and gesture channels; same-channel intervals cannot overlap.",
+    "An expression persists after its interval. Add a later expression to return to neutral.",
+    "Inspect onset, maximum expression and the next beat. Change one timing or intensity parameter before rewriting the scene."
+  ],
+  "example": "discovery",
+  "inspection": "Playable preview plus contact sheet/action-boundary frames; human or vision review for appeal.",
+  "stop": "Stop when requested effect is reviewed or workflow budget is exhausted."
+}

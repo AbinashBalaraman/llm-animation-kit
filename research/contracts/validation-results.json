@@ -1,0 +1,191 @@
+{
+  "python": "3.13.1",
+  "jsonschema": "4.26.0",
+  "schema_draft": "2020-12",
+  "example_documents": 15,
+  "synthetic_assets": 8,
+  "passed": 45,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "Draft 2020-12 schema self-check",
+      "passed": true
+    },
+    {
+      "name": "Schema: action-expression.json",
+      "passed": true
+    },
+    {
+      "name": "Schema: action-gesture.json",
+      "passed": true
+    },
+    {
+      "name": "Schema: action-handover.json",
+      "passed": true
+    },
+    {
+      "name": "Schema: action-look.json",
+      "passed": true
+    },
+    {
+      "name": "Schema: action-sit.json",
+      "passed": true
+    },
+    {
+      "name": "Schema: action-speak.json",
+      "passed": true
+    },
+    {
+      "name": "Schema: action-walk.json",
+      "passed": true
+    },
+    {
+      "name": "Schema: character-aya.json",
+      "passed": true
+    },
+    {
+      "name": "Schema: character-ren.json",
+      "passed": true
+    },
+    {
+      "name": "Schema: project.json",
+      "passed": true
+    },
+    {
+      "name": "Schema: revision.json",
+      "passed": true
+    },
+    {
+      "name": "Schema: scene.json",
+      "passed": true
+    },
+    {
+      "name": "Schema: shot-a.json",
+      "passed": true
+    },
+    {
+      "name": "Schema: shot-b.json",
+      "passed": true
+    },
+    {
+      "name": "Schema: validation-report.json",
+      "passed": true
+    },
+    {
+      "name": "Selected resolve/static/symbolic checks on original fixture",
+      "passed": true
+    },
+    {
+      "name": "Reject unknown action type",
+      "passed": true
+    },
+    {
+      "name": "Reject action parameter from a different type",
+      "passed": true
+    },
+    {
+      "name": "Reject fractional frames",
+      "passed": true
+    },
+    {
+      "name": "Reject malformed asset hash",
+      "passed": true
+    },
+    {
+      "name": "Reject unsupported rig profile",
+      "passed": true
+    },
+    {
+      "name": "Reject array-index revision patch",
+      "passed": true
+    },
+    {
+      "name": "Reject non-atomic revision",
+      "passed": true
+    },
+    {
+      "name": "Reject wrong audio sample rate",
+      "passed": true
+    },
+    {
+      "name": "Reject unknown document field",
+      "passed": true
+    },
+    {
+      "name": "Reject seat missing its foot-zone bounds",
+      "passed": true
+    },
+    {
+      "name": "Reject reversed frame range",
+      "passed": true
+    },
+    {
+      "name": "Reject transfer outside the action",
+      "passed": true
+    },
+    {
+      "name": "Reject missing receiver arm claim",
+      "passed": true
+    },
+    {
+      "name": "Reject overlapping actor/channel writes",
+      "passed": true
+    },
+    {
+      "name": "Reject duplicate logical owner records",
+      "passed": true
+    },
+    {
+      "name": "Reject duplicate transform parents",
+      "passed": true
+    },
+    {
+      "name": "Reject incorrect starting owner",
+      "passed": true
+    },
+    {
+      "name": "Reject digest mismatch for real fixture bytes",
+      "passed": true
+    },
+    {
+      "name": "Reject dangling actor reference",
+      "passed": true
+    },
+    {
+      "name": "Reject non-unit quaternion",
+      "passed": true
+    },
+    {
+      "name": "Reject non-uniform entity scale",
+      "passed": true
+    },
+    {
+      "name": "Reject grasp with the wrong allowed hand",
+      "passed": true
+    },
+    {
+      "name": "Reject degenerate camera up/view basis",
+      "passed": true
+    },
+    {
+      "name": "Reject stale expectedRevision",
+      "passed": true
+    },
+    {
+      "name": "Reject oversized source audio interval",
+      "passed": true
+    },
+    {
+      "name": "Reject viseme at excluded audio end",
+      "passed": true
+    },
+    {
+      "name": "Documented coupled +24-frame candidate passes selected checks",
+      "passed": true
+    },
+    {
+      "name": "Revision test leaves on-disk project revision 7 unchanged",
+      "passed": true
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "schemaVersion": "0.1.0",
+  "documentType": "characterRef",
+  "projectId": "project_handover_fixture",
+  "characterId": "char_aya",
+  "displayName": "Aya",
+  "rigProfileId": "rig_humanoid_v1",
+  "rigAsset": {
+    "assetId": "asset_aya_rig",
+    "uri": "fixtures/asset_aya_rig.json",
+    "sha256": "db16c854c70b01ba88ddaff2b8a485702f4ae995140c445671d5cf2e3af303b2",
+    "assetType": "character_rig",
+    "rigProfileId": "rig_humanoid_v1",
+    "mediaType": "application/json",
+    "materialization": "synthetic_fixture"
+  },
+  "appearanceProfileId": "appearance_aya_v1",
+  "voiceProfileId": "voice_aya_v1",
+  "supportedActions": [
+    "walk_to",
+    "look_at",
+    "gesture",
+    "speak",
+    "handover",
+    "sit",
+    "expression"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "fixtureVersion": "0.1.0",
+  "synthetic": true,
+  "label": "Motion catalog fixture",
+  "actions": [
+    "walk_to",
+    "look_at",
+    "gesture",
+    "speak",
+    "handover",
+    "sit",
+    "expression"
+  ],
+  "containsAnimationData": false
+}
