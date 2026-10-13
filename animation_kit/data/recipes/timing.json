@@ -1,24 +1,20 @@
 {
   "id": "timing",
-  "version": "1.0",
-  "backend": "puppet2d_v1",
-  "purpose": "Retiming without damaging other beats",
+  "version": "2.0",
+  "backend": "authored2d_v2",
   "keywords": [
     "timing",
     "delay",
     "pause",
-    "duration",
     "frame",
-    "revision"
+    "revision",
+    "easing"
   ],
+  "purpose": "Time visible action and comedy",
   "rules": [
-    "Frames are integer and zero-based at 24 fps; one second equals 24 frames. Intervals are half-open.",
-    "shift_action moves start and end by the same delta. Other actions remain fixed.",
-    "When delaying a reaction, decide whether its gesture should follow. Shift both explicitly if the brief asks for that relationship.",
-    "Validate all edits as one atomic transaction. If an overlap/end overflow appears, repair the schedule before applying.",
-    "Inspect before proposing a revision; expected_revision prevents stale edits. Undo creates a new revision."
-  ],
-  "example": "discovery",
-  "inspection": "Playable preview plus contact sheet/action-boundary frames; human or vision review for appeal.",
-  "stop": "Stop when requested effect is reviewed or workflow budget is exhausted."
+    "Shot-local tracks have strictly increasing integer frames; beats cite global frames. Easing belongs to the destination key.",
+    "Use hold for discrete changes, smooth for balanced motion, out_cubic for settling, out_back for restrained overshoot.",
+    "Hold the setup long enough to read before the payoff. A reaction pause can sell a joke more clearly than constant motion.",
+    "Replace the affected shot or asset in an atomic revision, or replace_story for a structural rewrite. Reviews become stale."
+  ]
 }

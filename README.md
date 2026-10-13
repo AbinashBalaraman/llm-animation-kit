@@ -1,67 +1,73 @@
-# LLM Animation Kit
+# LLM Animation Kit — authored stories, not demo substitution
 
-A working first version of the reusable knowledge/tool system for other LLMs to create and revise code-rendered animation. It includes a production skill, six task-specific recipes, three editable example scenes, a native 2D puppet/component library, strict validation, atomic revisions, previews, temporal evidence, review records, MP4 export, MCP stdio and bounded workflow memory. No video-generation model is used.
+Give a coding LLM a script. It designs the subjects and settings, writes their artwork and motion, renders previews, and checks the result against the script. **The kit contains no default production character, environment or plot.** All video frames are conventionally drawn by code; no video-generation model is used.
 
-**Trying this with another LLM?** Start with [the ready-to-use evaluation prompt](docs/TRY-WITH-ANOTHER-LLM.md), then load [the production skill](agent-kit/code-animation/SKILL.md).
+Version **0.2.0** replaces the fixed-puppet production workflow. The old release could render a puppet reliably but could not create the missing artwork/actions a different story needed. Its example-loading behavior encouraged substituting a demonstration for the requested story. That was a product failure, not a successful script adaptation.
 
-The consuming LLM provides direction. Tested code provides the puppet, gestures, expressions, gaze, motion, camera, drawing and encoding. The first backend is original stylized 2D art; Blender/3D interactions remain planned work, recorded in `docs/IMPLEMENTATION.md`.
+## What the LLM can author
 
-## Run
+- Original vector artwork: ellipses, rounded rectangles, polygons, quadratic/cubic paths and text.
+- Articulated assets: nested groups, joint origins, reusable drawings and independent per-instance poses.
+- Script-specific motion: position, rotation, scale, opacity and camera tracks with six interpolation choices.
+- Multiple sets/shots, captions, story props, timed procedural sound accents and continuous editable source.
+- A requirement-to-shot plan, early storyboard images, rendered MP4 previews, actual frame inspection and per-requirement review.
 
-Python 3.11+ and the package dependencies are required. FFmpeg comes through imageio-ffmpeg; set `ANIMATION_KIT_FFMPEG` to use another verified executable.
+These are general 2D tools. Characters, products, diagrams and abstract scenes use the same engine. A cat election and a toaster launching toast into space are two authored demonstrations—not new runtime presets. New scripts require new creative work by the consuming LLM.
 
-```powershell
+## Try with another LLM
+
+Give it this repository and [the fresh-script testing prompt](docs/TRY-WITH-ANOTHER-LLM.md). It should load [the production skill](agent-kit/code-animation/SKILL.md). The host needs terminal/files access or MCP tools, and visual access for honest review. The kit is not a standalone text-to-video model and makes no automatic claim that every LLM produces excellent animation.
+
+```sh
 python -m venv .venv
-.\.venv\Scripts\Activate.ps1
+# Activate the environment, then:
 python -m pip install -e .
 python -m animation_kit doctor
-python -m animation_kit tools
 python -m animation_kit call discover_capabilities
+python -m animation_kit call get_schema
 ```
 
-On macOS/Linux, activate with `source .venv/bin/activate`. On Windows, activation is optional: use `.venv\Scripts\python.exe` for the commands if script activation is unavailable.
+On Windows use `.venv\Scripts\python.exe` directly if activation is unavailable. Python 3.11+ is supported. Fonts are included. FFmpeg comes through imageio-ffmpeg; an existing verified executable may be selected with `ANIMATION_KIT_FFMPEG`.
 
-Create `arguments.json` containing `{"project_id":"my-scene","example_id":"discovery"}` then run:
+The [authoring SDK guide](agent-kit/code-animation/references/authoring.md) explains how a local Python script constructs the scene document. The render server accepts **declarative JSON only**; it does not evaluate executable scene code. Host-authored Python runs with the host's ordinary permissions.
 
-```powershell
-python -m animation_kit call load_example --input arguments.json
-```
+## Production and review
 
-Use `{"project_id":"my-scene"}` as the arguments file for `inspect_project` or `preview`. Read exact tool schemas with `tools` before editing. `preview` returns an MP4, contact sheet, trace and source; inspect the result, record a review for the current revision, then call `render_final`. Revisions invalidate review. The default persistent workspace is `.kit-workspace`; set `--workspace` before the command to choose another directory.
+The shared CLI, MCP and provider loop expose the same tools:
 
-## Give the kit to another LLM
+1. Preserve the original brief and extract visible acceptance requirements.
+2. Author artwork, poses, shots and story beats in `kit.story/2.0`.
+3. Start a production workflow, create the project, and inspect `preview_frames`.
+4. Render `preview`; compare actual frames and playback with each requirement.
+5. Submit `review_story`, then export `render_final` and retain editable source.
 
-Load [the production skill](agent-kit/code-animation/SKILL.md) into a host that supports files/CLI, or expose the same tools over MCP stdio. Example configuration after package installation:
+`check_story` checks authored coverage and visible drawing evidence. It **cannot recognize every subject, judge comedy, or replace visual review**. Acceptance records cite an actual preview and every requirement, and disclose whether playback was assessed. Source or renderer changes invalidate approval.
 
-```json
-{
-  "mcpServers": {
-    "animation-kit": {
-      "command": "python",
-      "args": ["-m", "animation_kit", "--workspace", "/absolute/path/to/animation-workspace", "serve"]
-    }
-  }
-}
-```
+Production workflows reject `load_example`, legacy scene documents and changed original briefs. The deprecated `kit.scene/1.0` renderer remains only for explicit exercises and regression compatibility. No complete example is automatically injected by context retrieval.
 
-Change the Python executable and workspace for your host. This repository does not alter host configuration automatically. MCP supports initialize, ping, tools/list, tools/call and explicit PNG image results, using the [official tool contract](https://modelcontextprotocol.io/specification/2025-11-25/server/tools) and [stdio transport](https://modelcontextprotocol.io/specification/2025-11-25/basic/transports). Rendering is synchronous and bounded, with no running-job cancellation API in this version.
+For shell-assisted production, `scripts/produce_story.py prepare --scene YOUR.json --project YOUR_ID` renders evidence. After inspection, `finish --run RUN.json --review REVIEW.json --output OUTPUT_DIR` accepts a reviewer-written record and exports. See [CLI details](agent-kit/code-animation/references/cli.md). This command never manufactures review approval.
 
-Use [mcp.example.json](agent-kit/mcp.example.json) as a template. Set `command` to the absolute Python executable inside your project's virtual environment, and choose an absolute workspace path. Copy the entry into the chosen host's MCP settings.
+## Demonstrations and evaluation
 
-Use `start_workflow` and `workflow_step` to enforce call/render budgets. Direct tools are also available for expert authoring. The Python `run_agent` loop accepts a provider's typed decisions and records a durable workflow; it does not assume a vendor API or execute model-supplied code.
+- [Cat becomes US president](examples/stories/cat-president/README.md): original tabby, campaign, election, office and visual payoff. [Authoring script](scripts/create_cat_president.py).
+- [Space toaster](examples/stories/space-toaster/README.md): entirely different subject, setting and action using the same engine. [Authoring script](scripts/create_space_toaster.py).
+- [Stack explainer](examples/stories/stack-explainer/README.md): an educational diagram with no character narrative. [Authoring script](scripts/create_stack_explainer.py).
+- [Fresh-script evaluation](evals/README.md): test unseen scripts, preserve prompts, record failures and require independent review to make quality comparisons.
+- [Verification and known limits](docs/VERIFICATION.md); [design decisions](docs/IMPLEMENTATION.md); [web/plugin research](docs/OVERHAUL-RESEARCH.md).
 
-## Examples and verification
-
-[Worked examples](examples/golden/README.md) contain actual previews, source and revision records. Run the same examples with `python scripts/render_examples.py`. [Behavioral tests](tests/test_kit.py) cover validation, transactions, targeted edits, workflow limits, MCP and actual encoding/cache recovery:
-
-```powershell
+```sh
 python -m unittest discover -s tests -v
+python scripts/build_catalog.py
 ```
 
-[The benchmark harness](evals/README.md) records model-produced runs on held-out briefs. No multi-model parity experiment has been run. Tests and authored examples establish working software, not equivalence to a stronger model.
+The catalog command regenerates schemas, recipes and authored example sources. Rendered demonstrations are produced separately through the normal tools. Software tests and demonstrations do not establish parity between models.
 
-[Release verification](docs/VERIFICATION.md) records the actual checks, packaging smoke test, render measurements and review limits.
+## MCP and host integration
 
-Current support: one front-view puppet rig; up to four characters, eight simple props and eight shots; 24 fps; clips up to 60 seconds; preview 640x360, final 1280x720; look_at, expression, gesture (wave/reach/celebrate), and move_to. It does not yet support Blender, arbitrary asset imports, handover, seating, speech/lip-sync or physical contact. Export directories retain editable JSON and checked frame/source manifests.
+Use [mcp.example.json](agent-kit/mcp.example.json) with the absolute virtual-environment Python path and an absolute workspace path. The stdio command is `python -m animation_kit --workspace /absolute/workspace serve`. No global host settings are modified automatically. [Host integration guidance](docs/LLM-INTEGRATION.md) covers portable instructions, MCP and terminal agents.
 
-Runtime source is GPL-3.0-or-later. Original procedural artwork and authored example scenes are CC0-1.0; dependency and FFmpeg-build terms remain separate. See `LICENSES/` and `THIRD-PARTY-NOTICES.md`. No executable FFmpeg or third-party weights are bundled in this repository.
+## Current boundaries
+
+Portable vector 2D; 24/30/60 fps, up to 120 seconds, 40 shots and 2,500 expanded nodes per shot. Output is landscape 640×360 preview / 1280×720 final. No 3D meshes, physics/contact solver, automatic narration/lip-sync, raster imports, nested asset instances or running-job cancellation. Different scripts can require additional conventional rendering capabilities; the agent must disclose those needs instead of substituting a demo. Other-model transfer and normal-speed independent human review are not yet established.
+
+Runtime source: GPL-3.0-or-later. Original example artwork: CC0-1.0. Bundled fonts: SIL OFL 1.1. Dependencies retain their own terms; see [notices](THIRD-PARTY-NOTICES.md).

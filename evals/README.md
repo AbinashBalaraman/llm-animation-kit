@@ -1,13 +1,23 @@
-# Measure whether the kit helps another LLM
+# Evaluate fresh scripts, not fixture reuse
 
-Use `heldout.json` as evaluation briefs, not production examples. Keep the exact held-out artifacts out of the model's example context. Run three conditions: stronger reference model + full kit; chosen other model + full kit; the same other model + basic tool documentation without recipes/example/repair guidance. Keep the engine, assets, target format, allowed assistance and budgets explicit. A model host supplies actual model runs; this harness neither calls a paid API nor fabricates a model's decisions.
+V2 evaluations must test generalization across subjects and forms. `story_briefs.json` contains candidate fresh scripts: character comedy, an object story, an educational mechanism, a product mechanism and a request with an explicit speech limitation. These public cases are not secret held-out data. For a real independent test, choose additional unpublished scripts after the kit is frozen.
 
-Give each session the task brief and record operations through `start_workflow` / `workflow_step`. Preserve the entire workflow, including rejected actions and corrections. Finish explicitly. Run:
+Compare the same scripts with (a) a model using the kit and (b) the same model using ordinary coding tools; optionally add a stronger reference model. Keep time, tool access, visual access and human assistance comparable. Allow every condition to author new assets: fixing the same puppet for every task would repeat the original experiment's mistake.
 
-```text
-python evals/evaluate.py --workspace <workspace> --workflow-id <id> --task delayed-wave --condition other-full --model <actual-model-id> --human-minutes <observed-minutes> --out <run.json>
+Assess independently:
+
+- Subject, setting and script-event fidelity.
+- Readable action, causality and requested outcome.
+- Drawing/composition, continuity, timing and motion.
+- Comedy/emotion if the brief calls for it; technical/data correctness for explainers.
+- Honest handling of missing capabilities, review access and incomplete requirements.
+
+Run through the production workflow. Collect the real record with:
+
+```sh
+python evals/evaluate_story.py --workspace WORKSPACE --workflow WORKFLOW_ID --model MODEL_LABEL --output result.json
 ```
 
-Optional `--ratings <file.json>` accepts independently assigned `appeal`, `acting_clarity`, `staging`, `revision_correctness`, each 1–5. Randomize output order for visual reviewers. Report tool failures, acceptance, rescue minutes, render time and provider-side token/spend measurements. Do not let the generating model certify its own parity.
+The collector verifies the current export and reports author-declared review separately. It does not assign an automatic quality score or treat source labels as visual recognition. A finished file with poor fidelity is a failed creative result. An unsupported required capability must not be silently replaced by a demo.
 
-The evaluator checks explicit annotated scene properties and whether the source matches the final export. Those predicates cover only part of each brief; complete instruction fulfillment and visual quality still need review. Only matched repeated runs with disclosed uncertainty can support a comparable-performance claim. No model comparison has been executed in this release.
+The shipped cat, toaster and stack examples are authored demonstrations exposed in this repository, not independent LLM-transfer results. No second-model benchmark has been completed. `heldout.json` and `evaluate.py` remain historical v1 mechanics tests; they do not evaluate the new general production path.

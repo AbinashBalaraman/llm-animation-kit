@@ -1,0 +1,101 @@
+{
+  "workflow_id": "327569cce31d49cf",
+  "model_label": "implementation-model; authored demonstration",
+  "brief": "Explain a stack: push A, push B, then pop B to demonstrate last-in, first-out.",
+  "outcome": "complete",
+  "human_assistance_count": 0,
+  "calls": 3,
+  "render_attempts": 2,
+  "failures": [],
+  "verified_current_export": true,
+  "artifact": "video.mp4",
+  "declared_review": {
+    "revision": 1,
+    "scene_hash": "9d87fb533ac7373ca89316fb06255a641799779a10cb81f65de83adc2b938ab5",
+    "accepted": true,
+    "preview_job_id": "dd7e1f3b8b9bebc2327c380a",
+    "preview_engine_hash": "d0bb0e07729e9e6df2a53ec1c1c93549d223ec5e89e23aaa359d429281a3b6f9",
+    "preview_video_hash": "17a608d92880c960fc0801543d909504a48f3f017f88de5ee5f11f3f3ad8b005",
+    "reviewer": "model",
+    "coverage": [
+      {
+        "requirement_id": "push_a",
+        "status": "pass",
+        "frames": [
+          48
+        ],
+        "observation": "A rests at the bottom of the outlined stack after leaving the input position; the first push label is highlighted."
+      },
+      {
+        "requirement_id": "push_b",
+        "status": "pass",
+        "frames": [
+          105
+        ],
+        "observation": "B is above A within the same stack, with the second push step highlighted."
+      },
+      {
+        "requirement_id": "pop_b",
+        "status": "pass",
+        "frames": [
+          179
+        ],
+        "observation": "B is now at the output while A stays at the stack bottom, showing last-in-first-out without a character narrative."
+      }
+    ],
+    "playback_reviewed": false,
+    "notes": "Implementation-model review of actual overview/contact-sheet images and selected action frames. Sampled-frame review only; normal-speed playback and audio listening were not assessed. This is an authored regression demonstration, not an independent other-LLM transfer result. After the stroke-visibility diagnostic fix, every regenerated preview PNG was hash-identical to the previously inspected output; the same observations apply to this current preview.",
+    "preflight": {
+      "passed": true,
+      "checks": [
+        {
+          "beat": "first_push",
+          "frame": 48,
+          "requirements": [
+            "push_a"
+          ],
+          "visible_drawing_nodes": [
+            "a",
+            "stack_outline"
+          ],
+          "ok": true
+        },
+        {
+          "beat": "second_push",
+          "frame": 105,
+          "requirements": [
+            "push_b"
+          ],
+          "visible_drawing_nodes": [
+            "a",
+            "b",
+            "stack_outline"
+          ],
+          "ok": true
+        },
+        {
+          "beat": "first_out",
+          "frame": 179,
+          "requirements": [
+            "pop_b"
+          ],
+          "visible_drawing_nodes": [
+            "a",
+            "b",
+            "stack_outline"
+          ],
+          "ok": true
+        }
+      ],
+      "meaning": "Checks geometry visibility and authored coverage only. A reviewer must verify identity, actions, story and comedy in the actual pixels."
+    },
+    "independent_quality_proof": false,
+    "limitations": [
+      "Sampled-frame review only; normal-speed motion and sound remain unassessed."
+    ]
+  },
+  "independent_semantic_quality": null,
+  "model_parity_established": false,
+  "export_seconds": 181.071,
+  "frame_count": 192
+}

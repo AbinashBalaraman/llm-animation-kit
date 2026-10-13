@@ -1,28 +1,35 @@
 {
-  "kit_version": "0.1.0",
-  "backend": "puppet2d_v1",
-  "scene_schema": "kit.scene/1.0",
+  "kit_version": "0.2.0",
+  "backend": "authored2d_v2",
+  "scene_schema": "kit.story/2.0",
   "video_generation_models": false,
-  "rigs": [
-    "pip2d_v1"
+  "default_artwork": null,
+  "authoring": "Original vector geometry, hierarchical groups, reusable assets, per-part pose overrides, per-shot keyframes; optional Python authoring SDK compiles to JSON.",
+  "shapes": [
+    "ellipse",
+    "rect",
+    "polygon",
+    "path (M/L/Q/C/Z)",
+    "text",
+    "group",
+    "instance"
   ],
-  "actions": [
-    "look_at",
-    "expression",
-    "gesture",
-    "move_to"
+  "motion": [
+    "x",
+    "y",
+    "scale_x",
+    "scale_y",
+    "rotation",
+    "opacity",
+    "camera x/y/zoom"
   ],
-  "gesture_variants": [
-    "wave",
-    "reach",
-    "celebrate"
-  ],
-  "expressions": [
-    "neutral",
-    "curious",
-    "surprised",
-    "happy",
-    "sad"
+  "easing": [
+    "linear",
+    "hold",
+    "smooth",
+    "in_cubic",
+    "out_cubic",
+    "out_back"
   ],
   "profiles": {
     "preview": [
@@ -34,27 +41,24 @@
       720
     ]
   },
-  "fps": 24,
-  "max_seconds": 60,
-  "max_actors": 4,
-  "max_props": 8,
-  "sound": [
-    "none",
-    "procedural chime/ambient bed"
+  "fps": [
+    24,
+    30,
+    60
   ],
-  "coordinate_system": "2D design pixels: x right, y down, 960x540 world; actor y is foot baseline",
-  "action_semantics": "Half-open frame intervals; move/gaze/expression persist; gestures return to rest. Same-channel overlap rejected.",
+  "max_seconds": 120,
+  "coordinates": "960x540 design pixels; x right/y down; local transforms compose through groups; tracks use local shot frames; beats use global frames.",
+  "audio": "Authored procedural bell/pop/purr cues; no voice synthesis or video model.",
+  "review": "Brief coverage, visible drawing evidence, current preview, per-requirement observations and disclosed playback scope.",
   "limitations": [
-    "One original 2D puppet rig, front view; no arbitrary art import",
-    "No 3D backend, handover, seating, speech/lip-sync, physics, or contact solver yet",
-    "No measured parity with other models; no trained model shipped",
-    "Render tools synchronous; no running-job cancellation API",
-    "Text-only agents need a disclosed visual reviewer"
+    "Vector 2D only; no full 3D/physics/automatic lip sync",
+    "Renderer does not infer story from text: the host LLM authors artwork, beats and keyframes",
+    "Declared visual reviews cannot automatically prove semantic correctness or comedy",
+    "No parity benchmark across other LLMs yet",
+    "Synchronous rendering; host Python code is not sandboxed by the kit"
   ],
-  "examples": [
-    "discovery",
-    "two_friends",
-    "quiet_wave"
-  ],
-  "license": "GPL-3.0-or-later runtime; original artwork/examples CC0-1.0"
+  "legacy": "kit.scene/1.0 retained only for explicit regression/exercise use; prohibited in production workflows",
+  "schema_tool": "get_schema",
+  "authoring_sdk": "animation_kit.authoring",
+  "license": "GPL-3.0-or-later runtime; original authored artwork CC0; bundled fonts SIL OFL 1.1"
 }

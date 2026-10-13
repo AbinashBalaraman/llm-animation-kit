@@ -1,4 +1,4 @@
 interface:
   display_name: "Code Animation"
-  short_description: "Create editable animation with local code and tools"
-  default_prompt: "Use $code-animation to create and revise a short animated video with the local kit."
+  short_description: "Author original artwork and motion from any 2D script"
+  default_prompt: "Use $code-animation to turn my script into original artwork, motion and a reviewed code-rendered video."

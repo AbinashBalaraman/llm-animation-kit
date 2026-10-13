@@ -1,0 +1,156 @@
+{
+  "workflow_id": "c88b42299571461e",
+  "model_label": "implementation-model; authored demonstration",
+  "brief": "Create a small funny story of a cat becoming president of the US.",
+  "outcome": "complete",
+  "human_assistance_count": 0,
+  "calls": 3,
+  "render_attempts": 2,
+  "failures": [],
+  "verified_current_export": true,
+  "artifact": "video.mp4",
+  "declared_review": {
+    "revision": 0,
+    "scene_hash": "26cae6d71105eec3ed009fc2672e3012d64c4ffbff2f75c5b62fc388cb4571f6",
+    "accepted": true,
+    "preview_job_id": "848b49e7c16a3986eb3fb76b",
+    "preview_engine_hash": "d0bb0e07729e9e6df2a53ec1c1c93549d223ec5e89e23aaa359d429281a3b6f9",
+    "preview_video_hash": "f81e401324ebf63c613271eb0353bbced0847820704331ae6caec3f6937b093e",
+    "reviewer": "model",
+    "coverage": [
+      {
+        "requirement_id": "cat",
+        "status": "pass",
+        "frames": [
+          65,
+          144,
+          380,
+          533
+        ],
+        "observation": "Inspected an orange tabby with triangular ears, whiskers, vertical pupils, paws and tail; the sleeping pose retains its species, palette and facial features."
+      },
+      {
+        "requirement_id": "campaign",
+        "status": "pass",
+        "frames": [
+          144,
+          164
+        ],
+        "observation": "The cat raises its paw behind a campaign podium with its name and nap platform; US flags and audience silhouettes provide a rally setting."
+      },
+      {
+        "requirement_id": "election",
+        "status": "pass",
+        "frames": [
+          246,
+          290
+        ],
+        "observation": "The results bar grows to a 99 percent victory for Mittens over a drawn vacuum cleaner; the cat raises both paws under confetti."
+      },
+      {
+        "requirement_id": "us_president",
+        "status": "pass",
+        "frames": [
+          380,
+          411,
+          533
+        ],
+        "observation": "The office contains US flags, a presidential desk/nameplate and an executive-order paper; the cat stamps the order and later sleeps on the desk."
+      },
+      {
+        "requirement_id": "comedy",
+        "status": "pass",
+        "frames": [
+          290,
+          533
+        ],
+        "observation": "Visible gags are a vacuum losing the election and the cat immediately obeying its mandatory-nap order. These setups/payoffs are readable in frames; audience humor response is not measured."
+      }
+    ],
+    "playback_reviewed": false,
+    "notes": "Implementation-model review of actual overview/contact-sheet images and selected action frames. Sampled-frame review only; normal-speed playback and audio listening were not assessed. This is an authored regression demonstration, not an independent other-LLM transfer result. Inspected the paw extension/contact/retraction sequence at frames 336 through 402; the arm is deliberately stylized and stretches. After the stroke-visibility diagnostic fix, every regenerated preview PNG was hash-identical to the previously inspected output; the same observations apply to this current preview.",
+    "preflight": {
+      "passed": true,
+      "checks": [
+        {
+          "beat": "recognizable_cat",
+          "frame": 65,
+          "requirements": [
+            "cat"
+          ],
+          "visible_drawing_nodes": [
+            "cat",
+            "empty_bowl"
+          ],
+          "ok": true
+        },
+        {
+          "beat": "campaign_promise",
+          "frame": 144,
+          "requirements": [
+            "campaign",
+            "cat"
+          ],
+          "visible_drawing_nodes": [
+            "candidate",
+            "podium"
+          ],
+          "ok": true
+        },
+        {
+          "beat": "wins_election",
+          "frame": 290,
+          "requirements": [
+            "election",
+            "comedy"
+          ],
+          "visible_drawing_nodes": [
+            "winner",
+            "winner_bar",
+            "vacuum"
+          ],
+          "ok": true
+        },
+        {
+          "beat": "presidential_action",
+          "frame": 380,
+          "requirements": [
+            "us_president",
+            "cat"
+          ],
+          "visible_drawing_nodes": [
+            "president",
+            "flag_left",
+            "desk_front",
+            "paw_stamp"
+          ],
+          "ok": true
+        },
+        {
+          "beat": "nap_payoff",
+          "frame": 533,
+          "requirements": [
+            "comedy",
+            "cat",
+            "us_president"
+          ],
+          "visible_drawing_nodes": [
+            "sleeping_president",
+            "desk_front",
+            "flag_left"
+          ],
+          "ok": true
+        }
+      ],
+      "meaning": "Checks geometry visibility and authored coverage only. A reviewer must verify identity, actions, story and comedy in the actual pixels."
+    },
+    "independent_quality_proof": false,
+    "limitations": [
+      "Sampled-frame review only; normal-speed motion and sound remain unassessed."
+    ]
+  },
+  "independent_semantic_quality": null,
+  "model_parity_established": false,
+  "export_seconds": 284.481,
+  "frame_count": 576
+}

@@ -1,0 +1,22 @@
+{
+  "id": "story",
+  "version": "2.0",
+  "backend": "authored2d_v2",
+  "keywords": [
+    "story",
+    "script",
+    "funny",
+    "cat",
+    "president",
+    "narrative",
+    "brief"
+  ],
+  "purpose": "Turn the user's request into visible events",
+  "rules": [
+    "Preserve the original prompt in brief.prompt. Extract independently reviewable requirements: identity, setting, key event/outcome, tone.",
+    "Write a short causal sequence: desire, obstacle, attempt, changed situation, payoff. A label announcing the outcome does not depict it.",
+    "Each shot has a purpose and evidence nodes. Link requirements to beats with specific global evidence frames.",
+    "Comedy needs an expectation followed by a readable violation and a reaction/hold. Show the physical action that causes the joke.",
+    "Start from an empty document. Invent the necessary artwork and motion; examples teach technique and are not a substitute for the requested story."
+  ]
+}

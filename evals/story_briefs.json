@@ -1,0 +1,7 @@
+[
+  {"id":"octopus-chef","brief":"Make a funny 15-second story about an octopus chef who flips too many pancakes and ends up wearing one as a hat.","focus":["recognizable new subject","tentacle articulation","prop contact and trajectory","visual payoff"]},
+  {"id":"umbrella-cloud","brief":"A lonely umbrella tries to catch a small rain cloud, then shelters a flower when it finally starts raining.","focus":["new object protagonist","spatial cause and effect","changing motivation","visible resolution"]},
+  {"id":"gear-explainer","brief":"Explain how two intermeshing gears rotate in opposite directions using labeled motion and no characters.","focus":["diagram clarity","correct opposite rotation","geometric contact","no forced cartoon story"]},
+  {"id":"product-lamp","brief":"Show a folding desk lamp opening, aiming its light at a book, then folding itself shut.","focus":["new articulated object","joint pivots","lighting represented clearly","ordered mechanism"]},
+  {"id":"dialogue-gap","brief":"Two squirrels argue aloud over an acorn, exchange it, then share it. Include synchronized spoken dialogue.","focus":["recognizable subjects","authored contact","explicit disclosure that the current backend does not synthesize voice or automatic lip-sync"]}
+]

@@ -15,7 +15,7 @@ parser.add_argument("--reviewer",choices=("human","model"),required=True)
 args=parser.parse_args()
 
 api=Tools(ROOT/".kit-workspace")
-started=api.call("start_workflow",{"brief":"Export the reviewed original 2D discovery example and retain the editable source and before/after evidence.","max_calls":12,"max_previews":3})
+started=api.call("start_workflow",{"brief":"Export the reviewed original 2D discovery example and retain the editable source and before/after evidence.","max_calls":12,"max_previews":3,"purpose":"legacy_exercise"})
 ident=started["result"]["workflow_id"]
 def step(tool,arguments):
     result=api.call("workflow_step",{"workflow_id":ident,"tool":tool,"arguments":arguments})

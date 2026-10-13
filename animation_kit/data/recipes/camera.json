@@ -1,8 +1,7 @@
 {
   "id": "camera",
-  "version": "1.0",
-  "backend": "puppet2d_v1",
-  "purpose": "Frame poses and reactions",
+  "version": "2.0",
+  "backend": "authored2d_v2",
   "keywords": [
     "camera",
     "shot",
@@ -11,14 +10,11 @@
     "framing",
     "composition"
   ],
+  "purpose": "Frame story-specific actions",
   "rules": [
-    "Use 960x540 design coordinates. A camera at x480,y270,zoom1 matches the wide stage.",
-    "The actor y coordinate is the foot baseline; its head sits about 220*scale pixels above it.",
-    "Check the raised hands, ears and antenna, not only the face. Text occupies screen-space y29\u201380.",
-    "A camera edit should preserve actions and actor positions. Revise only the named shot camera.",
-    "Shots partition [0,frames), with no overlaps/gaps. Review both sides of a cut for consistent gaze and identity."
-  ],
-  "example": "discovery",
-  "inspection": "Playable preview plus contact sheet/action-boundary frames; human or vision review for appeal.",
-  "stop": "Stop when requested effect is reviewed or workflow budget is exhausted."
+    "Design coordinates are 960x540. Camera x480/y270/zoom1 shows the whole canvas.",
+    "Use an establishing shot to orient, then frame the gesture/prop interaction large enough to understand. Camera is optional.",
+    "Camera tracks use local shot frames. Shots partition the full global timeline without gaps.",
+    "Preserve underlying acting when revising a camera. Check both sides of cuts and leave space around ears, paws and important props."
+  ]
 }

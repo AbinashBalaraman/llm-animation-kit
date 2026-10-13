@@ -38,7 +38,7 @@ if not (api.store.project("discovery-demo")/"current.json").exists():
 original=packaged_json("examples/discovery.json")
 for ident in ("discovery-original","discovery-revised","friends-demo"):
     if not (api.store.project(ident)/"current.json").exists():
-        call("create_project",{"project_id":ident,"scene":packaged_json("examples/two_friends.json") if ident=="friends-demo" else original})
+        call("create_project",{"project_id":ident,"scene":packaged_json("examples/two_friends.json") if ident=="friends-demo" else original,"legacy_exercise":True})
 base=collect("discovery-original","discovery-before")
 revision=api.store.load("discovery-revised")
 if revision["revision"]==0:

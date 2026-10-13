@@ -4,3 +4,4 @@
 *.wav binary
 *.zip binary
 *.whl binary
+*.ttf binary

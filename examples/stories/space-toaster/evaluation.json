@@ -1,0 +1,105 @@
+{
+  "workflow_id": "9bb61fbc3f2945bd",
+  "model_label": "implementation-model; authored demonstration",
+  "brief": "A tiny toaster dreams of space, launches its toast like a rocket, and watches it become a moon.",
+  "outcome": "complete",
+  "human_assistance_count": 0,
+  "calls": 3,
+  "render_attempts": 2,
+  "failures": [],
+  "verified_current_export": true,
+  "artifact": "video.mp4",
+  "declared_review": {
+    "revision": 0,
+    "scene_hash": "094e382bf68e60d7536a4404cd830325c128fb2caaba8e29467f27e677665948",
+    "accepted": true,
+    "preview_job_id": "f21806d979aa6561c714c549",
+    "preview_engine_hash": "d0bb0e07729e9e6df2a53ec1c1c93549d223ec5e89e23aaa359d429281a3b6f9",
+    "preview_video_hash": "90f233889c42eaebed3cd678546456e76f279211d1a5f1c68910221a1d8661bd",
+    "reviewer": "model",
+    "coverage": [
+      {
+        "requirement_id": "toaster",
+        "status": "pass",
+        "frames": [
+          0,
+          48,
+          108
+        ],
+        "observation": "Inspected a coral toaster with slot, lever, feet and a simple face; its identity remains consistent between counter and launch shots."
+      },
+      {
+        "requirement_id": "launch",
+        "status": "pass",
+        "frames": [
+          102,
+          108,
+          120
+        ],
+        "observation": "Toast moves upward from the slot as the toaster changes scale; the sampled sequence shows the launch direction. Frame sampling alone does not rate playback smoothness."
+      },
+      {
+        "requirement_id": "moon",
+        "status": "pass",
+        "frames": [
+          171,
+          213,
+          239
+        ],
+        "observation": "The same crust-and-crumb toast shape floats above a curved planet on a star field, making the absurd toast-moon outcome visible."
+      }
+    ],
+    "playback_reviewed": false,
+    "notes": "Implementation-model review of actual overview/contact-sheet images and selected action frames. Sampled-frame review only; normal-speed playback and audio listening were not assessed. This is an authored regression demonstration, not an independent other-LLM transfer result. After the stroke-visibility diagnostic fix, every regenerated preview PNG was hash-identical to the previously inspected output; the same observations apply to this current preview.",
+    "preflight": {
+      "passed": true,
+      "checks": [
+        {
+          "beat": "identity",
+          "frame": 48,
+          "requirements": [
+            "toaster"
+          ],
+          "visible_drawing_nodes": [
+            "dreamer"
+          ],
+          "ok": true
+        },
+        {
+          "beat": "blastoff",
+          "frame": 108,
+          "requirements": [
+            "launch",
+            "toaster"
+          ],
+          "visible_drawing_nodes": [
+            "rocket",
+            "launcher"
+          ],
+          "ok": true
+        },
+        {
+          "beat": "payoff",
+          "frame": 213,
+          "requirements": [
+            "moon"
+          ],
+          "visible_drawing_nodes": [
+            "toast_moon",
+            "planet"
+          ],
+          "ok": true
+        }
+      ],
+      "meaning": "Checks geometry visibility and authored coverage only. A reviewer must verify identity, actions, story and comedy in the actual pixels."
+    },
+    "independent_quality_proof": false,
+    "limitations": [
+      "Sampled-frame review only; normal-speed motion and sound remain unassessed."
+    ]
+  },
+  "independent_semantic_quality": null,
+  "model_parity_established": false,
+  "export_seconds": 183.597,
+  "frame_count": 240
+}

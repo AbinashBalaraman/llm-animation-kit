@@ -128,6 +128,19 @@ class Store:
                     find(scene["actors"],operation["actor"]["id"]).update(operation["actor"])
                 elif kind=="set_title":
                     scene["title"],scene["subtitle"]=operation["title"],operation["subtitle"]
+                elif kind=="replace_story":
+                    if operation["story"].get("schema_version") != "kit.story/2.0":
+                        raise KitError("story_required", "Replacement must be an authored story.")
+                    scene=copy.deepcopy(operation["story"])
+                elif kind in ("replace_shot", "upsert_asset"):
+                    if scene.get("schema_version") != "kit.story/2.0":
+                        raise KitError("story_required", "This operation requires kit.story/2.0.")
+                    field,key=("shots","shot") if kind=="replace_shot" else ("assets","asset")
+                    item=copy.deepcopy(operation[key])
+                    old=next((v for v in scene[field] if v["id"]==item["id"]),None)
+                    if old is not None: scene[field][scene[field].index(old)]=item
+                    elif kind=="upsert_asset": scene[field].append(item)
+                    else: raise KitError("missing_id", "Unknown shot: "+item["id"])
                 else:
                     raise KitError("unsupported_operation",f"Unknown operation: {kind}")
             require_valid(scene)

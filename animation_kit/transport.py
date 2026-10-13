@@ -23,7 +23,7 @@ def dispatch(api,message):
     if method=="initialize":
         version=params.get("protocolVersion")
         result={"protocolVersion":version if version in PROTOCOLS else PROTOCOLS[0],"capabilities":{"tools":{"listChanged":False}},
-                "serverInfo":{"name":"llm-animation-kit","version":"0.1.0"},"instructions":"Code-rendered 2D animation only. Discover capabilities and use bounded workflow tools; inspect previews before accepting a revision."}
+                "serverInfo":{"name":"llm-animation-kit","version":"0.2.0"},"instructions":"Author original kit.story/2.0 artwork and motion from the brief. Never substitute a legacy demo. Use get_schema, preview_frames, preview and per-requirement review_story. No video-generation models."}
     elif method=="ping":
         result={}
     elif method=="tools/list":

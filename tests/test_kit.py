@@ -24,14 +24,14 @@ class KitTests(unittest.TestCase):
         self.scene=packaged_json("examples/discovery.json")
 
     def create(self):
-        self.assertTrue(self.api.call("create_project",{"project_id":"demo","scene":self.scene})["ok"])
+        self.assertTrue(self.api.call("create_project",{"project_id":"demo","scene":self.scene,"legacy_exercise":True})["ok"])
 
     def test_examples_validate(self):
         for name in ("discovery","two_friends","quiet_wave"):
             self.assertTrue(validate(packaged_json(f"examples/{name}.json"))["valid"])
 
     def test_strict_json(self):
-        for text in ('{"x":1,"x":2}','{"x":NaN}','{"x":Infinity}'):
+        for text in ('{"x":1,"x":2}','{"x":NaN}','{"x":Infinity}','{"x":1e999}'):
             with self.assertRaises(KitError): loads(text)
 
     def test_non_json_python_arguments_fail_cleanly(self):
@@ -138,7 +138,7 @@ class KitTests(unittest.TestCase):
         init=dispatch(self.api,{"jsonrpc":"2.0","id":1,"method":"initialize","params":{"protocolVersion":"2025-11-25"}})
         self.assertIn("tools",init["result"]["capabilities"])
         tools=dispatch(self.api,{"jsonrpc":"2.0","id":2,"method":"tools/list"})
-        self.assertEqual(len(tools["result"]["tools"]),15)
+        self.assertTrue({"get_schema","create_project","review_story","preview_frames"}.issubset({t["name"] for t in tools["result"]["tools"]}))
         result=dispatch(self.api,{"jsonrpc":"2.0","id":3,"method":"tools/call","params":{"name":"inspect_project","arguments":{"project_id":"missing"}}})
         self.assertTrue(result["result"]["isError"])
         self.assertIsNone(dispatch(self.api,{"jsonrpc":"2.0","method":"notifications/initialized"}))

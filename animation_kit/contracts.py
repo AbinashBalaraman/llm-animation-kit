@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import json
+import math
 from pathlib import Path
 from importlib.resources import files
 from jsonschema import Draft202012Validator
@@ -30,8 +31,12 @@ def _unique_pairs(pairs):
 def loads(text):
     def reject_constant(value):
         raise KitError("nonfinite", f"Invalid JSON number: {value}")
+    def finite_float(value):
+        result=float(value)
+        if not math.isfinite(result): reject_constant(value)
+        return result
     try:
-        return json.loads(text, object_pairs_hook=_unique_pairs, parse_constant=reject_constant)
+        return json.loads(text, object_pairs_hook=_unique_pairs, parse_constant=reject_constant,parse_float=finite_float)
     except json.JSONDecodeError as exc:
         raise KitError("invalid_json", str(exc)) from exc
 
@@ -46,13 +51,22 @@ def packaged_json(name):
 
 def validate(scene):
     issues = []
-    schema = packaged_json("scene.schema.json")
+    try:
+        json.dumps(scene,allow_nan=False)
+    except (ValueError,TypeError):
+        return {"valid":False,"issues":[{"code":"non_json","pointer":"/","message":"Scene must contain finite JSON values.","repair_hint":"Remove nonfinite numbers and non-JSON values."}]}
+    is_story = isinstance(scene,dict) and scene.get("schema_version") == "kit.story/2.0"
+    schema = packaged_json("story.schema.json" if is_story else "scene.schema.json")
     for error in sorted(Draft202012Validator(schema).iter_errors(scene), key=lambda e: str(e.path)):
         pointer = "/" + "/".join(str(p).replace("~", "~0").replace("/", "~1") for p in error.path)
         issues.append({"code": "schema", "pointer": pointer, "message": error.message,
                        "repair_hint": "Use discover_capabilities and the exact scene schema."})
     if issues:
         return {"valid": False, "issues": issues}
+    if is_story:
+        from .story import validate_semantics
+        issues = validate_semantics(scene)
+        return {"valid": not issues, "issues": issues}
     entities = scene["actors"] + scene["props"]
     ids = [e["id"] for e in entities]
     action_ids = [a["id"] for a in scene["actions"]]

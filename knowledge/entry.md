@@ -1,7 +1,7 @@
-# Production entry point
+# The reusable capability
 
-Load `agent-kit/code-animation/SKILL.md` for the consuming model's workflow. Retrieve task-specific guidance through `get_context`; six maintained recipes live in the package's data/recipes directory, so CLI and MCP return the same content.
+The host LLM adapts a script, designs subjects and sets, authors geometry/motion, and judges the result. The kit supplies a vector scene graph, articulated assets, keyframes, shot clocks, inspection tools and source-bound review records. There is no default artwork to rename.
 
-The runtime supports direct structured authoring, MCP stdio and a provider-independent bounded agent loop (`animation_kit.agent.run_agent`). Model providers implement `decide(context)` and return a typed tool decision or an explicit finish. No model credential or paid API is required by the core. The host supplies the model; the kit supplies instructions, context, components, tool execution and recorded evidence.
+Begin with [the production skill](../agent-kit/code-animation/SKILL.md), retrieve focused guidance with `get_context`, and look up fields with `get_schema`. [The authoring SDK](../agent-kit/code-animation/references/authoring.md) builds arbitrary 2D artwork; the server consumes declarative JSON.
 
-Development instructions and the consuming skill have different purposes. Use the consuming skill to make videos, and the architecture/research packet when implementing new reviewed components.
+Production preserves the brief and rejects loading a legacy demo. Visual acceptance covers identity, action, setting and outcome as applicable. Geometry checks and author-declared reviews are useful evidence, not a semantic oracle or proof of model parity.

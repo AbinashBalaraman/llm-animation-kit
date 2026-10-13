@@ -1,70 +1,54 @@
 {
+  "version": "0.2.0",
   "date": "2026-10-13",
-  "runtime_version": "0.1.0",
-  "backend": "puppet2d_v1",
-  "scene_schema": "kit.scene/1.0",
   "tests": {
-    "command": ".venv/Scripts/python.exe -m unittest discover -s tests -v",
-    "passed": 24,
-    "failed": 0
+    "passed": 38,
+    "failed": 0,
+    "seconds": 8.405
   },
-  "skill_validator": {
-    "result": "passed",
-    "validator": "skill-creator/scripts/quick_validate.py"
-  },
+  "skill_validation": "passed",
+  "clean_wheel_install": "passed; new isolated venv, Pillow 12.3.0, jsonschema 4.26.0, imageio-ffmpeg 0.6.0; authored-scene encode/decode",
+  "wheel_sha256": "3d3f1798203348f123a4bcf29a7cacb657d5a0ed4386c574f8b34f539f41392c",
+  "independent_model_transfer": false,
+  "normal_speed_playback_review": false,
+  "audio_listening_review": false,
+  "reviewer": "implementation model; sampled frames and targeted action/contact ranges",
   "examples": [
     {
-      "backend": "puppet2d_v1",
-      "profile": "preview",
-      "width": 640,
-      "height": 360,
+      "name": "cat-president",
+      "frames": 576,
       "fps": 24,
-      "decoded_frame_count": 192,
-      "seconds": 26.156,
-      "scene_hash": "09c090a8999e740fb8aec0948fa5cc90b518262c5e79d81b850f267e5d2d3b9d",
-      "engine_hash": "e658cac645b60aea2b995fd40ee47b0b004cc3e85b658fac4f641903f05b4515",
-      "id": "discovery-after"
-    },
-    {
-      "backend": "puppet2d_v1",
-      "profile": "preview",
-      "width": 640,
-      "height": 360,
-      "fps": 24,
-      "decoded_frame_count": 192,
-      "seconds": 23.63,
-      "scene_hash": "563ba69237c87f301f35d3f236f9165188ccfe35408f1ce35b2d2becd55bdc35",
-      "engine_hash": "e658cac645b60aea2b995fd40ee47b0b004cc3e85b658fac4f641903f05b4515",
-      "id": "discovery-before"
-    },
-    {
-      "backend": "puppet2d_v1",
-      "profile": "final",
       "width": 1280,
       "height": 720,
-      "fps": 24,
-      "decoded_frame_count": 192,
-      "seconds": 55.48,
-      "scene_hash": "09c090a8999e740fb8aec0948fa5cc90b518262c5e79d81b850f267e5d2d3b9d",
-      "engine_hash": "e658cac645b60aea2b995fd40ee47b0b004cc3e85b658fac4f641903f05b4515",
-      "id": "discovery-final"
+      "final_render_seconds": 284.481,
+      "preview_render_seconds": 51.234,
+      "engine_hash": "d0bb0e07729e9e6df2a53ec1c1c93549d223ec5e89e23aaa359d429281a3b6f9",
+      "video_sha256": "8a8c60f8106044cb98e2f7648c28247dcc64f33b1ace0931eba2bef2339b5f63",
+      "review_scope": "sampled_frames"
     },
     {
-      "backend": "puppet2d_v1",
-      "profile": "preview",
-      "width": 640,
-      "height": 360,
+      "name": "space-toaster",
+      "frames": 240,
       "fps": 24,
-      "decoded_frame_count": 144,
-      "seconds": 18.865,
-      "scene_hash": "4acee07011ee20aa1cb901adf68d3dc9920fb33501e4d514635511e7ebbcf922",
-      "engine_hash": "e658cac645b60aea2b995fd40ee47b0b004cc3e85b658fac4f641903f05b4515",
-      "id": "two-friends"
+      "width": 1280,
+      "height": 720,
+      "final_render_seconds": 183.597,
+      "preview_render_seconds": 18.8,
+      "engine_hash": "d0bb0e07729e9e6df2a53ec1c1c93549d223ec5e89e23aaa359d429281a3b6f9",
+      "video_sha256": "33a79b6b9c55e2d3776c046d1e36d625f8d668476b7caf714d38666c1231a125",
+      "review_scope": "sampled_frames"
+    },
+    {
+      "name": "stack-explainer",
+      "frames": 192,
+      "fps": 24,
+      "width": 1280,
+      "height": 720,
+      "final_render_seconds": 181.071,
+      "preview_render_seconds": 13.897,
+      "engine_hash": "d0bb0e07729e9e6df2a53ec1c1c93549d223ec5e89e23aaa359d429281a3b6f9",
+      "video_sha256": "6f1a846042050c69b7602a787f9606fbdd4efb7e85af6b3fa84231e1506ad5dd",
+      "review_scope": "sampled_frames"
     }
-  ],
-  "limitations": [
-    "Authored demos, not actual multi-model comparison",
-    "Model inspected temporal contact sheets; no independent human/audio review",
-    "No Blender/3D, speech, handover or physical contact solver"
   ]
 }

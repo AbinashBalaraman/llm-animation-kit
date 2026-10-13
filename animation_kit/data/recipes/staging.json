@@ -1,26 +1,22 @@
 {
   "id": "staging",
-  "version": "1.0",
-  "backend": "puppet2d_v1",
-  "purpose": "Make the action legible",
+  "version": "2.0",
+  "backend": "authored2d_v2",
   "keywords": [
     "stage",
-    "story",
-    "two",
     "character",
-    "attention",
-    "layout",
-    "walk",
-    "move"
+    "asset",
+    "draw",
+    "art",
+    "silhouette",
+    "layout"
   ],
+  "purpose": "Author recognizable characters and environments",
   "rules": [
-    "Choose one clear shot purpose: establish a target, reveal a reaction, or resolve the beat.",
-    "Keep faces and important props separated in silhouette. Put gaze targets inside the view.",
-    "For two characters, establish a shared wide shot before a closer reaction; front-view rig does not support arbitrary perspective.",
-    "move_to controls a bounded stylized walk. It does not provide collision avoidance or a contact solver.",
-    "Reuse locked colors/rig IDs across shots. Review silent playback for the intended emotional beat."
-  ],
-  "example": "two_friends",
-  "inspection": "Playable preview plus contact sheet/action-boundary frames; human or vision review for appeal.",
-  "stop": "Stop when requested effect is reviewed or workflow budget is exhausted."
+    "Draw new subjects from ellipses, polygons, cubic paths and groups. Reuse your own asset definitions across shots.",
+    "List identifying visual features before drawing. A cat needs recognizably feline silhouette and face, not a humanoid named cat.",
+    "Separate articulated parts into groups whose local origin is the joint. Pose them with instance overrides.",
+    "Build the setting needed by the script: architecture, furniture and story props. The engine has no default environment.",
+    "Check silhouette, focal point, readable type and foreground/character/background layering before animating."
+  ]
 }

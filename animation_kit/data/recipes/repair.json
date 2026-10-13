@@ -1,26 +1,21 @@
 {
   "id": "repair",
-  "version": "1.0",
-  "backend": "puppet2d_v1",
-  "purpose": "Repair from evidence",
+  "version": "2.0",
+  "backend": "authored2d_v2",
   "keywords": [
-    "error",
+    "review",
     "repair",
-    "overlap",
-    "missing",
-    "invalid",
     "failure",
+    "error",
+    "quality",
     "unsupported"
   ],
+  "purpose": "Reject technical success that misses the brief",
   "rules": [
-    "Schema error: inspect the exact tool/scene schema instead of guessing another field.",
-    "Channel conflict: sequence that actor's actions on the indicated channel; do not disable validation.",
-    "Framing warning: adjust the affected shot's camera and compare its boundary frames.",
-    "Weak acting: inspect the temporal contact sheet/clip, then adjust gaze lead, pause, expression intensity or gesture timing.",
-    "Missing capability: report it and retain valid work. Never call a video-generation fallback or execute model-supplied Python.",
-    "Stop at workflow limits; record unresolved issues rather than declaring quality from a valid export."
-  ],
-  "example": "discovery",
-  "inspection": "Playable preview plus contact sheet/action-boundary frames; human or vision review for appeal.",
-  "stop": "Stop when requested effect is reviewed or workflow budget is exhausted."
+    "Render selected frames with preview_frames, then inspect actual pixels. Fix identity/staging before spending on full preview.",
+    "Run check_story: it checks visible drawing and coverage, not whether the drawing truly is a cat or the story is funny.",
+    "Review every brief requirement against actual preview frames. A title-only or invisible drawing claim fails structural evidence.",
+    "State playback_reviewed truthfully. Sampled frames cannot establish smooth motion, timing at normal speed or audio quality.",
+    "Use review_story, then render_final. If a requirement remains unmet, record rejection and revise; never relabel a fixture as success."
+  ]
 }

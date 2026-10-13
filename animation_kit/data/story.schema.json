@@ -1,0 +1,1502 @@
+{
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "kit.story/2.0"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 3000
+    },
+    "brief": {
+      "type": "object",
+      "properties": {
+        "prompt": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 3000
+        },
+        "requirements": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^[a-z][a-z0-9_-]{0,63}$"
+              },
+              "description": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 3000
+              }
+            },
+            "required": [
+              "id",
+              "description"
+            ],
+            "additionalProperties": false
+          },
+          "minItems": 1,
+          "maxItems": 24
+        }
+      },
+      "required": [
+        "prompt",
+        "requirements"
+      ],
+      "additionalProperties": false
+    },
+    "fps": {
+      "enum": [
+        24,
+        30,
+        60
+      ]
+    },
+    "frames": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 7200
+    },
+    "assets": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9_-]{0,63}$"
+          },
+          "description": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 3000
+          },
+          "nodes": {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/node"
+            },
+            "minItems": 1,
+            "maxItems": 600
+          }
+        },
+        "required": [
+          "id",
+          "description",
+          "nodes"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 0,
+      "maxItems": 100
+    },
+    "shots": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9_-]{0,63}$"
+          },
+          "start": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 7200
+          },
+          "end": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 7200
+          },
+          "purpose": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 3000
+          },
+          "background": {
+            "type": "string",
+            "pattern": "^#[0-9a-fA-F]{6}$"
+          },
+          "camera": {
+            "type": "object",
+            "properties": {
+              "x": {
+                "oneOf": [
+                  {
+                    "type": "number",
+                    "minimum": -10000,
+                    "maximum": 10000
+                  },
+                  {
+                    "$ref": "#/$defs/track"
+                  }
+                ]
+              },
+              "y": {
+                "oneOf": [
+                  {
+                    "type": "number",
+                    "minimum": -10000,
+                    "maximum": 10000
+                  },
+                  {
+                    "$ref": "#/$defs/track"
+                  }
+                ]
+              },
+              "zoom": {
+                "oneOf": [
+                  {
+                    "type": "number",
+                    "minimum": -10000,
+                    "maximum": 10000
+                  },
+                  {
+                    "$ref": "#/$defs/track"
+                  }
+                ]
+              }
+            },
+            "required": [
+              "x",
+              "y",
+              "zoom"
+            ],
+            "additionalProperties": false
+          },
+          "nodes": {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/node"
+            },
+            "minItems": 1,
+            "maxItems": 600
+          }
+        },
+        "required": [
+          "id",
+          "start",
+          "end",
+          "purpose",
+          "background",
+          "nodes"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 1,
+      "maxItems": 40
+    },
+    "beats": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9_-]{0,63}$"
+          },
+          "shot": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9_-]{0,63}$"
+          },
+          "frame": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 7200
+          },
+          "description": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 3000
+          },
+          "requirements": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^[a-z][a-z0-9_-]{0,63}$"
+            },
+            "minItems": 1,
+            "maxItems": 24
+          },
+          "nodes": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^[a-z][a-z0-9_-]{0,63}$"
+            },
+            "minItems": 1,
+            "maxItems": 40
+          }
+        },
+        "required": [
+          "id",
+          "shot",
+          "frame",
+          "description",
+          "requirements",
+          "nodes"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 1,
+      "maxItems": 120
+    },
+    "audio": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "frame": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 7200
+          },
+          "duration": {
+            "type": "number",
+            "exclusiveMinimum": 0,
+            "maximum": 5
+          },
+          "frequency": {
+            "type": "number",
+            "minimum": 40,
+            "maximum": 4000
+          },
+          "gain": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 0.5
+          },
+          "kind": {
+            "enum": [
+              "bell",
+              "pop",
+              "purr"
+            ]
+          }
+        },
+        "required": [
+          "frame",
+          "duration",
+          "frequency",
+          "gain",
+          "kind"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 0,
+      "maxItems": 200
+    }
+  },
+  "required": [
+    "schema_version",
+    "title",
+    "brief",
+    "fps",
+    "frames",
+    "assets",
+    "shots",
+    "beats",
+    "audio"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:animation-kit:story:2.0",
+  "$defs": {
+    "node": {
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "pattern": "^[a-z][a-z0-9_-]{0,63}$"
+            },
+            "x": {
+              "oneOf": [
+                {
+                  "type": "number",
+                  "minimum": -10000,
+                  "maximum": 10000
+                },
+                {
+                  "$ref": "#/$defs/track"
+                }
+              ]
+            },
+            "y": {
+              "oneOf": [
+                {
+                  "type": "number",
+                  "minimum": -10000,
+                  "maximum": 10000
+                },
+                {
+                  "$ref": "#/$defs/track"
+                }
+              ]
+            },
+            "scale_x": {
+              "oneOf": [
+                {
+                  "type": "number",
+                  "minimum": -10000,
+                  "maximum": 10000
+                },
+                {
+                  "$ref": "#/$defs/track"
+                }
+              ]
+            },
+            "scale_y": {
+              "oneOf": [
+                {
+                  "type": "number",
+                  "minimum": -10000,
+                  "maximum": 10000
+                },
+                {
+                  "$ref": "#/$defs/track"
+                }
+              ]
+            },
+            "rotation": {
+              "oneOf": [
+                {
+                  "type": "number",
+                  "minimum": -10000,
+                  "maximum": 10000
+                },
+                {
+                  "$ref": "#/$defs/track"
+                }
+              ]
+            },
+            "opacity": {
+              "oneOf": [
+                {
+                  "type": "number",
+                  "minimum": -10000,
+                  "maximum": 10000
+                },
+                {
+                  "$ref": "#/$defs/track"
+                }
+              ]
+            },
+            "fill": {
+              "oneOf": [
+                {
+                  "type": "string",
+                  "pattern": "^#[0-9a-fA-F]{6}$"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "stroke": {
+              "oneOf": [
+                {
+                  "type": "string",
+                  "pattern": "^#[0-9a-fA-F]{6}$"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "stroke_width": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 80
+            },
+            "kind": {
+              "const": "group"
+            },
+            "children": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/node"
+              },
+              "minItems": 1,
+              "maxItems": 600
+            }
+          },
+          "required": [
+            "id",
+            "kind",
+            "children"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "pattern": "^[a-z][a-z0-9_-]{0,63}$"
+            },
+            "x": {
+              "oneOf": [
+                {
+                  "type": "number",
+                  "minimum": -10000,
+                  "maximum": 10000
+                },
+                {
+                  "$ref": "#/$defs/track"
+                }
+              ]
+            },
+            "y": {
+              "oneOf": [
+                {
+                  "type": "number",
+                  "minimum": -10000,
+                  "maximum": 10000
+                },
+                {
+                  "$ref": "#/$defs/track"
+                }
+              ]
+            },
+            "scale_x": {
+              "oneOf": [
+                {
+                  "type": "number",
+                  "minimum": -10000,
+                  "maximum": 10000
+                },
+                {
+                  "$ref": "#/$defs/track"
+                }
+              ]
+            },
+            "scale_y": {
+              "oneOf": [
+                {
+                  "type": "number",
+                  "minimum": -10000,
+                  "maximum": 10000
+                },
+                {
+                  "$ref": "#/$defs/track"
+                }
+              ]
+            },
+            "rotation": {
+              "oneOf": [
+                {
+                  "type": "number",
+                  "minimum": -10000,
+                  "maximum": 10000
+                },
+                {
+                  "$ref": "#/$defs/track"
+                }
+              ]
+            },
+            "opacity": {
+              "oneOf": [
+                {
+                  "type": "number",
+                  "minimum": -10000,
+                  "maximum": 10000
+                },
+                {
+                  "$ref": "#/$defs/track"
+                }
+              ]
+            },
+            "fill": {
+              "oneOf": [
+                {
+                  "type": "string",
+                  "pattern": "^#[0-9a-fA-F]{6}$"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "stroke": {
+              "oneOf": [
+                {
+                  "type": "string",
+                  "pattern": "^#[0-9a-fA-F]{6}$"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "stroke_width": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 80
+            },
+            "kind": {
+              "const": "ellipse"
+            },
+            "rx": {
+              "type": "number",
+              "exclusiveMinimum": 0,
+              "maximum": 4000
+            },
+            "ry": {
+              "type": "number",
+              "exclusiveMinimum": 0,
+              "maximum": 4000
+            }
+          },
+          "required": [
+            "id",
+            "kind",
+            "rx",
+            "ry"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "pattern": "^[a-z][a-z0-9_-]{0,63}$"
+            },
+            "x": {
+              "oneOf": [
+                {
+                  "type": "number",
+                  "minimum": -10000,
+                  "maximum": 10000
+                },
+                {
+                  "$ref": "#/$defs/track"
+                }
+              ]
+            },
+            "y": {
+              "oneOf": [
+                {
+                  "type": "number",
+                  "minimum": -10000,
+                  "maximum": 10000
+                },
+                {
+                  "$ref": "#/$defs/track"
+                }
+              ]
+            },
+            "scale_x": {
+              "oneOf": [
+                {
+                  "type": "number",
+                  "minimum": -10000,
+                  "maximum": 10000
+                },
+                {
+                  "$ref": "#/$defs/track"
+                }
+              ]
+            },
+            "scale_y": {
+              "oneOf": [
+                {
+                  "type": "number",
+                  "minimum": -10000,
+                  "maximum": 10000
+                },
+                {
+                  "$ref": "#/$defs/track"
+                }
+              ]
+            },
+            "rotation": {
+              "oneOf": [
+                {
+                  "type": "number",
+                  "minimum": -10000,
+                  "maximum": 10000
+                },
+                {
+                  "$ref": "#/$defs/track"
+                }
+              ]
+            },
+            "opacity": {
+              "oneOf": [
+                {
+                  "type": "number",
+                  "minimum": -10000,
+                  "maximum": 10000
+                },
+                {
+                  "$ref": "#/$defs/track"
+                }
+              ]
+            },
+            "fill": {
+              "oneOf": [
+                {
+                  "type": "string",
+                  "pattern": "^#[0-9a-fA-F]{6}$"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "stroke": {
+              "oneOf": [
+                {
+                  "type": "string",
+                  "pattern": "^#[0-9a-fA-F]{6}$"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "stroke_width": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 80
+            },
+            "kind": {
+              "const": "rect"
+            },
+            "width": {
+              "type": "number",
+              "exclusiveMinimum": 0,
+              "maximum": 8000
+            },
+            "height": {
+              "type": "number",
+              "exclusiveMinimum": 0,
+              "maximum": 8000
+            },
+            "radius": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 4000
+            }
+          },
+          "required": [
+            "id",
+            "kind",
+            "width",
+            "height"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "pattern": "^[a-z][a-z0-9_-]{0,63}$"
+            },
+            "x": {
+              "oneOf": [
+                {
+                  "type": "number",
+                  "minimum": -10000,
+                  "maximum": 10000
+                },
+                {
+                  "$ref": "#/$defs/track"
+                }
+              ]
+            },
+            "y": {
+              "oneOf": [
+                {
+                  "type": "number",
+                  "minimum": -10000,
+                  "maximum": 10000
+                },
+                {
+                  "$ref": "#/$defs/track"
+                }
+              ]
+            },
+            "scale_x": {
+              "oneOf": [
+                {
+                  "type": "number",
+                  "minimum": -10000,
+                  "maximum": 10000
+                },
+                {
+                  "$ref": "#/$defs/track"
+                }
+              ]
+            },
+            "scale_y": {
+              "oneOf": [
+                {
+                  "type": "number",
+                  "minimum": -10000,
+                  "maximum": 10000
+                },
+                {
+                  "$ref": "#/$defs/track"
+                }
+              ]
+            },
+            "rotation": {
+              "oneOf": [
+                {
+                  "type": "number",
+                  "minimum": -10000,
+                  "maximum": 10000
+                },
+                {
+                  "$ref": "#/$defs/track"
+                }
+              ]
+            },
+            "opacity": {
+              "oneOf": [
+                {
+                  "type": "number",
+                  "minimum": -10000,
+                  "maximum": 10000
+                },
+                {
+                  "$ref": "#/$defs/track"
+                }
+              ]
+            },
+            "fill": {
+              "oneOf": [
+                {
+                  "type": "string",
+                  "pattern": "^#[0-9a-fA-F]{6}$"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "stroke": {
+              "oneOf": [
+                {
+                  "type": "string",
+                  "pattern": "^#[0-9a-fA-F]{6}$"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "stroke_width": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 80
+            },
+            "kind": {
+              "const": "polygon"
+            },
+            "points": {
+              "type": "array",
+              "items": {
+                "type": "array",
+                "items": {
+                  "type": "number",
+                  "minimum": -10000,
+                  "maximum": 10000
+                },
+                "minItems": 2,
+                "maxItems": 2
+              },
+              "minItems": 3,
+              "maxItems": 500
+            }
+          },
+          "required": [
+            "id",
+            "kind",
+            "points"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "pattern": "^[a-z][a-z0-9_-]{0,63}$"
+            },
+            "x": {
+              "oneOf": [
+                {
+                  "type": "number",
+                  "minimum": -10000,
+                  "maximum": 10000
+                },
+                {
+                  "$ref": "#/$defs/track"
+                }
+              ]
+            },
+            "y": {
+              "oneOf": [
+                {
+                  "type": "number",
+                  "minimum": -10000,
+                  "maximum": 10000
+                },
+                {
+                  "$ref": "#/$defs/track"
+                }
+              ]
+            },
+            "scale_x": {
+              "oneOf": [
+                {
+                  "type": "number",
+                  "minimum": -10000,
+                  "maximum": 10000
+                },
+                {
+                  "$ref": "#/$defs/track"
+                }
+              ]
+            },
+            "scale_y": {
+              "oneOf": [
+                {
+                  "type": "number",
+                  "minimum": -10000,
+                  "maximum": 10000
+                },
+                {
+                  "$ref": "#/$defs/track"
+                }
+              ]
+            },
+            "rotation": {
+              "oneOf": [
+                {
+                  "type": "number",
+                  "minimum": -10000,
+                  "maximum": 10000
+                },
+                {
+                  "$ref": "#/$defs/track"
+                }
+              ]
+            },
+            "opacity": {
+              "oneOf": [
+                {
+                  "type": "number",
+                  "minimum": -10000,
+                  "maximum": 10000
+                },
+                {
+                  "$ref": "#/$defs/track"
+                }
+              ]
+            },
+            "fill": {
+              "oneOf": [
+                {
+                  "type": "string",
+                  "pattern": "^#[0-9a-fA-F]{6}$"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "stroke": {
+              "oneOf": [
+                {
+                  "type": "string",
+                  "pattern": "^#[0-9a-fA-F]{6}$"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "stroke_width": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 80
+            },
+            "kind": {
+              "const": "path"
+            },
+            "commands": {
+              "type": "array",
+              "items": {
+                "oneOf": [
+                  {
+                    "type": "array",
+                    "prefixItems": [
+                      {
+                        "const": "M"
+                      },
+                      {
+                        "type": "number",
+                        "minimum": -10000,
+                        "maximum": 10000
+                      },
+                      {
+                        "type": "number",
+                        "minimum": -10000,
+                        "maximum": 10000
+                      }
+                    ],
+                    "items": false,
+                    "minItems": 3,
+                    "maxItems": 3
+                  },
+                  {
+                    "type": "array",
+                    "prefixItems": [
+                      {
+                        "const": "L"
+                      },
+                      {
+                        "type": "number",
+                        "minimum": -10000,
+                        "maximum": 10000
+                      },
+                      {
+                        "type": "number",
+                        "minimum": -10000,
+                        "maximum": 10000
+                      }
+                    ],
+                    "items": false,
+                    "minItems": 3,
+                    "maxItems": 3
+                  },
+                  {
+                    "type": "array",
+                    "prefixItems": [
+                      {
+                        "const": "Q"
+                      },
+                      {
+                        "type": "number",
+                        "minimum": -10000,
+                        "maximum": 10000
+                      },
+                      {
+                        "type": "number",
+                        "minimum": -10000,
+                        "maximum": 10000
+                      },
+                      {
+                        "type": "number",
+                        "minimum": -10000,
+                        "maximum": 10000
+                      },
+                      {
+                        "type": "number",
+                        "minimum": -10000,
+                        "maximum": 10000
+                      }
+                    ],
+                    "items": false,
+                    "minItems": 5,
+                    "maxItems": 5
+                  },
+                  {
+                    "type": "array",
+                    "prefixItems": [
+                      {
+                        "const": "C"
+                      },
+                      {
+                        "type": "number",
+                        "minimum": -10000,
+                        "maximum": 10000
+                      },
+                      {
+                        "type": "number",
+                        "minimum": -10000,
+                        "maximum": 10000
+                      },
+                      {
+                        "type": "number",
+                        "minimum": -10000,
+                        "maximum": 10000
+                      },
+                      {
+                        "type": "number",
+                        "minimum": -10000,
+                        "maximum": 10000
+                      },
+                      {
+                        "type": "number",
+                        "minimum": -10000,
+                        "maximum": 10000
+                      },
+                      {
+                        "type": "number",
+                        "minimum": -10000,
+                        "maximum": 10000
+                      }
+                    ],
+                    "items": false,
+                    "minItems": 7,
+                    "maxItems": 7
+                  },
+                  {
+                    "type": "array",
+                    "prefixItems": [
+                      {
+                        "const": "Z"
+                      }
+                    ],
+                    "items": false,
+                    "minItems": 1,
+                    "maxItems": 1
+                  }
+                ]
+              },
+              "minItems": 2,
+              "maxItems": 500
+            }
+          },
+          "required": [
+            "id",
+            "kind",
+            "commands"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "pattern": "^[a-z][a-z0-9_-]{0,63}$"
+            },
+            "x": {
+              "oneOf": [
+                {
+                  "type": "number",
+                  "minimum": -10000,
+                  "maximum": 10000
+                },
+                {
+                  "$ref": "#/$defs/track"
+                }
+              ]
+            },
+            "y": {
+              "oneOf": [
+                {
+                  "type": "number",
+                  "minimum": -10000,
+                  "maximum": 10000
+                },
+                {
+                  "$ref": "#/$defs/track"
+                }
+              ]
+            },
+            "scale_x": {
+              "oneOf": [
+                {
+                  "type": "number",
+                  "minimum": -10000,
+                  "maximum": 10000
+                },
+                {
+                  "$ref": "#/$defs/track"
+                }
+              ]
+            },
+            "scale_y": {
+              "oneOf": [
+                {
+                  "type": "number",
+                  "minimum": -10000,
+                  "maximum": 10000
+                },
+                {
+                  "$ref": "#/$defs/track"
+                }
+              ]
+            },
+            "rotation": {
+              "oneOf": [
+                {
+                  "type": "number",
+                  "minimum": -10000,
+                  "maximum": 10000
+                },
+                {
+                  "$ref": "#/$defs/track"
+                }
+              ]
+            },
+            "opacity": {
+              "oneOf": [
+                {
+                  "type": "number",
+                  "minimum": -10000,
+                  "maximum": 10000
+                },
+                {
+                  "$ref": "#/$defs/track"
+                }
+              ]
+            },
+            "fill": {
+              "oneOf": [
+                {
+                  "type": "string",
+                  "pattern": "^#[0-9a-fA-F]{6}$"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "stroke": {
+              "oneOf": [
+                {
+                  "type": "string",
+                  "pattern": "^#[0-9a-fA-F]{6}$"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "stroke_width": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 80
+            },
+            "kind": {
+              "const": "text"
+            },
+            "text": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 500
+            },
+            "font": {
+              "enum": [
+                "sans",
+                "display"
+              ]
+            },
+            "size": {
+              "type": "number",
+              "minimum": 8,
+              "maximum": 400
+            },
+            "align": {
+              "enum": [
+                "left",
+                "center",
+                "right"
+              ]
+            }
+          },
+          "required": [
+            "id",
+            "kind",
+            "text",
+            "size"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "pattern": "^[a-z][a-z0-9_-]{0,63}$"
+            },
+            "x": {
+              "oneOf": [
+                {
+                  "type": "number",
+                  "minimum": -10000,
+                  "maximum": 10000
+                },
+                {
+                  "$ref": "#/$defs/track"
+                }
+              ]
+            },
+            "y": {
+              "oneOf": [
+                {
+                  "type": "number",
+                  "minimum": -10000,
+                  "maximum": 10000
+                },
+                {
+                  "$ref": "#/$defs/track"
+                }
+              ]
+            },
+            "scale_x": {
+              "oneOf": [
+                {
+                  "type": "number",
+                  "minimum": -10000,
+                  "maximum": 10000
+                },
+                {
+                  "$ref": "#/$defs/track"
+                }
+              ]
+            },
+            "scale_y": {
+              "oneOf": [
+                {
+                  "type": "number",
+                  "minimum": -10000,
+                  "maximum": 10000
+                },
+                {
+                  "$ref": "#/$defs/track"
+                }
+              ]
+            },
+            "rotation": {
+              "oneOf": [
+                {
+                  "type": "number",
+                  "minimum": -10000,
+                  "maximum": 10000
+                },
+                {
+                  "$ref": "#/$defs/track"
+                }
+              ]
+            },
+            "opacity": {
+              "oneOf": [
+                {
+                  "type": "number",
+                  "minimum": -10000,
+                  "maximum": 10000
+                },
+                {
+                  "$ref": "#/$defs/track"
+                }
+              ]
+            },
+            "fill": {
+              "oneOf": [
+                {
+                  "type": "string",
+                  "pattern": "^#[0-9a-fA-F]{6}$"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "stroke": {
+              "oneOf": [
+                {
+                  "type": "string",
+                  "pattern": "^#[0-9a-fA-F]{6}$"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "stroke_width": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 80
+            },
+            "kind": {
+              "const": "instance"
+            },
+            "asset": {
+              "type": "string",
+              "pattern": "^[a-z][a-z0-9_-]{0,63}$"
+            },
+            "overrides": {
+              "type": "object",
+              "propertyNames": {
+                "type": "string",
+                "pattern": "^[a-z][a-z0-9_-]{0,63}$"
+              },
+              "additionalProperties": {
+                "type": "object",
+                "properties": {
+                  "x": {
+                    "oneOf": [
+                      {
+                        "type": "number",
+                        "minimum": -10000,
+                        "maximum": 10000
+                      },
+                      {
+                        "$ref": "#/$defs/track"
+                      }
+                    ]
+                  },
+                  "y": {
+                    "oneOf": [
+                      {
+                        "type": "number",
+                        "minimum": -10000,
+                        "maximum": 10000
+                      },
+                      {
+                        "$ref": "#/$defs/track"
+                      }
+                    ]
+                  },
+                  "scale_x": {
+                    "oneOf": [
+                      {
+                        "type": "number",
+                        "minimum": -10000,
+                        "maximum": 10000
+                      },
+                      {
+                        "$ref": "#/$defs/track"
+                      }
+                    ]
+                  },
+                  "scale_y": {
+                    "oneOf": [
+                      {
+                        "type": "number",
+                        "minimum": -10000,
+                        "maximum": 10000
+                      },
+                      {
+                        "$ref": "#/$defs/track"
+                      }
+                    ]
+                  },
+                  "rotation": {
+                    "oneOf": [
+                      {
+                        "type": "number",
+                        "minimum": -10000,
+                        "maximum": 10000
+                      },
+                      {
+                        "$ref": "#/$defs/track"
+                      }
+                    ]
+                  },
+                  "opacity": {
+                    "oneOf": [
+                      {
+                        "type": "number",
+                        "minimum": -10000,
+                        "maximum": 10000
+                      },
+                      {
+                        "$ref": "#/$defs/track"
+                      }
+                    ]
+                  },
+                  "fill": {
+                    "oneOf": [
+                      {
+                        "type": "string",
+                        "pattern": "^#[0-9a-fA-F]{6}$"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "stroke": {
+                    "oneOf": [
+                      {
+                        "type": "string",
+                        "pattern": "^#[0-9a-fA-F]{6}$"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "stroke_width": {
+                    "type": "number",
+                    "minimum": 0,
+                    "maximum": 80
+                  }
+                },
+                "required": [],
+                "additionalProperties": false
+              }
+            }
+          },
+          "required": [
+            "id",
+            "kind",
+            "asset"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "track": {
+      "type": "object",
+      "properties": {
+        "keys": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "frame": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 7200
+              },
+              "value": {
+                "type": "number",
+                "minimum": -10000,
+                "maximum": 10000
+              },
+              "ease": {
+                "enum": [
+                  "linear",
+                  "hold",
+                  "smooth",
+                  "in_cubic",
+                  "out_cubic",
+                  "out_back"
+                ]
+              }
+            },
+            "required": [
+              "frame",
+              "value"
+            ],
+            "additionalProperties": false
+          },
+          "minItems": 1,
+          "maxItems": 500
+        }
+      },
+      "required": [
+        "keys"
+      ],
+      "additionalProperties": false
+    }
+  }
+}

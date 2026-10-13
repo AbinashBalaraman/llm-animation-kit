@@ -7,7 +7,7 @@ ROOT=Path(__file__).resolve().parents[1]/"animation_kit"/"data"
 def write(relative,value):
     path=ROOT/relative
     path.parent.mkdir(parents=True,exist_ok=True)
-    path.write_text(json.dumps(value,indent=2)+"\n",encoding="utf-8")
+    path.write_text(json.dumps(value,indent=2)+"\n",encoding="utf-8",newline="\n")
 
 def obj(properties,required=None):
     return {"type":"object","properties":properties,"required":list(properties) if required is None else required,"additionalProperties":False}
@@ -153,3 +153,9 @@ for ident,keywords,purpose,rules,example in RECIPES:
     write(f"recipes/{ident}.json",{"id":ident,"version":"1.0","backend":"puppet2d_v1","purpose":purpose,"keywords":keywords,"rules":rules,"example":example,
                                   "inspection":"Playable preview plus contact sheet/action-boundary frames; human or vision review for appeal.","stop":"Stop when requested effect is reviewed or workflow budget is exhausted."})
 print("Catalog, strict schemas, six recipes and three editable examples generated.")
+import runpy
+runpy.run_path(str(Path(__file__).with_name("build_story_catalog.py")))
+from animation_kit.authoring import save
+for script,folder in [("create_cat_president.py","cat-president"),("create_space_toaster.py","space-toaster"),("create_stack_explainer.py","stack-explainer")]:
+    authored=runpy.run_path(str(Path(__file__).with_name(script)))["make_story"]()
+    save(authored,ROOT.parents[1]/"examples"/"stories"/folder/"story.json")

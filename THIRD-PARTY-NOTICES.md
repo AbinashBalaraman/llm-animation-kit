@@ -10,3 +10,5 @@ The local verification used Python 3.13.1, Pillow 11.3.0 and imageio-ffmpeg's FF
 - https://ffmpeg.org/legal.html
 
 Code and original procedural artwork are provided separately: runtime source GPL-3.0-or-later, authored artwork/example scenes CC0-1.0. User-imported material retains its own terms.
+
+Version 0.2.0 bundles Lilita One and Nunito Sans font files from the Google Fonts repository, each under SIL Open Font License 1.1. Their complete original copyright/license notices accompany the files in `animation_kit/data/fonts/`. Sources: [Lilita One](https://github.com/google/fonts/tree/main/ofl/lilitaone), [Nunito Sans](https://github.com/google/fonts/tree/main/ofl/nunitosans). Font files are not covered by the project's artwork dedication.

@@ -41,6 +41,27 @@ def ffmpeg_path():
 
 
 def soundtrack(path,scene):
+    if scene.get("schema_version") == "kit.story/2.0":
+        from array import array
+        rate=24000
+        count=math.ceil(scene["frames"]*rate/scene["fps"])
+        samples=array("f",[0])*count
+        for cue in scene["audio"]:
+            start=round(cue["frame"]*rate/scene["fps"])
+            length=round(cue["duration"]*rate)
+            for j in range(min(length,count-start)):
+                t=j/rate
+                envelope=min(1,t/.008)*max(0,1-j/length)**2
+                frequency=cue["frequency"]
+                if cue["kind"]=="pop": frequency*=1+2*math.exp(-30*t)
+                tone=math.sin(math.tau*frequency*t)
+                if cue["kind"]=="bell": tone=(tone+.3*math.sin(math.tau*frequency*2*t))/1.3
+                if cue["kind"]=="purr": tone*=.4+.6*abs(math.sin(math.tau*24*t))
+                samples[start+j]+=cue["gain"]*envelope*tone
+        with wave.open(str(path),"wb") as output:
+            output.setparams((1,2,rate,0,"NONE","not compressed"))
+            output.writeframes(b"".join(struct.pack("<h",round(max(-1,min(1,v))*32767)) for v in samples))
+        return
     rate=48000
     count=scene["frames"]*rate//scene["fps"]
     accents=[a["start"]/scene["fps"] for a in scene["actions"] if a["type"]=="expression"]
@@ -64,16 +85,31 @@ def artifact_valid(path,expected):
     return path.is_file() and file_hash(path)==expected
 
 
+def engine_fingerprint(ffmpeg_version):
+    from .contracts import DATA
+    return digest({"components":file_hash(Path(__file__).with_name("components.py")),
+                   "story":file_hash(Path(__file__).with_name("story.py")),
+                   "fonts":{p.name:file_hash(Path(str(p))) for p in DATA.joinpath("fonts").iterdir() if p.name.endswith(".ttf")},
+                   "renderer":file_hash(Path(__file__)),"pillow":pillow_version,"ffmpeg":ffmpeg_version})
+
+
 def render(store,project_id,profile="preview",expected_scene_hash=None):
     started=time.monotonic()
     width,height=PROFILES[profile]
     executable,ffmpeg_version=ffmpeg_path()
-    engine_hash=digest({"components":file_hash(Path(__file__).with_name("components.py")),"renderer":file_hash(Path(__file__)),"pillow":pillow_version,"ffmpeg":ffmpeg_version})
+    engine_hash=engine_fingerprint(ffmpeg_version)
     with store.lock(project_id) as project:
         snapshot=store.load(project_id)
         if expected_scene_hash is not None and snapshot["scene_hash"]!=expected_scene_hash:
             raise KitError("stale_render","Project changed after review; inspect and review the new revision.")
         scene=snapshot["scene"]
+        is_story=scene.get("schema_version")=="kit.story/2.0"
+        render_frame=draw_frame
+        evaluate_frame=evaluate
+        if is_story:
+            from .story import draw_frame as render_frame, evaluate as evaluate_story, trace as story_trace
+            evaluate_frame=lambda s,f: story_trace(evaluate_story(s,f))
+        has_sound=bool(scene["audio"]) if is_story else scene["sound"]=="chime"
         key=digest({"scene":snapshot["scene_hash"],"profile":profile,"engine":engine_hash})[:24]
         folder=(project/"renders"/key).resolve()
         if not folder.is_relative_to(store.root):
@@ -90,7 +126,7 @@ def render(store,project_id,profile="preview",expected_scene_hash=None):
         frames_dir.mkdir(exist_ok=True)
         old_frames=manifest.get("frames",{})
         manifest={"job_id":key,"revision":snapshot["revision"],"scene_hash":snapshot["scene_hash"],"engine_hash":engine_hash,
-                  "backend":"puppet2d_v1","profile":profile,"width":width,"height":height,"fps":scene["fps"],"frame_count":scene["frames"],
+                  "backend":"authored2d_v2" if is_story else "puppet2d_v1","profile":profile,"width":width,"height":height,"fps":scene["fps"],"frame_count":scene["frames"],
                   "ffmpeg":ffmpeg_version,"status":"running","frames":{},"artifacts":{},"cached":False}
         atomic_json(manifest_path,manifest)
         trace=[]
@@ -101,17 +137,17 @@ def render(store,project_id,profile="preview",expected_scene_hash=None):
                 name=f"{frame:06d}.png"
                 destination=frames_dir/name
                 if artifact_valid(destination,old_frames.get(name,"")):
-                    state=evaluate(scene,frame)
+                    state=evaluate_frame(scene,frame)
                     resumed+=1
                 else:
-                    image,state=draw_frame(scene,frame,width,height)
+                    image,state=render_frame(scene,frame,width,height)
                     temporary=frames_dir/f".{name}.tmp"
                     image.save(temporary,format="PNG")
                     os.replace(temporary,destination)
                 manifest["frames"][name]=file_hash(destination)
                 trace.append(state)
                 camera=state["camera"]
-                for actor in state["actors"].values():
+                for actor in state.get("actors",{}).values():
                     left=(actor["x"]-75*actor["scale"]-camera["x"])*camera["zoom"]+480
                     right=(actor["x"]+110*actor["scale"]-camera["x"])*camera["zoom"]+480
                     top=(actor["y"]-235*actor["scale"]-camera["y"])*camera["zoom"]+270
@@ -121,7 +157,8 @@ def render(store,project_id,profile="preview",expected_scene_hash=None):
                 if frame%24==23:
                     atomic_json(manifest_path,manifest)
             atomic_json(folder/"trace.json",{"frames":trace,"diagnostics":warnings,"limits":["No 3D collision/contact solver","Technical diagnostics do not certify visual appeal"]})
-            sampled=sorted(set([0,scene["frames"]-1]+[min(scene["frames"]-1,int(scene["frames"]*i/7)) for i in range(1,7)]+[a["start"] for a in scene["actions"]]))
+            markers=([b["frame"] for b in scene["beats"]] + [s["start"] for s in scene["shots"]]) if is_story else [a["start"] for a in scene["actions"]]
+            sampled=sorted(set([0,scene["frames"]-1]+[min(scene["frames"]-1,int(scene["frames"]*i/7)) for i in range(1,7)]+markers))
             # Contact sheet includes temporal evidence and action onsets.
             tw,th=320,180
             columns=4
@@ -136,7 +173,7 @@ def render(store,project_id,profile="preview",expected_scene_hash=None):
                     draw.text((x+8,y+th+3),f"frame {frame} / {frame/scene['fps']:.2f}s",fill="#f6ecd7",font=font(12))
             sheet.save(folder/"contact-sheet.png")
             args=[executable,"-hide_banner","-loglevel","error","-y","-framerate",str(scene["fps"]),"-i",str(frames_dir/"%06d.png")]
-            if scene["sound"]=="chime":
+            if has_sound:
                 soundtrack(folder/"sound.wav",scene)
                 args += ["-i",str(folder/"sound.wav"),"-c:a","aac","-b:a","128k"]
             args += ["-frames:v",str(scene["frames"]),"-c:v","libx264","-preset","fast","-crf","20","-pix_fmt","yuv420p","-movflags","+faststart",str(folder/"video.tmp.mp4")]
@@ -153,7 +190,7 @@ def render(store,project_id,profile="preview",expected_scene_hash=None):
             if abs(meta["fps"]-scene["fps"])>.01:
                 raise KitError("fps_mismatch","Encoded frame rate differs from project.")
             artifacts=["video.mp4","contact-sheet.png","trace.json"]
-            if scene["sound"]=="chime":
+            if has_sound:
                 artifacts.append("sound.wav")
             # Editable source is included with every export.
             atomic_json(folder/"scene.json",scene)

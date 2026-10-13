@@ -1,15 +1,18 @@
-# CLI transport
+# CLI and MCP production
 
-Install the repository package once with `python -m pip install -e <repository-path>`. Use a fixed workspace for the project. The production tools are shared with MCP.
+Install in a Python 3.11+ virtual environment using `python -m pip install -e .`; run `python -m animation_kit doctor`. Fonts are packaged; FFmpeg comes from imageio-ffmpeg. Rendering needs no hosted model/account.
 
-```text
-python -m animation_kit --workspace <workspace> tools
-python -m animation_kit --workspace <workspace> call discover_capabilities
-python -m animation_kit --workspace <workspace> call get_context --input <arguments.json>
-```
+`python -m animation_kit tools` prints tool schemas. Call with `python -m animation_kit --workspace .kit-workspace call TOOL --input arguments.json`. Use real JSON files for shell-safe arguments. `get_schema` defaults to v2; `{'version':'legacy'}` is for old exercises only.
 
-Write exact JSON tool arguments to a file and pass `--input`; this avoids shell quoting mistakes. The response is `{ok,result}` or `{ok:false,error}` with a code, pointer and repair hint. CLI failure exits nonzero. The scene schema and arguments must match discovery; do not infer field names from prose.
+1. Author a new story JSON, usually with a local Python script and the SDK.
+2. `start_workflow` with the original brief and a call/render budget, e.g. 36 calls and 8 renders. Keep its `workflow_id`.
+3. Use `workflow_step` with `workflow_id`, `tool`, and `arguments`. Nested tool failures appear in `result.response`; inspect that result too.
+4. `create_project` takes `project_id` and the authored document as `scene`. `check_story` checks structural evidence; `preview_frames` renders drawing/acting samples; `preview` encodes an MP4.
+5. `inspect_artifact` takes project and preview `job_id`. Add `frame` and `include_image: true` for an explicit PNG in a vision-capable MCP host.
+6. Use `review_story`, `render_final`, then `finish_workflow` with a truthful outcome: `complete`, `needs_review`, `unsupported`, or `budget_exhausted`.
 
-For MCP stdio use `python -m animation_kit --workspace <workspace> serve`. It exposes the same tools with JSON-RPC. A host should provide its normal tool controls and image display. Tools perform no remote model or asset downloads.
+For a shell workflow, `scripts/produce_story.py prepare --scene YOUR.json --project YOUR_ID` creates/previews through those tools and returns a run file. After actual inspection, write the review fields described in `review.md` (the run supplies project/revision/job identity), then run `scripts/produce_story.py finish --run RUN.json --review REVIEW.json --output OUTPUT_DIR`. It never manufactures approval. Rejected work needs repair and a new preview through the shared tools.
 
-Projects hold immutable snapshots, a current pointer, render manifests, frames, review records and editable scene JSON. Keep the workspace between agent sessions. Never edit generated snapshots directly; apply a revision or undo through tools.
+For MCP, run `python -m animation_kit --workspace /absolute/workspace serve` as stdio; see `agent-kit/mcp.example.json`. Configure the host with the absolute virtual-environment Python path.
+
+The server consumes JSON and does not execute model-supplied scene code. Authoring Python is ordinary code running in the chosen host, with that host's permissions; the kit does not sandbox it. The package calls no LLM unless a consuming application supplies a provider to its optional agent loop.

@@ -1,0 +1,983 @@
+{
+  "schema_version": "kit.story/2.0",
+  "title": "One small step for toast",
+  "brief": {
+    "prompt": "A tiny toaster dreams of space, launches its toast like a rocket, and watches it become a moon.",
+    "requirements": [
+      {
+        "id": "toaster",
+        "description": "A recognizable toaster is the protagonist."
+      },
+      {
+        "id": "launch",
+        "description": "Toast visibly launches from the toaster like a rocket."
+      },
+      {
+        "id": "moon",
+        "description": "The launched toast becomes a moon in space, with a visual payoff."
+      }
+    ]
+  },
+  "fps": 24,
+  "frames": 240,
+  "assets": [
+    {
+      "id": "toaster",
+      "description": "An original coral countertop toaster with top slots, eyes, a lever and feet.",
+      "nodes": [
+        {
+          "id": "body",
+          "kind": "rect",
+          "width": 210,
+          "height": 133,
+          "fill": "#E98370",
+          "x": -105,
+          "y": -133,
+          "radius": 33,
+          "stroke": "#222943",
+          "stroke_width": 5
+        },
+        {
+          "id": "top",
+          "kind": "ellipse",
+          "rx": 90,
+          "ry": 21,
+          "fill": "#D46762",
+          "y": -128,
+          "stroke": "#222943",
+          "stroke_width": 3
+        },
+        {
+          "id": "slot",
+          "kind": "rect",
+          "width": 122,
+          "height": 10,
+          "fill": "#222943",
+          "x": -61,
+          "y": -137,
+          "radius": 5
+        },
+        {
+          "id": "eye_left",
+          "kind": "ellipse",
+          "rx": 8,
+          "ry": 12,
+          "fill": "#222943",
+          "x": -38,
+          "y": -79
+        },
+        {
+          "id": "eye_right",
+          "kind": "ellipse",
+          "rx": 8,
+          "ry": 12,
+          "fill": "#222943",
+          "x": 38,
+          "y": -79
+        },
+        {
+          "id": "smile",
+          "kind": "path",
+          "commands": [
+            [
+              "M",
+              -15,
+              -53
+            ],
+            [
+              "Q",
+              0,
+              -36,
+              15,
+              -53
+            ]
+          ],
+          "fill": null,
+          "stroke": "#222943",
+          "stroke_width": 4
+        },
+        {
+          "id": "lever_slot",
+          "kind": "rect",
+          "width": 7,
+          "height": 74,
+          "fill": "#222943",
+          "x": 101,
+          "y": -111,
+          "radius": 3
+        },
+        {
+          "id": "lever",
+          "kind": "group",
+          "children": [
+            {
+              "id": "stem",
+              "kind": "rect",
+              "width": 26,
+              "height": 7,
+              "fill": "#222943"
+            },
+            {
+              "id": "knob",
+              "kind": "ellipse",
+              "rx": 13,
+              "ry": 11,
+              "fill": "#6DC7BC",
+              "x": 30,
+              "y": 4,
+              "stroke": "#222943",
+              "stroke_width": 3
+            }
+          ],
+          "x": 107,
+          "y": -105
+        },
+        {
+          "id": "foot_left",
+          "kind": "rect",
+          "width": 33,
+          "height": 13,
+          "fill": "#222943",
+          "x": -77,
+          "y": -1,
+          "radius": 4
+        },
+        {
+          "id": "foot_right",
+          "kind": "rect",
+          "width": 33,
+          "height": 13,
+          "fill": "#222943",
+          "x": 44,
+          "y": -1,
+          "radius": 4
+        }
+      ]
+    },
+    {
+      "id": "toast",
+      "description": "A piece of golden toast with rounded crown and dark crust, entirely authored vector geometry.",
+      "nodes": [
+        {
+          "id": "crust",
+          "kind": "path",
+          "commands": [
+            [
+              "M",
+              -53,
+              -35
+            ],
+            [
+              "C",
+              -83,
+              -102,
+              83,
+              -102,
+              53,
+              -35
+            ],
+            [
+              "L",
+              49,
+              62
+            ],
+            [
+              "Q",
+              0,
+              78,
+              -49,
+              62
+            ],
+            [
+              "Z"
+            ]
+          ],
+          "fill": "#B57444",
+          "stroke": "#222943",
+          "stroke_width": 4
+        },
+        {
+          "id": "crumb",
+          "kind": "path",
+          "commands": [
+            [
+              "M",
+              -40,
+              -32
+            ],
+            [
+              "C",
+              -66,
+              -78,
+              66,
+              -78,
+              40,
+              -32
+            ],
+            [
+              "L",
+              38,
+              52
+            ],
+            [
+              "Q",
+              0,
+              63,
+              -38,
+              52
+            ],
+            [
+              "Z"
+            ]
+          ],
+          "fill": "#F7D287"
+        },
+        {
+          "id": "crumb_a",
+          "kind": "ellipse",
+          "rx": 5,
+          "ry": 4,
+          "fill": "#D8AA66",
+          "x": -18,
+          "y": -20
+        },
+        {
+          "id": "crumb_b",
+          "kind": "ellipse",
+          "rx": 4,
+          "ry": 3,
+          "fill": "#D8AA66",
+          "x": 20,
+          "y": 27
+        },
+        {
+          "id": "crumb_c",
+          "kind": "ellipse",
+          "rx": 3,
+          "ry": 3,
+          "fill": "#D8AA66",
+          "x": -14,
+          "y": 39
+        }
+      ]
+    }
+  ],
+  "shots": [
+    {
+      "id": "dream",
+      "start": 0,
+      "end": 72,
+      "purpose": "A toaster looks from the counter toward a space poster.",
+      "background": "#FFF0D8",
+      "nodes": [
+        {
+          "id": "counter",
+          "kind": "rect",
+          "width": 960,
+          "height": 150,
+          "fill": "#B9D5CA",
+          "y": 390
+        },
+        {
+          "id": "counter_edge",
+          "kind": "rect",
+          "width": 960,
+          "height": 12,
+          "fill": "#222943",
+          "y": 390
+        },
+        {
+          "id": "poster",
+          "kind": "rect",
+          "width": 221,
+          "height": 230,
+          "fill": "#222943",
+          "x": 650,
+          "y": 107,
+          "radius": 8
+        },
+        {
+          "id": "poster_moon",
+          "kind": "ellipse",
+          "rx": 57,
+          "ry": 57,
+          "fill": "#E3D8B9",
+          "x": 760,
+          "y": 197
+        },
+        {
+          "id": "poster_text",
+          "kind": "text",
+          "text": "DREAM BIG",
+          "x": 760,
+          "y": 292,
+          "size": 27,
+          "fill": "#FFF0D8",
+          "font": "display"
+        },
+        {
+          "id": "dreamer",
+          "kind": "instance",
+          "asset": "toaster",
+          "x": 351,
+          "y": 385,
+          "overrides": {
+            "lever": {
+              "y": {
+                "keys": [
+                  {
+                    "frame": 0,
+                    "value": -105,
+                    "ease": "smooth"
+                  },
+                  {
+                    "frame": 24,
+                    "value": -44,
+                    "ease": "smooth"
+                  },
+                  {
+                    "frame": 71,
+                    "value": -44,
+                    "ease": "smooth"
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "id": "title",
+          "kind": "text",
+          "text": "ONE SMALL STEP FOR TOAST",
+          "x": 480,
+          "y": 49,
+          "size": 38,
+          "fill": "#222943",
+          "font": "display"
+        },
+        {
+          "id": "caption",
+          "kind": "text",
+          "text": "Some appliances dream bigger.",
+          "x": 480,
+          "y": 487,
+          "size": 28,
+          "fill": "#222943"
+        }
+      ]
+    },
+    {
+      "id": "launch",
+      "start": 72,
+      "end": 168,
+      "purpose": "Toast accelerates upward from the slot with squash, anticipation and a flame.",
+      "background": "#AFD9E0",
+      "nodes": [
+        {
+          "id": "counter",
+          "kind": "rect",
+          "width": 960,
+          "height": 112,
+          "fill": "#B9D5CA",
+          "y": 428
+        },
+        {
+          "id": "counter_edge",
+          "kind": "rect",
+          "width": 960,
+          "height": 12,
+          "fill": "#222943",
+          "y": 428
+        },
+        {
+          "id": "rocket",
+          "kind": "group",
+          "children": [
+            {
+              "id": "flame",
+              "kind": "path",
+              "commands": [
+                [
+                  "M",
+                  -26,
+                  59
+                ],
+                [
+                  "Q",
+                  -15,
+                  108,
+                  0,
+                  149
+                ],
+                [
+                  "Q",
+                  17,
+                  106,
+                  26,
+                  59
+                ],
+                [
+                  "Z"
+                ]
+              ],
+              "fill": "#E98370",
+              "scale_y": {
+                "keys": [
+                  {
+                    "frame": 0,
+                    "value": 0.01,
+                    "ease": "smooth"
+                  },
+                  {
+                    "frame": 21,
+                    "value": 0.01,
+                    "ease": "smooth"
+                  },
+                  {
+                    "frame": 35,
+                    "value": 1,
+                    "ease": "smooth"
+                  },
+                  {
+                    "frame": 48,
+                    "value": 0.65,
+                    "ease": "smooth"
+                  },
+                  {
+                    "frame": 61,
+                    "value": 1.2,
+                    "ease": "smooth"
+                  },
+                  {
+                    "frame": 80,
+                    "value": 0.8,
+                    "ease": "smooth"
+                  }
+                ]
+              },
+              "opacity": {
+                "keys": [
+                  {
+                    "frame": 0,
+                    "value": 0,
+                    "ease": "smooth"
+                  },
+                  {
+                    "frame": 20,
+                    "value": 0,
+                    "ease": "smooth"
+                  },
+                  {
+                    "frame": 21,
+                    "value": 1,
+                    "ease": "smooth"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "bread",
+              "kind": "instance",
+              "asset": "toast"
+            }
+          ],
+          "x": 480,
+          "y": {
+            "keys": [
+              {
+                "frame": 0,
+                "value": 281,
+                "ease": "smooth"
+              },
+              {
+                "frame": 20,
+                "value": 310,
+                "ease": "smooth"
+              },
+              {
+                "frame": 34,
+                "value": 210,
+                "ease": "smooth"
+              },
+              {
+                "frame": 62,
+                "value": -120,
+                "ease": "in_cubic"
+              },
+              {
+                "frame": 95,
+                "value": -160,
+                "ease": "smooth"
+              }
+            ]
+          },
+          "scale_x": {
+            "keys": [
+              {
+                "frame": 0,
+                "value": 0.8,
+                "ease": "smooth"
+              },
+              {
+                "frame": 20,
+                "value": 0.95,
+                "ease": "smooth"
+              },
+              {
+                "frame": 34,
+                "value": 0.65,
+                "ease": "smooth"
+              },
+              {
+                "frame": 60,
+                "value": 0.8,
+                "ease": "smooth"
+              }
+            ]
+          },
+          "scale_y": {
+            "keys": [
+              {
+                "frame": 0,
+                "value": 0.8,
+                "ease": "smooth"
+              },
+              {
+                "frame": 20,
+                "value": 0.65,
+                "ease": "smooth"
+              },
+              {
+                "frame": 34,
+                "value": 1.1,
+                "ease": "smooth"
+              },
+              {
+                "frame": 60,
+                "value": 0.8,
+                "ease": "smooth"
+              }
+            ]
+          }
+        },
+        {
+          "id": "launcher",
+          "kind": "instance",
+          "asset": "toaster",
+          "x": 480,
+          "y": 416,
+          "scale_x": {
+            "keys": [
+              {
+                "frame": 0,
+                "value": 1,
+                "ease": "smooth"
+              },
+              {
+                "frame": 20,
+                "value": 1.12,
+                "ease": "smooth"
+              },
+              {
+                "frame": 28,
+                "value": 0.92,
+                "ease": "smooth"
+              },
+              {
+                "frame": 42,
+                "value": 1,
+                "ease": "smooth"
+              }
+            ]
+          },
+          "scale_y": {
+            "keys": [
+              {
+                "frame": 0,
+                "value": 1,
+                "ease": "smooth"
+              },
+              {
+                "frame": 20,
+                "value": 0.84,
+                "ease": "smooth"
+              },
+              {
+                "frame": 28,
+                "value": 1.06,
+                "ease": "smooth"
+              },
+              {
+                "frame": 42,
+                "value": 1,
+                "ease": "smooth"
+              }
+            ]
+          },
+          "overrides": {
+            "lever": {
+              "y": {
+                "keys": [
+                  {
+                    "frame": 0,
+                    "value": -44,
+                    "ease": "smooth"
+                  },
+                  {
+                    "frame": 20,
+                    "value": -44,
+                    "ease": "smooth"
+                  },
+                  {
+                    "frame": 29,
+                    "value": -105,
+                    "ease": "smooth"
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "id": "launch_text",
+          "kind": "text",
+          "text": "LIFT-OFF!",
+          "x": 190,
+          "y": 117,
+          "size": 42,
+          "fill": "#222943",
+          "font": "display",
+          "opacity": {
+            "keys": [
+              {
+                "frame": 0,
+                "value": 0,
+                "ease": "smooth"
+              },
+              {
+                "frame": 27,
+                "value": 0,
+                "ease": "smooth"
+              },
+              {
+                "frame": 28,
+                "value": 1,
+                "ease": "smooth"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "orbit",
+      "start": 168,
+      "end": 240,
+      "purpose": "The toast becomes a large moon above a tiny planet; the toast shape makes the absurd outcome visible.",
+      "background": "#222943",
+      "nodes": [
+        {
+          "id": "star_0",
+          "kind": "ellipse",
+          "rx": 2,
+          "ry": 2,
+          "fill": "#FFF0D8",
+          "x": 35,
+          "y": 50
+        },
+        {
+          "id": "star_1",
+          "kind": "ellipse",
+          "rx": 3,
+          "ry": 3,
+          "fill": "#FFF0D8",
+          "x": 172,
+          "y": 133
+        },
+        {
+          "id": "star_2",
+          "kind": "ellipse",
+          "rx": 4,
+          "ry": 4,
+          "fill": "#FFF0D8",
+          "x": 309,
+          "y": 216
+        },
+        {
+          "id": "star_3",
+          "kind": "ellipse",
+          "rx": 2,
+          "ry": 2,
+          "fill": "#FFF0D8",
+          "x": 446,
+          "y": 299
+        },
+        {
+          "id": "star_4",
+          "kind": "ellipse",
+          "rx": 3,
+          "ry": 3,
+          "fill": "#FFF0D8",
+          "x": 583,
+          "y": 382
+        },
+        {
+          "id": "star_5",
+          "kind": "ellipse",
+          "rx": 4,
+          "ry": 4,
+          "fill": "#FFF0D8",
+          "x": 720,
+          "y": 110
+        },
+        {
+          "id": "star_6",
+          "kind": "ellipse",
+          "rx": 2,
+          "ry": 2,
+          "fill": "#FFF0D8",
+          "x": 857,
+          "y": 193
+        },
+        {
+          "id": "star_7",
+          "kind": "ellipse",
+          "rx": 3,
+          "ry": 3,
+          "fill": "#FFF0D8",
+          "x": 99,
+          "y": 276
+        },
+        {
+          "id": "star_8",
+          "kind": "ellipse",
+          "rx": 4,
+          "ry": 4,
+          "fill": "#FFF0D8",
+          "x": 236,
+          "y": 359
+        },
+        {
+          "id": "star_9",
+          "kind": "ellipse",
+          "rx": 2,
+          "ry": 2,
+          "fill": "#FFF0D8",
+          "x": 373,
+          "y": 87
+        },
+        {
+          "id": "star_10",
+          "kind": "ellipse",
+          "rx": 3,
+          "ry": 3,
+          "fill": "#FFF0D8",
+          "x": 510,
+          "y": 170
+        },
+        {
+          "id": "star_11",
+          "kind": "ellipse",
+          "rx": 4,
+          "ry": 4,
+          "fill": "#FFF0D8",
+          "x": 647,
+          "y": 253
+        },
+        {
+          "id": "star_12",
+          "kind": "ellipse",
+          "rx": 2,
+          "ry": 2,
+          "fill": "#FFF0D8",
+          "x": 784,
+          "y": 336
+        },
+        {
+          "id": "star_13",
+          "kind": "ellipse",
+          "rx": 3,
+          "ry": 3,
+          "fill": "#FFF0D8",
+          "x": 921,
+          "y": 64
+        },
+        {
+          "id": "star_14",
+          "kind": "ellipse",
+          "rx": 4,
+          "ry": 4,
+          "fill": "#FFF0D8",
+          "x": 163,
+          "y": 147
+        },
+        {
+          "id": "star_15",
+          "kind": "ellipse",
+          "rx": 2,
+          "ry": 2,
+          "fill": "#FFF0D8",
+          "x": 300,
+          "y": 230
+        },
+        {
+          "id": "star_16",
+          "kind": "ellipse",
+          "rx": 3,
+          "ry": 3,
+          "fill": "#FFF0D8",
+          "x": 437,
+          "y": 313
+        },
+        {
+          "id": "star_17",
+          "kind": "ellipse",
+          "rx": 4,
+          "ry": 4,
+          "fill": "#FFF0D8",
+          "x": 574,
+          "y": 396
+        },
+        {
+          "id": "star_18",
+          "kind": "ellipse",
+          "rx": 2,
+          "ry": 2,
+          "fill": "#FFF0D8",
+          "x": 711,
+          "y": 124
+        },
+        {
+          "id": "star_19",
+          "kind": "ellipse",
+          "rx": 3,
+          "ry": 3,
+          "fill": "#FFF0D8",
+          "x": 848,
+          "y": 207
+        },
+        {
+          "id": "planet",
+          "kind": "ellipse",
+          "rx": 202,
+          "ry": 122,
+          "fill": "#6DC7BC",
+          "x": 480,
+          "y": 521
+        },
+        {
+          "id": "toast_moon",
+          "kind": "instance",
+          "asset": "toast",
+          "x": {
+            "keys": [
+              {
+                "frame": 0,
+                "value": 494,
+                "ease": "smooth"
+              },
+              {
+                "frame": 71,
+                "value": 516,
+                "ease": "smooth"
+              }
+            ]
+          },
+          "y": 199,
+          "rotation": {
+            "keys": [
+              {
+                "frame": 0,
+                "value": -15,
+                "ease": "smooth"
+              },
+              {
+                "frame": 71,
+                "value": 10,
+                "ease": "smooth"
+              }
+            ]
+          },
+          "scale_x": 1.4,
+          "scale_y": 1.4
+        },
+        {
+          "id": "moon_title",
+          "kind": "text",
+          "text": "THE MOON IS NOW GLUTEN.",
+          "x": 480,
+          "y": 43,
+          "size": 34,
+          "fill": "#FFF0D8",
+          "font": "display"
+        },
+        {
+          "id": "end",
+          "kind": "text",
+          "text": "Houston, we have breakfast.",
+          "x": 480,
+          "y": 386,
+          "size": 29,
+          "fill": "#FFF0D8"
+        }
+      ]
+    }
+  ],
+  "beats": [
+    {
+      "id": "identity",
+      "shot": "dream",
+      "frame": 48,
+      "description": "Toaster body, slot and lever establish the new character.",
+      "requirements": [
+        "toaster"
+      ],
+      "nodes": [
+        "dreamer"
+      ]
+    },
+    {
+      "id": "blastoff",
+      "shot": "launch",
+      "frame": 108,
+      "description": "Toast emerges above the reacting toaster with a flame.",
+      "requirements": [
+        "launch",
+        "toaster"
+      ],
+      "nodes": [
+        "rocket",
+        "launcher"
+      ]
+    },
+    {
+      "id": "payoff",
+      "shot": "orbit",
+      "frame": 213,
+      "description": "A clearly toast-shaped moon floats above a planet.",
+      "requirements": [
+        "moon"
+      ],
+      "nodes": [
+        "toast_moon",
+        "planet"
+      ]
+    }
+  ],
+  "audio": [
+    {
+      "frame": 96,
+      "duration": 0.35,
+      "frequency": 190,
+      "gain": 0.18,
+      "kind": "pop"
+    },
+    {
+      "frame": 171,
+      "duration": 1.3,
+      "frequency": 698,
+      "gain": 0.15,
+      "kind": "bell"
+    }
+  ]
+}

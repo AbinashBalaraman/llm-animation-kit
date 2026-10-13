@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "llm-animation-kit"
-version = "0.1.0"
+version = "0.2.0"
 description = "Knowledge, tools and a code-rendered 2D animation runtime for LLMs"
 requires-python = ">=3.11"
 license = "GPL-3.0-or-later"
@@ -20,4 +20,4 @@ include = ["animation_kit*"]
 license-files = ["LICENSES/*.txt", "THIRD-PARTY-NOTICES.md"]
 
 [tool.setuptools.package-data]
-animation_kit = ["data/*.json", "data/recipes/*.json", "data/examples/*.json"]
+animation_kit = ["data/*.json", "data/recipes/*.json", "data/examples/*.json", "data/fonts/*"]

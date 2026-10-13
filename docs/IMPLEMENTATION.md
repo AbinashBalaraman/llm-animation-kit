@@ -1,13 +1,29 @@
-# Implemented release and boundaries
+# Implementation decisions
 
-13 October 2026. Release 0.1.0 is an operating local 2D capability kit. The research handoff remains useful background; its proposed 3D contract/rig profile was not silently reinterpreted.
+13 October 2026. Release 0.2.0 introduces `authored2d_v2` / `kit.story/2.0` as the production path.
 
-**ADR-014:** ship the first consumable capability kit on an original native 2D renderer because the host has Python/Pillow and a usable wheel-supplied FFmpeg, while Blender is absent. This is a recorded implementation choice under the user's request to implement the kit. All frames are drawn by reviewed code. Blender remains future backend work, rather than a hidden prerequisite or falsely advertised capability.
+## ADR-015: scripts require authoring, not a finite puppet menu
 
-The runtime uses a separate `kit.scene/1.0` contract with 960x540 design-pixel coordinates and a front-view puppet. It does not claim compatibility with the research package's proposed metre-based 3D `studio.schema.json`. The latter's 45 fixture checks are independent of the runtime tests.
+The first transfer attempt took a cat-president brief and produced humanoid puppets on the example's night stage. The v1 system offered one rig, one environment and three gestures; it had no way to create the requested subjects or events. Example retrieval and a generic acceptance note let a technically valid result be mistaken for completing the brief.
 
-Implemented: consuming production skill; indexed bounded recipe/context retrieval; original puppet, stage, prop, camera and four action components; strict schema and selected semantics; immutable snapshots, atomic transactions and undo; native frame/video rendering; verified cache/resume; temporal contact sheets, state traces and editable exports; explicit review records; shared CLI/MCP tools; durable workflow budgets; provider-independent agent loop; benchmark collection/scoring tooling.
+The replacement exposes general vector geometry, local coordinate hierarchies, reusable static assets, instance-specific articulated poses, shot-local keyframes, cameras and timed sound cues. Nothing in the engine names a cat, president, toaster, campaign or other story content. Original drawings and narrative decisions live in host-authored scripts and exported JSON. The Python authoring SDK constructs declarative data; the CLI/MCP renderer does not execute scene-supplied code.
 
-Not yet implemented: 3D adapter, compatible Blender rigs/performance library, handover/seating, speech/lip-sync, physical contact, asynchronous cancellation, vendor model adapters and completed comparative model evaluation. The generic provider loop and host tools can be used by another LLM now, but actual transfer results must be collected. The provided actor movement is stylized and is not certified physical locomotion.
+Each document preserves its original brief, reviewable requirements, shot purposes and visual evidence beats. A production workflow cannot load legacy examples, accept the legacy backend or silently switch prompts. Context retrieval no longer injects an entire demo scene. Missing artwork is authored; missing backend capabilities are reported specifically.
 
-Render cache keys include the full scene, profile, renderer/component source, Pillow and FFmpeg build strings. This version conservatively rerenders changed scenes; it does not yet provide per-shot dependency caching. Resume reuses verified frames and rechecks every output. A crashed writer may leave a lock; investigate the recorded PID before removing it. The kit operates within a configured workspace but is not an OS sandbox for untrusted plugins.
+`preview_frames` supports inexpensive drawing/timing inspection. `check_story` checks planned drawing visibility, not meaning. `review_story` requires a current rendered preview and an observation with actual frames for every requirement. It rejects absent, title-only and invisible evidence; it does not certify semantic correctness or detect every occlusion. Review scope is explicit. The final gate checks source, preview integrity and renderer/font fingerprint. Self-review remains self-review.
+
+The reusable knowledge and host instructions now describe script interpretation, shape construction, articulation, acting, continuity, physical contact authored by hand, comedy where appropriate and prompt-based review. They do not impose the regression example's plot on unrelated scripts.
+
+## Compatibility and invariants
+
+`kit.scene/1.0` remains an explicit legacy exercise path. Its tools/tests preserve existing snapshots, while new project creation requires v2 unless `legacy_exercise: true` is deliberately supplied. Production workflows still reject it. Proposed research 3D schemas remain separate; this release does not claim Blender compatibility.
+
+CLI/MCP/provider adapters share `Tools`. Store mutations validate before atomically publishing immutable hashed snapshots. Undo is a new revision. Every frame is evaluated directly from its frame number and source, independent of sampling order. Render cache keys include source, renderer, components, fonts, Pillow and FFmpeg. Existing verified frames can resume interrupted work. Invalid/corrupt artifacts fail checks.
+
+## Current limits
+
+This is a general authored vector 2D backend, not an unrestricted film engine. No full 3D, automatic physical simulation, voice/lip-sync, external raster assets, nested asset instances, offscreen group-opacity compositing or asynchronous cancellation. Output is fixed landscape 16:9. Paths support M/L/Q/C/Z, with independent filled contours. Camera/keyframe values are bounded. A crashed writer may leave a lock; investigate the PID before removing it. The kit is not an OS sandbox for host-authored scripts.
+
+## Historical ADR-014
+
+0.1.0 shipped the original native 2D puppet because Python/Pillow/FFmpeg were available and Blender was not. That decision established a working renderer and transaction/tool infrastructure, but the closed artwork/action vocabulary did not fulfil the broader LLM capability-transfer goal. Its 24 tests and original examples were real technical evidence, not evidence of general script adaptation or professional quality. The older research proposal is background, not the current production API.

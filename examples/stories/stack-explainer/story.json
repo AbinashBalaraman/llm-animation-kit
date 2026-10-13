@@ -1,0 +1,459 @@
+{
+  "schema_version": "kit.story/2.0",
+  "title": "Last in. First out.",
+  "brief": {
+    "prompt": "Explain a stack: push A, push B, then pop B to demonstrate last-in, first-out.",
+    "requirements": [
+      {
+        "id": "push_a",
+        "description": "Show A being pushed onto an empty stack."
+      },
+      {
+        "id": "push_b",
+        "description": "Show B above A after a second push."
+      },
+      {
+        "id": "pop_b",
+        "description": "Show B leaving first while A remains, demonstrating LIFO."
+      }
+    ]
+  },
+  "fps": 24,
+  "frames": 192,
+  "assets": [],
+  "shots": [
+    {
+      "id": "stack",
+      "start": 0,
+      "end": 192,
+      "purpose": "Two blocks enter a stack; the most recently pushed block exits first.",
+      "background": "#F5F0E5",
+      "nodes": [
+        {
+          "id": "title",
+          "kind": "text",
+          "text": "LAST IN. FIRST OUT.",
+          "x": 480,
+          "y": 54,
+          "size": 44,
+          "fill": "#243D58",
+          "font": "display"
+        },
+        {
+          "id": "subtitle",
+          "kind": "text",
+          "text": "A stack remembers order.",
+          "x": 480,
+          "y": 101,
+          "size": 24,
+          "fill": "#243D58"
+        },
+        {
+          "id": "stack_outline",
+          "kind": "path",
+          "commands": [
+            [
+              "M",
+              386,
+              192
+            ],
+            [
+              "L",
+              386,
+              437
+            ],
+            [
+              "L",
+              574,
+              437
+            ],
+            [
+              "L",
+              574,
+              192
+            ]
+          ],
+          "fill": null,
+          "stroke": "#243D58",
+          "stroke_width": 7
+        },
+        {
+          "id": "stack_label",
+          "kind": "text",
+          "text": "STACK",
+          "x": 480,
+          "y": 468,
+          "size": 23,
+          "fill": "#243D58",
+          "font": "display"
+        },
+        {
+          "id": "input",
+          "kind": "text",
+          "text": "PUSH",
+          "x": 145,
+          "y": 173,
+          "size": 27,
+          "fill": "#327E7E",
+          "font": "display"
+        },
+        {
+          "id": "output",
+          "kind": "text",
+          "text": "POP",
+          "x": 803,
+          "y": 173,
+          "size": 27,
+          "fill": "#D66651",
+          "font": "display"
+        },
+        {
+          "id": "a",
+          "kind": "group",
+          "children": [
+            {
+              "id": "a_box",
+              "kind": "rect",
+              "width": 154,
+              "height": 68,
+              "fill": "#327E7E",
+              "x": -77,
+              "y": -34,
+              "radius": 12
+            },
+            {
+              "id": "a_label",
+              "kind": "text",
+              "text": "A",
+              "x": 0,
+              "y": 0,
+              "size": 38,
+              "fill": "#FFFFFF",
+              "font": "display"
+            }
+          ],
+          "x": {
+            "keys": [
+              {
+                "frame": 0,
+                "value": 145,
+                "ease": "smooth"
+              },
+              {
+                "frame": 14,
+                "value": 145,
+                "ease": "smooth"
+              },
+              {
+                "frame": 29,
+                "value": 480,
+                "ease": "smooth"
+              },
+              {
+                "frame": 191,
+                "value": 480,
+                "ease": "smooth"
+              }
+            ]
+          },
+          "y": {
+            "keys": [
+              {
+                "frame": 0,
+                "value": 235,
+                "ease": "smooth"
+              },
+              {
+                "frame": 14,
+                "value": 235,
+                "ease": "smooth"
+              },
+              {
+                "frame": 29,
+                "value": 145,
+                "ease": "smooth"
+              },
+              {
+                "frame": 48,
+                "value": 395,
+                "ease": "smooth"
+              },
+              {
+                "frame": 191,
+                "value": 395,
+                "ease": "smooth"
+              }
+            ]
+          }
+        },
+        {
+          "id": "b",
+          "kind": "group",
+          "children": [
+            {
+              "id": "b_box",
+              "kind": "rect",
+              "width": 154,
+              "height": 68,
+              "fill": "#D66651",
+              "x": -77,
+              "y": -34,
+              "radius": 12
+            },
+            {
+              "id": "b_label",
+              "kind": "text",
+              "text": "B",
+              "x": 0,
+              "y": 0,
+              "size": 38,
+              "fill": "#FFFFFF",
+              "font": "display"
+            }
+          ],
+          "x": {
+            "keys": [
+              {
+                "frame": 0,
+                "value": 145,
+                "ease": "smooth"
+              },
+              {
+                "frame": 64,
+                "value": 145,
+                "ease": "smooth"
+              },
+              {
+                "frame": 80,
+                "value": 480,
+                "ease": "smooth"
+              },
+              {
+                "frame": 146,
+                "value": 480,
+                "ease": "smooth"
+              },
+              {
+                "frame": 166,
+                "value": 803,
+                "ease": "smooth"
+              },
+              {
+                "frame": 191,
+                "value": 803,
+                "ease": "smooth"
+              }
+            ]
+          },
+          "y": {
+            "keys": [
+              {
+                "frame": 0,
+                "value": 329,
+                "ease": "smooth"
+              },
+              {
+                "frame": 64,
+                "value": 329,
+                "ease": "smooth"
+              },
+              {
+                "frame": 80,
+                "value": 145,
+                "ease": "smooth"
+              },
+              {
+                "frame": 103,
+                "value": 319,
+                "ease": "smooth"
+              },
+              {
+                "frame": 126,
+                "value": 319,
+                "ease": "smooth"
+              },
+              {
+                "frame": 146,
+                "value": 145,
+                "ease": "smooth"
+              },
+              {
+                "frame": 166,
+                "value": 235,
+                "ease": "smooth"
+              },
+              {
+                "frame": 191,
+                "value": 235,
+                "ease": "smooth"
+              }
+            ]
+          }
+        },
+        {
+          "id": "step_one",
+          "kind": "text",
+          "text": "1   PUSH A",
+          "x": 165,
+          "y": 498,
+          "size": 24,
+          "fill": "#327E7E",
+          "font": "display",
+          "opacity": {
+            "keys": [
+              {
+                "frame": 0,
+                "value": 1,
+                "ease": "smooth"
+              },
+              {
+                "frame": 63,
+                "value": 1,
+                "ease": "smooth"
+              },
+              {
+                "frame": 64,
+                "value": 0.3,
+                "ease": "smooth"
+              }
+            ]
+          }
+        },
+        {
+          "id": "step_two",
+          "kind": "text",
+          "text": "2   PUSH B",
+          "x": 480,
+          "y": 498,
+          "size": 24,
+          "fill": "#D66651",
+          "font": "display",
+          "opacity": {
+            "keys": [
+              {
+                "frame": 0,
+                "value": 0.3,
+                "ease": "smooth"
+              },
+              {
+                "frame": 63,
+                "value": 0.3,
+                "ease": "smooth"
+              },
+              {
+                "frame": 64,
+                "value": 1,
+                "ease": "smooth"
+              },
+              {
+                "frame": 125,
+                "value": 1,
+                "ease": "smooth"
+              },
+              {
+                "frame": 126,
+                "value": 0.3,
+                "ease": "smooth"
+              }
+            ]
+          }
+        },
+        {
+          "id": "step_three",
+          "kind": "text",
+          "text": "3   POP RETURNS B",
+          "x": 780,
+          "y": 498,
+          "size": 24,
+          "fill": "#243D58",
+          "font": "display",
+          "opacity": {
+            "keys": [
+              {
+                "frame": 0,
+                "value": 0.3,
+                "ease": "smooth"
+              },
+              {
+                "frame": 125,
+                "value": 0.3,
+                "ease": "smooth"
+              },
+              {
+                "frame": 126,
+                "value": 1,
+                "ease": "smooth"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "beats": [
+    {
+      "id": "first_push",
+      "shot": "stack",
+      "frame": 48,
+      "description": "A rests at the bottom of the stack.",
+      "requirements": [
+        "push_a"
+      ],
+      "nodes": [
+        "a",
+        "stack_outline"
+      ]
+    },
+    {
+      "id": "second_push",
+      "shot": "stack",
+      "frame": 105,
+      "description": "B now rests above A.",
+      "requirements": [
+        "push_b"
+      ],
+      "nodes": [
+        "a",
+        "b",
+        "stack_outline"
+      ]
+    },
+    {
+      "id": "first_out",
+      "shot": "stack",
+      "frame": 179,
+      "description": "B is at the output while A remains in the stack.",
+      "requirements": [
+        "pop_b"
+      ],
+      "nodes": [
+        "a",
+        "b",
+        "stack_outline"
+      ]
+    }
+  ],
+  "audio": [
+    {
+      "frame": 48,
+      "duration": 0.3,
+      "frequency": 330,
+      "gain": 0.1,
+      "kind": "pop"
+    },
+    {
+      "frame": 103,
+      "duration": 0.3,
+      "frequency": 440,
+      "gain": 0.1,
+      "kind": "pop"
+    },
+    {
+      "frame": 166,
+      "duration": 0.3,
+      "frequency": 660,
+      "gain": 0.1,
+      "kind": "pop"
+    }
+  ]
+}

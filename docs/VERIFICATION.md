@@ -1,11 +1,11 @@
-# Verified release 0.1.0
+# Verified release 0.2.0
 
-13 October 2026. Actual results are also recorded in `verification-results.json`.
+13 October 2026. Machine-readable results are in `verification-results.json`; historical v1 results are retained separately.
 
-- 24 behavioral tests passed, zero failed. The suite includes strict decoding, schema/semantic rejection, atomic failure, stale revisions, undo, camera edits preserving world state, corrupt-snapshot rejection, bounded context/workflow/agent loops, MCP stdio/image results, evaluation records, real MP4 decoding, cache reuse and damaged-frame recovery.
-- The skill-creator validator passed for `agent-kit/code-animation`.
-- An ordinary distribution wheel was built. Its ZIP integrity, schema/recipe/example resources and full license texts were checked. The wheel was extracted into an isolated temporary directory and its tools created/inspected a fresh example project there.
-- Three original preview packages and a final MP4 were generated. The final is 1280x720, 24 fps, exactly 192 decoded frames (eight seconds). Local measured final render/assembly time was 55.48 seconds. This is a measurement on this host and scene, not a hardware throughput promise.
-- The demo workflow uses actual public tool calls, including preview, artifact inspection, explicit review and final export. Before/after contact sheets were visually inspected by the implementation model. No normal-speed independent human/audio review was performed.
+- **38 behavioral/integration tests passed**, zero failed. They cover legacy mechanics plus original vector drawing, articulated poses, independent instance overrides, arbitrary-frame evaluation, strict timelines/references, script coverage, rejection of demo substitution and changed prompts, title-only/hidden/offscreen evidence, stroked-line visibility, source/renderer-bound review, real preview/final encoding and evaluation records.
+- The consuming skill passed the Skill Creator validator. Local Markdown references and Python compilation were checked.
+- A normal v0.2.0 wheel was built and installed in a new isolated virtual environment. Its own packaged runtime loaded the schemas and fonts, created an authored scene, encoded an MP4 and decoded the expected frames. This clean install used Pillow 12.3.0, jsonschema 4.26.0 and imageio-ffmpeg 0.6.0 with its FFmpeg 7.1 build. The authoring workspace used Pillow 11.3.0 and its existing FFmpeg 4.2.2. Runtime fingerprints record those differences.
+- Three different scripts use the same renderer: a 24-second cat-president comedy, a 10-second toaster-space film and an 8-second stack explainer. Each has original source, current export manifest and per-requirement review. The stack movement was revised after inspecting its path to pass through the top of the stack.
+- Overview images, the toaster launch, cat paw-contact sequence and revised stack transitions were visually inspected. A later stroke-visibility diagnostic fix required fresh previews; every regenerated preview PNG was hash-identical to the previously reviewed frames. The records explicitly retain **sampled-frame review only**.
 
-The examples are authored demonstrations. No second model was invoked and no model-parity score exists. The release establishes usable software and reproducible evidence paths; it does not establish professional animation quality or equivalence to a stronger model. Blender/3D, speech and physical interaction remain outside the shipped backend.
+No second LLM was invoked in this task. No independent human quality rating, normal-speed playback assessment or audio listening was performed. These are working software checks and authored regression demonstrations, not proof of unrestricted script support, professional animation quality or model parity. The repository includes a fresh-script test prompt and evidence collector so actual transfer can be measured.

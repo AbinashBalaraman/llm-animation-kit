@@ -32,7 +32,9 @@ def main():
         from .render import ffmpeg_path
         import PIL
         executable,version=ffmpeg_path()
-        response={"python":sys.version.split()[0],"pillow":PIL.__version__,"ffmpeg_path":executable,"ffmpeg":version,"workspace":str(api.store.root),"backend":"puppet2d_v1","video_generation_models":False}
+        from .story import font
+        for name in ("sans","display"): font(name,24)
+        response={"python":sys.version.split()[0],"pillow":PIL.__version__,"ffmpeg_path":executable,"ffmpeg":version,"workspace":str(api.store.root),"backend":"authored2d_v2","bundled_fonts":"ok","video_generation_models":False}
     else:
         payload=read_json(arguments.input) if arguments.input else loads(arguments.json or "{}")
         response=api.call(arguments.tool,payload)

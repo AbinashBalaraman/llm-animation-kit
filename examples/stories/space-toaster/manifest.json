@@ -1,0 +1,26 @@
+{
+  "job_id": "37ddc61c54229c6ad87a4a85",
+  "revision": 0,
+  "scene_hash": "094e382bf68e60d7536a4404cd830325c128fb2caaba8e29467f27e677665948",
+  "engine_hash": "d0bb0e07729e9e6df2a53ec1c1c93549d223ec5e89e23aaa359d429281a3b6f9",
+  "backend": "authored2d_v2",
+  "profile": "final",
+  "width": 1280,
+  "height": 720,
+  "fps": 24,
+  "frame_count": 240,
+  "ffmpeg": "ffmpeg version 4.2.2 Copyright (c) 2000-2019 the FFmpeg developers",
+  "status": "succeeded",
+  "artifacts": {
+    "video.mp4": "33a79b6b9c55e2d3776c046d1e36d625f8d668476b7caf714d38666c1231a125",
+    "contact-sheet.png": "6aaf371bedfbafb1aed021533e2cc9e930b7c219e60599c5680e5ed9f84b55a9",
+    "sound.wav": "a649405a12bc7915b83632303d217d52672ddf3173963d4e4569a451f7c2e3de",
+    "scene.json": "6f1567dc56f833aa2ae739625ba5369c7c681afc15dc01292802a855c78116ab"
+  },
+  "cached": false,
+  "seconds": 183.597,
+  "resumed_frames": 0,
+  "decoded_frame_count": 240,
+  "diagnostics": [],
+  "review_scope": "sampled_frames"
+}
