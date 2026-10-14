@@ -1045,18 +1045,289 @@
   },
   {
     "name": "get_schema",
-    "description": "Retrieve the exact authored story contract on demand; keeps discovery/context small.",
+    "description": "Retrieve the drawing, direction-plan or archived legacy contract on demand.",
     "inputSchema": {
       "type": "object",
       "properties": {
         "version": {
           "enum": [
             "story",
+            "direction",
             "legacy"
           ]
         }
       },
       "required": [],
+      "additionalProperties": false
+    },
+    "annotations": {
+      "readOnlyHint": true,
+      "destructiveHint": false,
+      "openWorldHint": false
+    }
+  },
+  {
+    "name": "plan_story",
+    "description": "BEFORE artwork: write and question a complete story with who/what/when/where/why/how, causal beats, a shot script and six self-checks. This tool validates your plan; it does not invent answers or certify a good story. Copy the plan into scene.direction.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "plan": {
+          "type": "object",
+          "properties": {
+            "schema_version": {
+              "const": "kit.direction/1.0"
+            },
+            "brief": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 3000
+            },
+            "mode": {
+              "enum": [
+                "narrative",
+                "explainer",
+                "abstract"
+              ]
+            },
+            "premise": {
+              "type": "string",
+              "minLength": 12,
+              "maxLength": 3000
+            },
+            "answers": {
+              "type": "object",
+              "properties": {
+                "who": {
+                  "type": "string",
+                  "minLength": 12,
+                  "maxLength": 3000
+                },
+                "what": {
+                  "type": "string",
+                  "minLength": 12,
+                  "maxLength": 3000
+                },
+                "when": {
+                  "type": "string",
+                  "minLength": 12,
+                  "maxLength": 3000
+                },
+                "where": {
+                  "type": "string",
+                  "minLength": 12,
+                  "maxLength": 3000
+                },
+                "why": {
+                  "type": "string",
+                  "minLength": 12,
+                  "maxLength": 3000
+                },
+                "how": {
+                  "type": "string",
+                  "minLength": 12,
+                  "maxLength": 3000
+                }
+              },
+              "required": [
+                "who",
+                "what",
+                "when",
+                "where",
+                "why",
+                "how"
+              ],
+              "additionalProperties": false
+            },
+            "story_text": {
+              "type": "string",
+              "minLength": 120,
+              "maxLength": 12000
+            },
+            "beats": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "pattern": "^[a-z][a-z0-9_-]{0,63}$"
+                  },
+                  "role": {
+                    "enum": [
+                      "setup",
+                      "inciting_event",
+                      "attempt",
+                      "turn",
+                      "resolution",
+                      "explanation",
+                      "transition"
+                    ]
+                  },
+                  "cause": {
+                    "type": "string",
+                    "minLength": 12,
+                    "maxLength": 3000
+                  },
+                  "visible_action": {
+                    "type": "string",
+                    "minLength": 12,
+                    "maxLength": 3000
+                  },
+                  "change": {
+                    "type": "string",
+                    "minLength": 12,
+                    "maxLength": 3000
+                  }
+                },
+                "required": [
+                  "id",
+                  "role",
+                  "cause",
+                  "visible_action",
+                  "change"
+                ],
+                "additionalProperties": false
+              },
+              "minItems": 1,
+              "maxItems": 40
+            },
+            "shots": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "pattern": "^[a-z][a-z0-9_-]{0,63}$"
+                  },
+                  "beats": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "pattern": "^[a-z][a-z0-9_-]{0,63}$"
+                    },
+                    "minItems": 1,
+                    "maxItems": 12
+                  },
+                  "seconds": {
+                    "type": "number",
+                    "exclusiveMinimum": 0,
+                    "maximum": 120
+                  },
+                  "framing": {
+                    "type": "string",
+                    "minLength": 12,
+                    "maxLength": 3000
+                  },
+                  "action": {
+                    "type": "string",
+                    "minLength": 12,
+                    "maxLength": 3000
+                  },
+                  "reaction": {
+                    "type": "string",
+                    "minLength": 12,
+                    "maxLength": 3000
+                  },
+                  "continuity_in": {
+                    "type": "string",
+                    "minLength": 12,
+                    "maxLength": 3000
+                  },
+                  "continuity_out": {
+                    "type": "string",
+                    "minLength": 12,
+                    "maxLength": 3000
+                  },
+                  "dialogue": {
+                    "type": "string",
+                    "maxLength": 2000
+                  }
+                },
+                "required": [
+                  "id",
+                  "beats",
+                  "seconds",
+                  "framing",
+                  "action",
+                  "reaction",
+                  "continuity_in",
+                  "continuity_out",
+                  "dialogue"
+                ],
+                "additionalProperties": false
+              },
+              "minItems": 1,
+              "maxItems": 40
+            },
+            "self_review": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "focus": {
+                    "enum": [
+                      "motivation",
+                      "causality",
+                      "stakes",
+                      "clarity",
+                      "ending",
+                      "filmability"
+                    ]
+                  },
+                  "question": {
+                    "type": "string",
+                    "minLength": 12,
+                    "maxLength": 3000
+                  },
+                  "answer": {
+                    "type": "string",
+                    "minLength": 12,
+                    "maxLength": 3000
+                  },
+                  "verdict": {
+                    "enum": [
+                      "pass",
+                      "revise",
+                      "not_applicable"
+                    ]
+                  },
+                  "revision": {
+                    "type": "string",
+                    "maxLength": 3000
+                  }
+                },
+                "required": [
+                  "focus",
+                  "question",
+                  "answer",
+                  "verdict",
+                  "revision"
+                ],
+                "additionalProperties": false
+              },
+              "minItems": 6,
+              "maxItems": 12
+            }
+          },
+          "required": [
+            "schema_version",
+            "brief",
+            "mode",
+            "premise",
+            "answers",
+            "story_text",
+            "beats",
+            "shots",
+            "self_review"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "plan"
+      ],
       "additionalProperties": false
     },
     "annotations": {
@@ -1089,7 +1360,7 @@
   },
   {
     "name": "preview_frames",
-    "description": "Render selected storyboard/acting frames without encoding a movie; returns an inspectable PNG.",
+    "description": "Render selected storyboard/acting frames. hide_text removes all text for a visual-story diagnostic; never changes the export.",
     "inputSchema": {
       "type": "object",
       "properties": {
@@ -1106,10 +1377,55 @@
           },
           "minItems": 1,
           "maxItems": 32
+        },
+        "hide_text": {
+          "type": "boolean"
         }
       },
       "required": [
         "project_id"
+      ],
+      "additionalProperties": false
+    },
+    "annotations": {
+      "readOnlyHint": false,
+      "destructiveHint": false,
+      "openWorldHint": false
+    }
+  },
+  {
+    "name": "preview_motion",
+    "description": "Render an inclusive global-frame interval as a temporal strip (max 32 samples). Inspect contact/action at 100-250ms spacing and include exact contact frames.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "project_id": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9_-]{0,63}$"
+        },
+        "start": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 7200
+        },
+        "end": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 7200
+        },
+        "step": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 240
+        },
+        "hide_text": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "project_id",
+        "start",
+        "end"
       ],
       "additionalProperties": false
     },
@@ -1196,6 +1512,55 @@
           "type": "string",
           "minLength": 1,
           "maxLength": 3000
+        },
+        "quality": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "dimension": {
+                "enum": [
+                  "visual_clarity",
+                  "cause_and_effect",
+                  "motion_and_contact",
+                  "framing",
+                  "continuity"
+                ]
+              },
+              "status": {
+                "enum": [
+                  "pass",
+                  "fail",
+                  "unreviewed",
+                  "not_applicable"
+                ]
+              },
+              "frames": {
+                "type": "array",
+                "items": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 7200
+                },
+                "minItems": 0,
+                "maxItems": 16
+              },
+              "observation": {
+                "type": "string",
+                "minLength": 20,
+                "maxLength": 1500
+              }
+            },
+            "required": [
+              "dimension",
+              "status",
+              "frames",
+              "observation"
+            ],
+            "additionalProperties": false
+          },
+          "minItems": 5,
+          "maxItems": 5
         }
       },
       "required": [
@@ -1206,7 +1571,8 @@
         "reviewer",
         "coverage",
         "playback_reviewed",
-        "notes"
+        "notes",
+        "quality"
       ],
       "additionalProperties": false
     },

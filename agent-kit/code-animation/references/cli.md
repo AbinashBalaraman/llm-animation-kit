@@ -4,10 +4,10 @@ Install in a Python 3.11+ virtual environment using `python -m pip install -e .`
 
 `python -m animation_kit tools` prints tool schemas. Call with `python -m animation_kit --workspace .kit-workspace call TOOL --input arguments.json`. Use real JSON files for shell-safe arguments. `get_schema` defaults to v2; `{'version':'legacy'}` is for old exercises only.
 
-1. Author a new story JSON, usually with a local Python script and the SDK.
+1. Write a complete story and self-question it using `references/story-development.md`. Retrieve `get_schema` with `version: direction` for its contract.
 2. `start_workflow` with the original brief and a call/render budget, e.g. 36 calls and 8 renders. Keep its `workflow_id`.
 3. Use `workflow_step` with `workflow_id`, `tool`, and `arguments`. Nested tool failures appear in `result.response`; inspect that result too.
-4. `create_project` takes `project_id` and the authored document as `scene`. `check_story` checks structural evidence; `preview_frames` renders drawing/acting samples; `preview` encodes an MP4.
+4. Call `plan_story` with the finished plan. When structurally ready, author artwork and include that plan as `scene.direction`. `create_project` takes `project_id` and the authored document as `scene`. `check_story` checks structural evidence; `preview_frames` and `preview_motion` render images; `preview` encodes an MP4.
 5. `inspect_artifact` takes project and preview `job_id`. Add `frame` and `include_image: true` for an explicit PNG in a vision-capable MCP host.
 6. Use `review_story`, `render_final`, then `finish_workflow` with a truthful outcome: `complete`, `needs_review`, `unsupported`, or `budget_exhausted`.
 

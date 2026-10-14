@@ -1,6 +1,6 @@
 {
   "id": "repair",
-  "version": "2.0",
+  "version": "3.0",
   "backend": "authored2d_v2",
   "keywords": [
     "review",
@@ -13,8 +13,10 @@
   "purpose": "Reject technical success that misses the brief",
   "rules": [
     "Render selected frames with preview_frames, then inspect actual pixels. Fix identity/staging before spending on full preview.",
+    "Use preview_motion for short contact/action intervals. For visual narratives, hide_text exposes caption dependence; essential labels remain appropriate in diagrams.",
     "Run check_story: it checks visible drawing and coverage, not whether the drawing truly is a cat or the story is funny.",
     "Review every brief requirement against actual preview frames. A title-only or invisible drawing claim fails structural evidence.",
+    "Also review visual_clarity, cause_and_effect, motion_and_contact, framing and continuity. Motion needs at least three distinct frames including a same-shot pair within 250 ms. Minimum evidence does not prove filmmaking quality.",
     "State playback_reviewed truthfully. Sampled frames cannot establish smooth motion, timing at normal speed or audio quality.",
     "Use review_story, then render_final. If a requirement remains unmet, record rejection and revise; never relabel a fixture as success."
   ]

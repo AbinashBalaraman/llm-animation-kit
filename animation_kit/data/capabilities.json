@@ -1,10 +1,11 @@
 {
-  "kit_version": "0.2.0",
+  "kit_version": "0.3.0",
   "backend": "authored2d_v2",
   "scene_schema": "kit.story/2.0",
   "video_generation_models": false,
   "default_artwork": null,
   "authoring": "Original vector geometry, hierarchical groups, reusable assets, per-part pose overrides, per-shot keyframes; optional Python authoring SDK compiles to JSON.",
+  "story_development": "Required scene.direction (kit.direction/1.0): explicit who/what/when/where/why/how, complete prose story, causal beats, shot script, and self-question/rewrite cycle. Production must call plan_story before creating artwork; shot IDs/durations must match.",
   "shapes": [
     "ellipse",
     "rect",
@@ -49,7 +50,8 @@
   "max_seconds": 120,
   "coordinates": "960x540 design pixels; x right/y down; local transforms compose through groups; tracks use local shot frames; beats use global frames.",
   "audio": "Authored procedural bell/pop/purr cues; no voice synthesis or video model.",
-  "review": "Brief coverage, visible drawing evidence, current preview, per-requirement observations and disclosed playback scope.",
+  "review": "Brief coverage plus five quality dimensions, neighboring action frames, caption-free diagnostic strips and disclosed playback scope. These are declared observations, not automated semantic scores.",
+  "motion_helpers": "animation_kit.motion.arc and follow_anchor compile contact/trajectory motion to ordinary tracks.",
   "limitations": [
     "Vector 2D only; no full 3D/physics/automatic lip sync",
     "Renderer does not infer story from text: the host LLM authors artwork, beats and keyframes",

@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "llm-animation-kit"
-version = "0.2.0"
+version = "0.3.0"
 description = "Knowledge, tools and a code-rendered 2D animation runtime for LLMs"
 requires-python = ">=3.11"
 license = "GPL-3.0-or-later"

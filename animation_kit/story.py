@@ -55,6 +55,9 @@ def descendants(nodes):
 
 def validate_semantics(scene):
     issues = []
+    if "direction" in scene:
+        from .direction import scene_plan_issues
+        issues.extend(scene_plan_issues(scene))
     def issue(code, pointer, message):
         issues.append({"code": code, "pointer": pointer, "message": message,
                        "repair_hint": "Repair the named artwork, timeline or brief evidence; do not substitute a stock scene."})

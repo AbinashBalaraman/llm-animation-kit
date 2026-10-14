@@ -1,6 +1,6 @@
 {
   "id": "story",
-  "version": "2.0",
+  "version": "3.0",
   "backend": "authored2d_v2",
   "keywords": [
     "story",
@@ -14,7 +14,10 @@
   "purpose": "Turn the user's request into visible events",
   "rules": [
     "Preserve the original prompt in brief.prompt. Extract independently reviewable requirements: identity, setting, key event/outcome, tone.",
-    "Write a short causal sequence: desire, obstacle, attempt, changed situation, payoff. A label announcing the outcome does not depict it.",
+    "Before artwork, answer who, what, when, where, why and how; write a complete prose story, then challenge motivation, causality, stakes, clarity, ending and filmability. Rewrite specific weaknesses, not just the verdict.",
+    "Use get_schema version direction. Submit the finished kit.direction/1.0 plan through plan_story before create_project, then embed it as scene.direction. Explainers and abstract pieces need meaningful progression, not forced character conflict.",
+    "Write a causal sequence with visible causes, actions, changes and reactions. A label announcing the outcome does not depict it. Preserve supplied scripts and invent only missing details.",
+    "Write the shot script: duration, framing, action, reaction, continuity in/out and dialogue. Match its IDs and durations in the scene; revalidate after editorial changes.",
     "Each shot has a purpose and evidence nodes. Link requirements to beats with specific global evidence frames.",
     "Comedy needs an expectation followed by a readable violation and a reaction/hold. Show the physical action that causes the joke.",
     "Start from an empty document. Invent the necessary artwork and motion; examples teach technique and are not a substitute for the requested story."

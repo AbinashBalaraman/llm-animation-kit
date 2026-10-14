@@ -4,6 +4,8 @@ from .contracts import KitError, read_json
 from .story import evaluate, visible_evidence
 from .store import atomic_json
 
+QUALITY_DIMENSIONS=("visual_clarity", "cause_and_effect", "motion_and_contact", "framing", "continuity")
+
 
 def preflight(scene):
     checks=[]
@@ -16,7 +18,7 @@ def preflight(scene):
             "meaning":"Checks geometry visibility and authored coverage only. A reviewer must verify identity, actions, story and comedy in the actual pixels."}
 
 
-def record(api, project_id, expected_revision, preview_job_id, accepted, reviewer, coverage, playback_reviewed, notes):
+def record(api, project_id, expected_revision, preview_job_id, accepted, reviewer, coverage, playback_reviewed, notes, quality):
     with api.store.lock(project_id) as path:
         snapshot=api.store.load(project_id); scene=snapshot["scene"]
         if scene.get("schema_version")!="kit.story/2.0": raise KitError("story_required","Use record_review for legacy exercises.")
@@ -42,10 +44,28 @@ def record(api, project_id, expected_revision, preview_job_id, accepted, reviewe
                 api.inspect_artifact(project_id,preview_job_id,frame=frame)
         if accepted and (not diagnostic["passed"] or any(c["status"]!="pass" for c in coverage)):
             raise KitError("brief_not_met","Resolve rejected/unreviewed requirements or record this as a rejected review.")
-        review={"revision":expected_revision,"scene_hash":snapshot["scene_hash"],"accepted":accepted,
+        dimensions=[q["dimension"] for q in quality]
+        if len(set(dimensions))!=len(dimensions) or set(dimensions)!=set(QUALITY_DIMENSIONS):
+            raise KitError("quality_coverage","Review every quality dimension exactly once; explain genuinely inapplicable checks.")
+        for row in quality:
+            frames=sorted(set(row["frames"]))
+            for frame in frames:
+                if not 0<=frame<scene["frames"]: raise KitError("frame_range","Quality review cites an out-of-range frame.")
+                api.inspect_artifact(project_id,preview_job_id,frame=frame)
+            if row["status"]=="pass":
+                needed=3 if row["dimension"]=="motion_and_contact" else 2 if row["dimension"] in ("cause_and_effect","continuity") else 1
+                if len(frames)<needed:
+                    raise KitError("temporal_evidence",f"{row['dimension']} needs at least {needed} distinct rendered frames.")
+                if row["dimension"]=="motion_and_contact" and not any(
+                    b-a<=max(1,round(scene["fps"]*.25)) and evaluate(scene,a)["shot"]==evaluate(scene,b)["shot"]
+                    for a,b in zip(frames,frames[1:])):
+                    raise KitError("temporal_evidence","Inspect neighboring frames (within 250 ms in the same shot) around the key action/contact.")
+        if accepted and any(q["status"] in ("fail","unreviewed") for q in quality):
+            raise KitError("quality_not_met","Repair failed quality dimensions or record a rejected review.")
+        review={"review_version":2,"revision":expected_revision,"scene_hash":snapshot["scene_hash"],"accepted":accepted,
                 "preview_job_id":preview_job_id,"preview_engine_hash":manifest["engine_hash"],
                 "preview_video_hash":manifest["artifacts"]["video.mp4"],"reviewer":reviewer,
-                "coverage":coverage,"playback_reviewed":playback_reviewed,"notes":notes,
+                "coverage":coverage,"quality":quality,"playback_reviewed":playback_reviewed,"notes":notes,
                 "preflight":diagnostic,"independent_quality_proof":False,
                 "limitations":[] if playback_reviewed else ["Sampled-frame review only; normal-speed motion and sound remain unassessed."]}
         atomic_json(path/"review.json",review)

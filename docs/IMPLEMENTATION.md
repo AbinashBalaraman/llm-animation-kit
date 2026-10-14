@@ -1,5 +1,19 @@
 # Implementation decisions
 
+## ADR-016: write and question the story before geometry
+
+14 October 2026. Release 0.3.0 retains the authored vector 2D `kit.story/2.0` drawing backend and introduces the nested writing contract `kit.direction/1.0`. This is not a 3D contract or a video-model pipeline.
+
+The next user-supplied transfer clip depicted a crocodile, chicken and egg but relied on captions for an ambiguous rescue and an abrupt friendship. The user clarified that proper story development must precede animation: the model should ask and answer who, what, when, where, why, how and story-specific questions itself.
+
+The host must now supply six concrete answers, a complete prose story, causal beats, a shot script and a self-review of motivation, causality, stakes, clarity, ending and filmability. `plan_story` validates the host's work; it does not generate answers or certify creative quality. Narrative plans require setup/turn/resolution and cannot skip those questions; explainer and abstract modes permit justified inapplicable checks. Unresolved rewrites block structural readiness.
+
+New project creation requires `scene.direction`. Production workflows require a successful `plan_story` call with the exact plan before creation or rendering. Plan and scene must preserve the same prompt and ordered shot IDs/durations; editorial changes require revalidation. The direction schema is optional only for reading historical v0.2 sources. Explicit legacy exercise loading does not bypass the new final-production gate.
+
+`preview_motion` renders bounded temporal strips; `hide_text` provides a diagnostic without altering canonical data. `review_story` version 2 requires separate evidence for visual clarity, cause/effect, motion/contact, framing and continuity. A passed motion review needs three distinct rendered frames, including a nearby pair in one shot. Historical reviews cannot approve a new final export. These are evidence and declaration requirements, not a semantic oracle or an independent audience rating.
+
+Host-side `motion.arc` and `follow_anchor` compile ordinary tracks for trajectories and contact points. There is still no physics solver, runtime scene code or video-generation model. The revised crocodile/chicken example is authored with these tools; its specific artwork and plot remain outside the engine. Reports distinguish software tests, author-reviewed pixels and actual other-model evaluation.
+
 13 October 2026. Release 0.2.0 introduces `authored2d_v2` / `kit.story/2.0` as the production path.
 
 ## ADR-015: scripts require authoring, not a finite puppet menu

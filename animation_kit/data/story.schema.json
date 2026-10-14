@@ -289,6 +289,258 @@
       },
       "minItems": 0,
       "maxItems": 200
+    },
+    "direction": {
+      "type": "object",
+      "properties": {
+        "schema_version": {
+          "const": "kit.direction/1.0"
+        },
+        "brief": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 3000
+        },
+        "mode": {
+          "enum": [
+            "narrative",
+            "explainer",
+            "abstract"
+          ]
+        },
+        "premise": {
+          "type": "string",
+          "minLength": 12,
+          "maxLength": 3000
+        },
+        "answers": {
+          "type": "object",
+          "properties": {
+            "who": {
+              "type": "string",
+              "minLength": 12,
+              "maxLength": 3000
+            },
+            "what": {
+              "type": "string",
+              "minLength": 12,
+              "maxLength": 3000
+            },
+            "when": {
+              "type": "string",
+              "minLength": 12,
+              "maxLength": 3000
+            },
+            "where": {
+              "type": "string",
+              "minLength": 12,
+              "maxLength": 3000
+            },
+            "why": {
+              "type": "string",
+              "minLength": 12,
+              "maxLength": 3000
+            },
+            "how": {
+              "type": "string",
+              "minLength": 12,
+              "maxLength": 3000
+            }
+          },
+          "required": [
+            "who",
+            "what",
+            "when",
+            "where",
+            "why",
+            "how"
+          ],
+          "additionalProperties": false
+        },
+        "story_text": {
+          "type": "string",
+          "minLength": 120,
+          "maxLength": 12000
+        },
+        "beats": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^[a-z][a-z0-9_-]{0,63}$"
+              },
+              "role": {
+                "enum": [
+                  "setup",
+                  "inciting_event",
+                  "attempt",
+                  "turn",
+                  "resolution",
+                  "explanation",
+                  "transition"
+                ]
+              },
+              "cause": {
+                "type": "string",
+                "minLength": 12,
+                "maxLength": 3000
+              },
+              "visible_action": {
+                "type": "string",
+                "minLength": 12,
+                "maxLength": 3000
+              },
+              "change": {
+                "type": "string",
+                "minLength": 12,
+                "maxLength": 3000
+              }
+            },
+            "required": [
+              "id",
+              "role",
+              "cause",
+              "visible_action",
+              "change"
+            ],
+            "additionalProperties": false
+          },
+          "minItems": 1,
+          "maxItems": 40
+        },
+        "shots": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^[a-z][a-z0-9_-]{0,63}$"
+              },
+              "beats": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "pattern": "^[a-z][a-z0-9_-]{0,63}$"
+                },
+                "minItems": 1,
+                "maxItems": 12
+              },
+              "seconds": {
+                "type": "number",
+                "exclusiveMinimum": 0,
+                "maximum": 120
+              },
+              "framing": {
+                "type": "string",
+                "minLength": 12,
+                "maxLength": 3000
+              },
+              "action": {
+                "type": "string",
+                "minLength": 12,
+                "maxLength": 3000
+              },
+              "reaction": {
+                "type": "string",
+                "minLength": 12,
+                "maxLength": 3000
+              },
+              "continuity_in": {
+                "type": "string",
+                "minLength": 12,
+                "maxLength": 3000
+              },
+              "continuity_out": {
+                "type": "string",
+                "minLength": 12,
+                "maxLength": 3000
+              },
+              "dialogue": {
+                "type": "string",
+                "maxLength": 2000
+              }
+            },
+            "required": [
+              "id",
+              "beats",
+              "seconds",
+              "framing",
+              "action",
+              "reaction",
+              "continuity_in",
+              "continuity_out",
+              "dialogue"
+            ],
+            "additionalProperties": false
+          },
+          "minItems": 1,
+          "maxItems": 40
+        },
+        "self_review": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "focus": {
+                "enum": [
+                  "motivation",
+                  "causality",
+                  "stakes",
+                  "clarity",
+                  "ending",
+                  "filmability"
+                ]
+              },
+              "question": {
+                "type": "string",
+                "minLength": 12,
+                "maxLength": 3000
+              },
+              "answer": {
+                "type": "string",
+                "minLength": 12,
+                "maxLength": 3000
+              },
+              "verdict": {
+                "enum": [
+                  "pass",
+                  "revise",
+                  "not_applicable"
+                ]
+              },
+              "revision": {
+                "type": "string",
+                "maxLength": 3000
+              }
+            },
+            "required": [
+              "focus",
+              "question",
+              "answer",
+              "verdict",
+              "revision"
+            ],
+            "additionalProperties": false
+          },
+          "minItems": 6,
+          "maxItems": 12
+        }
+      },
+      "required": [
+        "schema_version",
+        "brief",
+        "mode",
+        "premise",
+        "answers",
+        "story_text",
+        "beats",
+        "shots",
+        "self_review"
+      ],
+      "additionalProperties": false
     }
   },
   "required": [

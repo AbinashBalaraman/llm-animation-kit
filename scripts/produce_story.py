@@ -30,6 +30,8 @@ def main():
         workflow=checked(api.call("start_workflow",{"brief":scene["brief"]["prompt"],"max_calls":36,"max_previews":8}))
         ident=workflow["workflow_id"]
         def call(tool,arguments): return checked(checked(api.call("workflow_step",{"workflow_id":ident,"tool":tool,"arguments":arguments}))["response"])
+        planned=call("plan_story",{"plan":scene.get("direction",{})})
+        if not planned["ready_for_storyboard"]: raise RuntimeError("Resolve the writing plan before rendering: "+str(planned["issues"]))
         call("create_project",{"project_id":args.project,"scene":scene})
         diagnostic=call("check_story",{"project_id":args.project})
         if not diagnostic["passed"]: raise RuntimeError("Storyboard evidence is invisible: "+str(diagnostic))
@@ -61,6 +63,10 @@ def main():
         record["artifacts"]={k:v for k,v in final["artifacts"].items() if k!="trace.json"}
         record["review_scope"]="playback" if review["playback_reviewed"] else "sampled_frames"
         atomic_json(output/"manifest.json",record);atomic_json(output/"review.json",review)
+        from animation_kit.direction import as_markdown
+        plan=snapshot["scene"]["direction"]
+        atomic_json(output/"direction.json",plan)
+        (output/"story.md").write_text(as_markdown(plan),encoding="utf-8",newline="\n")
         print((output/"video.mp4").resolve())
 
 

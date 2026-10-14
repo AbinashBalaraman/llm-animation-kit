@@ -2,7 +2,9 @@
 
 Give a coding LLM a script. It designs the subjects and settings, writes their artwork and motion, renders previews, and checks the result against the script. **The kit contains no default production character, environment or plot.** All video frames are conventionally drawn by code; no video-generation model is used.
 
-Version **0.2.0** replaces the fixed-puppet production workflow. The old release could render a puppet reliably but could not create the missing artwork/actions a different story needed. Its example-loading behavior encouraged substituting a demonstration for the requested story. That was a product failure, not a successful script adaptation.
+Version **0.3.0** adds a required writing and directing stage. Before drawing, the model answers **who, what, when, where, why and how**, writes a complete story, challenges its weak points, rewrites them and creates a shot script. The earlier workflow could produce recognizable characters while still leaving the story vague. Technical rendering and subject coverage were insufficient.
+
+Read the [story-development guide](agent-kit/code-animation/references/story-development.md) and the new example's [complete story, questions and shot script](examples/stories/crocodile-chicken/story.md). The model does this creative work itself; the tools validate structure and preserve its plan. They do not automatically judge whether the story is good.
 
 ## What the LLM can author
 
@@ -35,13 +37,13 @@ The [authoring SDK guide](agent-kit/code-animation/references/authoring.md) expl
 
 The shared CLI, MCP and provider loop expose the same tools:
 
-1. Preserve the original brief and extract visible acceptance requirements.
-2. Author artwork, poses, shots and story beats in `kit.story/2.0`.
-3. Start a production workflow, create the project, and inspect `preview_frames`.
-4. Render `preview`; compare actual frames and playback with each requirement.
-5. Submit `review_story`, then export `render_final` and retain editable source.
+1. Preserve the brief. Write the six core answers, complete prose story, causal beats and shot script; question and revise motivation, causality, stakes, clarity, ending and filmability.
+2. Start a production workflow and submit `plan_story`. Resolve structural issues before artwork. Include the exact plan in `scene.direction`.
+3. Author artwork, poses and shots matching the plan. Create the project and inspect `preview_frames` and `preview_motion`, including text-hidden evidence for visual narratives.
+4. Render `preview`; inspect cause and effect, contact, reactions, framing and continuity as well as each brief requirement.
+5. Submit `review_story` with requirement and quality evidence, then export `render_final`. Deliver the written story and script alongside the MP4 and editable source.
 
-`check_story` checks authored coverage and visible drawing evidence. It **cannot recognize every subject, judge comedy, or replace visual review**. Acceptance records cite an actual preview and every requirement, and disclose whether playback was assessed. Source or renderer changes invalidate approval.
+`check_story` checks authored coverage and visible drawing evidence. It **cannot recognize every subject, judge comedy, or replace visual review**. Acceptance requires observations for each requirement and five quality dimensions. Actions require temporal evidence, and playback scope remains explicit. Source or renderer changes invalidate approval. A model can still write weak answers or misjudge its own output; these gates are not proof of good filmmaking.
 
 Production workflows reject `load_example`, legacy scene documents and changed original briefs. The deprecated `kit.scene/1.0` renderer remains only for explicit exercises and regression compatibility. No complete example is automatically injected by context retrieval.
 
@@ -49,6 +51,7 @@ For shell-assisted production, `scripts/produce_story.py prepare --scene YOUR.js
 
 ## Demonstrations and evaluation
 
+- [A crocodile and a chicken become friends](examples/stories/crocodile-chicken/README.md): a written story, self-questioning, closer rescue/reaction shots, contact evidence and reciprocal trust. [Authoring script](scripts/create_crocodile_chicken.py).
 - [Cat becomes US president](examples/stories/cat-president/README.md): original tabby, campaign, election, office and visual payoff. [Authoring script](scripts/create_cat_president.py).
 - [Space toaster](examples/stories/space-toaster/README.md): entirely different subject, setting and action using the same engine. [Authoring script](scripts/create_space_toaster.py).
 - [Stack explainer](examples/stories/stack-explainer/README.md): an educational diagram with no character narrative. [Authoring script](scripts/create_stack_explainer.py).
@@ -61,6 +64,8 @@ python scripts/build_catalog.py
 ```
 
 The catalog command regenerates schemas, recipes and authored example sources. Rendered demonstrations are produced separately through the normal tools. Software tests and demonstrations do not establish parity between models.
+
+The three v0.2 films and their review records remain historical evidence. Their saved sources are still readable, but a new production/export under v0.3 requires an authored `direction` plan and the new quality review. Add a plan when adapting them; do not relabel an old approval as a current review.
 
 ## MCP and host integration
 

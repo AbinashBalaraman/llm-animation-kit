@@ -6,4 +6,6 @@ The product packages instructions, animation knowledge, reusable components, too
 
 Tool schemas/catalog/examples are built by `scripts/build_catalog.py`; update the source and generated data together. CLI, MCP and the agent loop share `animation_kit.tools.Tools`. Keep canonical scene edits in `Store` transactions. State evaluation must be independent of sampling order. Reports must distinguish technical checks, visual review, and actual model evaluation.
 
+Before production artwork, develop and self-question a complete story and shot script with `plan_story`; preserve its `kit.direction/1.0` plan in `scene.direction`. Use the story-development reference for who/what/when/where/why/how and concrete rewrites. Inspect temporal action evidence and review cause/effect, contact, framing and continuity as well as brief coverage. Structural checks do not certify creative quality.
+
 Run `python -m unittest discover -s tests -v` for changes to these mechanics. Preview changed drawing/controllers and inspect temporal evidence. Do not call a schema fixture or mocked tool result a rendered example. Preserve the user scope and record backend/contract changes in implementation decisions.

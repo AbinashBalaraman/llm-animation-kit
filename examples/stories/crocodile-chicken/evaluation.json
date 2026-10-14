@@ -1,0 +1,240 @@
+{
+  "workflow_id": "05fecb71aad44312",
+  "model_label": "implementation-model author; not a second-model transfer run",
+  "brief": "create a story of a crocodile and chicken and how they become friends",
+  "outcome": "complete",
+  "human_assistance_count": 0,
+  "calls": 17,
+  "render_attempts": 10,
+  "failures": [],
+  "verified_current_export": true,
+  "artifact": "video.mp4",
+  "declared_review": {
+    "review_version": 2,
+    "revision": 3,
+    "scene_hash": "a69bcfa72c8745c257feb85db345e7a5b5594942f5cd2afb56b1d19bbcf9d590",
+    "accepted": true,
+    "preview_job_id": "ef5992c38a1013d8f3a96153",
+    "preview_engine_hash": "45b180157d566d23c5d1d83cc4c79b3c37e44ec70a872af5e721e7c231d72a22",
+    "preview_video_hash": "44672d06c47202c8c5e09402009c03f78c539496ecdd243d0f5c2fff0a2bfa72",
+    "reviewer": "model",
+    "coverage": [
+      {
+        "requirement_id": "characters",
+        "status": "pass",
+        "frames": [
+          40,
+          485
+        ],
+        "observation": "Original cream hen with comb, beak and wing and long green crocodile with scutes, snout and teeth remain recognizable in the overview and final approach."
+      },
+      {
+        "requirement_id": "danger",
+        "status": "pass",
+        "frames": [
+          147,
+          167
+        ],
+        "observation": "The egg has left the straw nest and moves beyond the bank above the river while the hen reaches after it. A preceding visible gust establishes the trigger."
+      },
+      {
+        "requirement_id": "rescue",
+        "status": "pass",
+        "frames": [
+          198,
+          230,
+          388
+        ],
+        "observation": "The intact egg lands on top of the closed snout, remains balanced, then is visibly separated from the withdrawing croc in the nest."
+      },
+      {
+        "requirement_id": "friendship",
+        "status": "pass",
+        "frames": [
+          40,
+          301,
+          485,
+          518
+        ],
+        "observation": "Initial withdrawal contrasts with the closer relieved reaction, voluntary approach and offered flower. They hold a shared final pose with the egg safe behind them."
+      }
+    ],
+    "quality": [
+      {
+        "dimension": "visual_clarity",
+        "status": "pass",
+        "frames": [
+          147,
+          198,
+          301,
+          485
+        ],
+        "observation": "Text-hidden and actual-preview samples show the falling egg, catch, relieved hen and gift. Explanatory scene headings are absent; only an opening title and closing line remain."
+      },
+      {
+        "dimension": "cause_and_effect",
+        "status": "pass",
+        "frames": [
+          147,
+          198,
+          301,
+          388,
+          485
+        ],
+        "observation": "The danger precedes the rescue; an explicit reaction precedes the returned egg and reciprocal approach. This communicates a basic short friendship story, without claiming complex dramatic acting."
+      },
+      {
+        "dimension": "motion_and_contact",
+        "status": "pass",
+        "frames": [
+          194,
+          196,
+          198,
+          200,
+          362,
+          366,
+          370,
+          374,
+          488,
+          491,
+          493,
+          496
+        ],
+        "observation": "Inspected neighboring catch, egg-deposit and flower-handoff frames. The egg meets the top of the snout, then travels off its end into the nest; the flower changes owner at matching positions. Movement remains stylized and manually authored, not physically simulated."
+      },
+      {
+        "dimension": "framing",
+        "status": "pass",
+        "frames": [
+          22,
+          198,
+          270,
+          301,
+          485
+        ],
+        "observation": "Wide shots establish the bank and nest. The catch and the hen reaction use closer views so the egg and expression occupy more of the image; the final wider shot retains both characters and the saved egg."
+      },
+      {
+        "dimension": "continuity",
+        "status": "pass",
+        "frames": [
+          198,
+          230,
+          388,
+          408,
+          491,
+          493,
+          518
+        ],
+        "observation": "The same intact egg is carried, deposited and retained in the nest across the final cut. The flower is carried to the snout and remains there after release. Cuts compress the croc turn/travel; that travel is not fully animated."
+      }
+    ],
+    "playback_reviewed": false,
+    "notes": "Author-model visual review of actual preview overview/contact PNGs and text-hidden temporal strips. Repaired an egg path discontinuity, obscured deposit and flower overlap before this review. This is a simple stylized 22-second 2D demonstration, not an independent audience test or movie-quality guarantee. Flower pickup is briefly partly occluded by the hen; the offered flower is clear. Normal-speed timing, playback and audio were not assessed. No second LLM was invoked.",
+    "preflight": {
+      "passed": true,
+      "checks": [
+        {
+          "beat": "fear",
+          "frame": 40,
+          "requirements": [
+            "characters",
+            "friendship"
+          ],
+          "visible_drawing_nodes": [
+            "hen",
+            "croc"
+          ],
+          "ok": true
+        },
+        {
+          "beat": "rolling",
+          "frame": 147,
+          "requirements": [
+            "danger"
+          ],
+          "visible_drawing_nodes": [
+            "egg",
+            "hen"
+          ],
+          "ok": true
+        },
+        {
+          "beat": "catch",
+          "frame": 198,
+          "requirements": [
+            "rescue"
+          ],
+          "visible_drawing_nodes": [
+            "egg_held",
+            "croc"
+          ],
+          "ok": true
+        },
+        {
+          "beat": "relief",
+          "frame": 301,
+          "requirements": [
+            "friendship"
+          ],
+          "visible_drawing_nodes": [
+            "hen",
+            "egg",
+            "croc"
+          ],
+          "ok": true
+        },
+        {
+          "beat": "safe",
+          "frame": 388,
+          "requirements": [
+            "rescue"
+          ],
+          "visible_drawing_nodes": [
+            "egg_safe",
+            "hen",
+            "croc"
+          ],
+          "ok": true
+        },
+        {
+          "beat": "gift",
+          "frame": 485,
+          "requirements": [
+            "friendship",
+            "characters"
+          ],
+          "visible_drawing_nodes": [
+            "hen",
+            "croc",
+            "flower"
+          ],
+          "ok": true
+        },
+        {
+          "beat": "together",
+          "frame": 518,
+          "requirements": [
+            "friendship"
+          ],
+          "visible_drawing_nodes": [
+            "hen",
+            "croc",
+            "accepted_flower"
+          ],
+          "ok": true
+        }
+      ],
+      "meaning": "Checks geometry visibility and authored coverage only. A reviewer must verify identity, actions, story and comedy in the actual pixels."
+    },
+    "independent_quality_proof": false,
+    "limitations": [
+      "Sampled-frame review only; normal-speed motion and sound remain unassessed."
+    ]
+  },
+  "independent_semantic_quality": null,
+  "model_parity_established": false,
+  "export_seconds": 135.958,
+  "frame_count": 528,
+  "written_plan_present": true
+}

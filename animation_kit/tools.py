@@ -55,7 +55,7 @@ class Tools:
                     workspace=str(self.store.root))
 
     def get_schema(self,version="story"):
-        return packaged_json("story.schema.json" if version=="story" else "scene.schema.json")
+        return packaged_json({"story":"story.schema.json","direction":"direction.schema.json","legacy":"scene.schema.json"}[version])
 
     def get_context(self,task,max_chars=9000):
         from .contracts import DATA
@@ -65,7 +65,7 @@ class Tools:
         ranked=sorted(recipes,key=lambda r:(-len(words.intersection(r["keywords"])),r["id"]))
         if not any(words.intersection(r["keywords"]) for r in ranked):
             ranked=sorted(recipes,key=lambda r:r["id"]!="staging")
-        entry={"workflow":"Brief -> requirements -> original artwork/storyboard -> custom keyframes -> inspect stills -> preview -> per-requirement visual review -> final.",
+        entry={"workflow":"Brief -> self-question who/what/when/where/why/how -> complete story -> causal beats -> shot script -> plan_story -> scene.direction and artwork -> temporal strips -> preview -> requirement and quality review -> final.",
                "rules":["Author a new story; do not load a demonstration to fulfil an unrelated brief.","Use geometry, assets and tracks or the Python authoring SDK to create missing subjects/actions.","Server consumes declarative JSON; no video-generation models.","Technical coverage is not semantic visual approval. Disclose review scope."],
                "recipes":[],"example":None,"scene_schema_tool":"get_schema","tool_schema_source":"MCP tools/list or CLI tools",
                "missing_capabilities":packaged_json("capabilities.json")["limitations"]}
@@ -81,7 +81,19 @@ class Tools:
     def create_project(self,project_id,scene,legacy_exercise=False):
         if scene.get("schema_version")!="kit.story/2.0" and not legacy_exercise:
             raise KitError("story_required","New productions require kit.story/2.0. Author the brief's assets and shots; do not reuse the stock puppet.")
+        if scene.get("schema_version")=="kit.story/2.0" and not legacy_exercise:
+            self._require_plan(scene)
         return dict(self.store.create(project_id,scene),project_id=project_id)
+
+    @staticmethod
+    def _require_plan(scene):
+        from .direction import scene_plan_issues
+        issues=scene_plan_issues(scene)
+        if issues: raise KitError(issues[0]["code"],issues[0]["message"],issues[0]["pointer"])
+
+    def plan_story(self,plan):
+        from .direction import inspect_plan
+        return inspect_plan(plan)
 
     def load_example(self,project_id,example_id):
         return self.create_project(project_id,packaged_json(f"examples/{example_id}.json"),legacy_exercise=True)
@@ -103,7 +115,8 @@ class Tools:
         if scene.get("schema_version")!="kit.story/2.0": raise KitError("story_required","Legacy scenes cannot satisfy a production brief.")
         return preflight(scene)
 
-    def preview_frames(self,project_id,frames=None):
+    def preview_frames(self,project_id,frames=None,hide_text=False):
+        import copy
         from PIL import Image, ImageDraw
         from .story import draw_frame, font
         from .store import digest
@@ -112,6 +125,19 @@ class Tools:
             if scene.get("schema_version")!="kit.story/2.0": raise KitError("story_required","Frame authoring tools require a v2 story.")
             frames=frames or sorted(set(b["frame"] for b in scene["beats"]))[:32]
             if any(f>=scene["frames"] for f in frames): raise KitError("frame_range","Storyboard frame outside story.")
+            if hide_text:
+                # A diagnostic view only: canonical artwork and export stay intact.
+                from .story import descendants
+                scene=copy.deepcopy(scene)
+                for collection in [a["nodes"] for a in scene["assets"]]+[s["nodes"] for s in scene["shots"]]:
+                    for node in descendants(collection):
+                        if node["kind"]=="text": node["opacity"]=0
+                for shot in scene["shots"]:
+                    for node in descendants(shot["nodes"]):
+                        if node["kind"]=="instance":
+                            asset=next(a for a in scene["assets"] if a["id"]==node["asset"])
+                            for part in descendants(asset["nodes"]):
+                                if part["kind"]=="text": node.setdefault("overrides",{}).setdefault(part["id"],{})["opacity"]=0
             sheet=Image.new("RGB",(1200,((len(frames)+2)//3)*250),"#152e42")
             draw=ImageDraw.Draw(sheet)
             for i,frame in enumerate(frames):
@@ -121,9 +147,20 @@ class Tools:
                 draw.text((x+8,y+227),f'{state["shot"]} | {frame}f | {frame/scene["fps"]:.2f}s',font=font("sans",14),fill="white")
             folder=project/"storyboards";folder.mkdir(exist_ok=True)
             if not folder.resolve().is_relative_to(self.store.root): raise KitError("path_escape","Storyboard folder escapes workspace.")
-            path=folder/(digest({"source":snapshot["scene_hash"],"frames":frames})[:24]+".png")
+            from .render import engine_fingerprint, ffmpeg_path
+            engine=engine_fingerprint(ffmpeg_path()[1])
+            path=folder/(digest({"source":snapshot["scene_hash"],"engine":engine,"frames":frames,"hide_text":hide_text})[:24]+".png")
             sheet.save(path)
-            return {"revision":snapshot["revision"],"scene_hash":snapshot["scene_hash"],"frames":frames,"image_path":str(path),"not_a_playback_review":True}
+            return {"revision":snapshot["revision"],"scene_hash":snapshot["scene_hash"],"engine_hash":engine,"frames":frames,"image_path":str(path),"hide_text":hide_text,"not_a_playback_review":True}
+
+    def preview_motion(self,project_id,start,end,step=3,hide_text=False):
+        if end<=start: raise KitError("frame_range","Motion strip needs start < end (inclusive global frames).")
+        frames=list(range(start,end+1,step))
+        if frames[-1]!=end: frames.append(end)
+        if len(frames)>32: raise KitError("frame_budget","At most 32 samples; use a shorter action interval or larger step.")
+        result=self.preview_frames(project_id,frames,hide_text)
+        result["review_hint"]="Inspect direction, contact, deformation and the reaction. A strip is temporal evidence, not normal-speed playback."
+        return result
 
     def review_story(self,**arguments):
         from .story_review import record
@@ -193,7 +230,10 @@ class Tools:
         if not review["accepted"] or review["scene_hash"]!=snapshot["scene_hash"]:
             raise KitError("review_required","Current revision has no accepted review.")
         if snapshot["scene"].get("schema_version")=="kit.story/2.0":
+            self._require_plan(snapshot["scene"])
             if "coverage" not in review: raise KitError("story_review_required","A story needs per-requirement visual review.")
+            if review.get("review_version")!=2 or "quality" not in review:
+                raise KitError("quality_review_required","This approval predates the visual storytelling checks. Inspect temporal evidence and submit a new review_story.")
             from .render import engine_fingerprint, ffmpeg_path
             if review.get("preview_engine_hash")!=engine_fingerprint(ffmpeg_path()[1]):
                 raise KitError("stale_engine","Renderer/fonts changed after review. Render a new preview and review it.")
@@ -221,10 +261,10 @@ class Tools:
                 raise KitError("workflow_closed","Workflow has already ended.")
             if state["calls"]>=state["max_calls"]:
                 raise KitError("budget_exhausted","Tool-call budget exhausted; finish the workflow.")
-            if tool in ("preview","preview_frames","render_final") and state["previews"]>=state["max_previews"]:
+            if tool in ("preview","preview_frames","preview_motion","render_final") and state["previews"]>=state["max_previews"]:
                 raise KitError("budget_exhausted","Render-attempt budget exhausted; finish or request a new budget.")
             state["calls"]+=1
-            if tool in ("preview","preview_frames","render_final"):
+            if tool in ("preview","preview_frames","preview_motion","render_final"):
                 state["previews"]+=1
             # Reserve before execution so crashes do not reset the budget.
             atomic_json(state_path,state)
@@ -237,12 +277,24 @@ class Tools:
                         source=self.store.load(arguments["project_id"])["scene"]
                     if source is not None and (source.get("schema_version")!="kit.story/2.0" or source["brief"]["prompt"]!=state["brief"]):
                         raise KitError("brief_mismatch","Production must use an authored story preserving this workflow's original prompt.")
+                    if tool=="plan_story" and arguments.get("plan",{}).get("brief")!=state["brief"]:
+                        raise KitError("brief_mismatch","Develop the exact original brief.")
+                    if tool=="apply_revision":
+                        for op in arguments.get("operations",[]):
+                            if op.get("type")=="replace_story": source=op.get("story",{})
+                    if source is not None:
+                        self._require_plan(source)
+                        from .direction import inspect_plan
+                        if state.get("plan_hash")!=inspect_plan(source["direction"])["plan_hash"]:
+                            raise KitError("plan_first","Call plan_story with this scene's complete direction plan before production. Revalidate it after story/shot changes.")
                     if tool=="apply_revision":
                         for op in arguments.get("operations",[]):
                             if op.get("type")=="replace_story" and op.get("story",{}).get("brief",{}).get("prompt")!=state["brief"]:
                                 raise KitError("brief_mismatch","A revision must preserve the original user prompt.")
                 except KitError as exc: response={"ok":False,"error":exc.as_dict()}
             if response is None: response=self.call(tool,arguments)
+            if tool=="plan_story" and response["ok"] and response["result"]["ready_for_storyboard"]:
+                state["plan_hash"]=response["result"]["plan_hash"]
             state["history"].append({"tool":tool,"arguments":arguments,"response":response})
             atomic_json(state_path,state)
             return {"response":response,"remaining_calls":state["max_calls"]-state["calls"],"remaining_renders":state["max_previews"]-state["previews"]}

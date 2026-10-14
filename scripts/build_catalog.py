@@ -156,6 +156,6 @@ print("Catalog, strict schemas, six recipes and three editable examples generate
 import runpy
 runpy.run_path(str(Path(__file__).with_name("build_story_catalog.py")))
 from animation_kit.authoring import save
-for script,folder in [("create_cat_president.py","cat-president"),("create_space_toaster.py","space-toaster"),("create_stack_explainer.py","stack-explainer")]:
+for script,folder in [("create_cat_president.py","cat-president"),("create_space_toaster.py","space-toaster"),("create_stack_explainer.py","stack-explainer"),("create_crocodile_chicken.py","crocodile-chicken")]:
     authored=runpy.run_path(str(Path(__file__).with_name(script)))["make_story"]()
     save(authored,ROOT.parents[1]/"examples"/"stories"/folder/"story.json")

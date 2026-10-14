@@ -20,7 +20,7 @@ def run_agent(provider:Provider,api,brief,max_calls=24,max_previews=3,max_contex
     history=[]
     for turn in range(max_calls):
         context={"brief":brief,"knowledge":recipes,"tools":[tool for tool in api.definitions if tool["name"] not in ("start_workflow","workflow_step","finish_workflow")],"history":history[-3:],"remaining_calls":max_calls-turn,
-                 "workflow_id":workflow["workflow_id"],"constraints":"Author a kit.story/2.0 document preserving the original brief. Invent needed vector assets and motion; never substitute a demo. Read get_schema. No video-generation models. Review each requirement against actual preview frames, and disclose playback/visual access."}
+                 "workflow_id":workflow["workflow_id"],"constraints":"Before artwork, answer who/what/when/where/why/how, write a complete story and causal shot script, self-question and rewrite weak points, then call plan_story. Embed the validated plan as scene.direction. Author kit.story/2.0 artwork/motion preserving the brief, never a substituted demo. Read get_schema. No video-generation models. Inspect temporal evidence and review requirements plus quality dimensions; disclose playback/visual access."}
         while len(json.dumps(context))>max_context_chars and context["history"]:
             context["history"].pop(0)
         if len(json.dumps(context))>max_context_chars:

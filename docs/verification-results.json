@@ -1,54 +1,44 @@
 {
-  "version": "0.2.0",
-  "date": "2026-10-13",
+  "release": "0.3.0",
+  "date": "2026-10-14",
   "tests": {
-    "passed": 38,
+    "command": "python -m unittest discover -s tests -v",
+    "passed": 45,
     "failed": 0,
-    "seconds": 8.405
+    "seconds": 34.293
   },
-  "skill_validation": "passed",
-  "clean_wheel_install": "passed; new isolated venv, Pillow 12.3.0, jsonschema 4.26.0, imageio-ffmpeg 0.6.0; authored-scene encode/decode",
-  "wheel_sha256": "3d3f1798203348f123a4bcf29a7cacb657d5a0ed4386c574f8b34f539f41392c",
-  "independent_model_transfer": false,
-  "normal_speed_playback_review": false,
-  "audio_listening_review": false,
-  "reviewer": "implementation model; sampled frames and targeted action/contact ranges",
-  "examples": [
-    {
-      "name": "cat-president",
-      "frames": 576,
-      "fps": 24,
-      "width": 1280,
-      "height": 720,
-      "final_render_seconds": 284.481,
-      "preview_render_seconds": 51.234,
-      "engine_hash": "d0bb0e07729e9e6df2a53ec1c1c93549d223ec5e89e23aaa359d429281a3b6f9",
-      "video_sha256": "8a8c60f8106044cb98e2f7648c28247dcc64f33b1ace0931eba2bef2339b5f63",
-      "review_scope": "sampled_frames"
-    },
-    {
-      "name": "space-toaster",
-      "frames": 240,
-      "fps": 24,
-      "width": 1280,
-      "height": 720,
-      "final_render_seconds": 183.597,
-      "preview_render_seconds": 18.8,
-      "engine_hash": "d0bb0e07729e9e6df2a53ec1c1c93549d223ec5e89e23aaa359d429281a3b6f9",
-      "video_sha256": "33a79b6b9c55e2d3776c046d1e36d625f8d668476b7caf714d38666c1231a125",
-      "review_scope": "sampled_frames"
-    },
-    {
-      "name": "stack-explainer",
-      "frames": 192,
-      "fps": 24,
-      "width": 1280,
-      "height": 720,
-      "final_render_seconds": 181.071,
-      "preview_render_seconds": 13.897,
-      "engine_hash": "d0bb0e07729e9e6df2a53ec1c1c93549d223ec5e89e23aaa359d429281a3b6f9",
-      "video_sha256": "6f1a846042050c69b7602a787f9606fbdd4efb7e85af6b3fa84231e1506ad5dd",
-      "review_scope": "sampled_frames"
-    }
+  "package": {
+    "wheel": "llm_animation_kit-0.3.0-py3-none-any.whl",
+    "sha256": "8db235627b7f56ec7820241e0bdfdc398056a3f496e22becb7e61248bad5d033",
+    "isolated_install_smoke": "passed",
+    "fixture_decoded_frames": 12,
+    "fixture_is_creative_example": false
+  },
+  "skill_validator": "passed",
+  "example": {
+    "directory": "examples/stories/crocodile-chicken",
+    "duration_seconds": 22,
+    "frame_count": 528,
+    "size": [
+      1280,
+      720
+    ],
+    "fps": 24,
+    "source_hash": "a69bcfa72c8745c257feb85db345e7a5b5594942f5cd2afb56b1d19bbcf9d590",
+    "engine_hash": "45b180157d566d23c5d1d83cc4c79b3c37e44ec70a872af5e721e7c231d72a22",
+    "video_sha256": "6fc9f3c27950b82be539b89eb271085e16f3b0b7189d234f249917a64ec1174a",
+    "render_seconds": 135.958,
+    "review_scope": "author model inspected overview and temporal PNGs; no normal-speed playback/audio assessment"
+  },
+  "model_evaluation": {
+    "second_model_invocations": 0,
+    "independent_audience_ratings": 0,
+    "parity_established": false
+  },
+  "limits": [
+    "Simple stylized vector 2D; no voice or 3D backend",
+    "Writing and review gates validate evidence and structure, not storytelling quality",
+    "Flower pickup is briefly partly occluded; edits omit some turn/return travel",
+    "Historical v0.2 examples and reviews remain unchanged"
   ]
 }

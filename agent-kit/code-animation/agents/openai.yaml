@@ -1,4 +1,4 @@
 interface:
   display_name: "Code Animation"
-  short_description: "Author original artwork and motion from any 2D script"
-  default_prompt: "Use $code-animation to turn my script into original artwork, motion and a reviewed code-rendered video."
+  short_description: "Write, question and direct a clear code-rendered story"
+  default_prompt: "Use $code-animation to develop and self-question my story, write a shot script, then create original artwork, motion and a reviewed code-rendered video."

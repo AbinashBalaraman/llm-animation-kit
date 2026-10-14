@@ -9,7 +9,9 @@ doc = story(original_user_prompt, [
     ("subject", "Describe the subject's identifying visible features"),
     ("event", "Describe the requested visible action and its outcome"),
 ], title="Your title")
-# Add your own assets, shots, beats and optional audio cues.
+# First write and self-review a direction plan; validate it with plan_story.
+doc['direction'] = your_written_plan
+# Add your own assets, shots, beats and optional audio cues matching that plan.
 # Set doc['frames'] to the final shot's end, then save(doc, 'story.json').
 ```
 
@@ -47,3 +49,11 @@ The destination key controls interpolation: `track((0,0), (20,100,'out_cubic'))`
 Optional audio cues have `frame`, `duration` in seconds, `frequency`, `gain` and `kind` (`bell`, `pop`, `purr`). These are conventional synthesized accents, not narration, music generation or a video model.
 
 See `get_schema` for exact limits. `scripts/create_cat_president.py` and `scripts/create_space_toaster.py` demonstrate different art and actions. Read them for construction techniques, then invent the content your brief needs.
+
+## Trajectories and contact
+
+`animation_kit.motion.arc(start, end, origin, destination, lift=60)` returns `x`/`y` tracks sampled at integer frames. Unpack them into a node with `**arc(...)`. Positive lift arches upward; endpoints match exactly. Author anticipation, landing poses and follow-through separately; an arc is not a walk cycle.
+
+`follow_anchor(frames, transforms, anchor=(0,0))` bakes a point through an outer-to-inner transform chain to world `x`/`y` tracks. Include every parent and use every rendered frame during rotating contact. Place the prop at the shot root; exclude camera transforms. A shared parent group is often simpler for a permanently attached object. This follows one point, not the object's full orientation or a collision surface.
+
+At a handoff, match the free object's position and rotation to the attached version at an exact frame, then use `hold` opacity keys to exchange them. Inspect neighboring frames and keep only one visible version. Both helpers compile declarative tracks, accept at most 500 samples and provide no physical simulation.

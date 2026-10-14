@@ -32,6 +32,7 @@ def command(letter, count):
 
 
 def schema():
+    from .direction import PLAN_SCHEMA
     common = {"id": ID, **PROPS}
     types = []
     for kind, fields, required in [
@@ -71,4 +72,6 @@ def schema():
     })
     result.update({"$schema": "https://json-schema.org/draft/2020-12/schema",
                    "$id": "urn:animation-kit:story:2.0", "$defs": {"node": {"oneOf": types}, "track": TRACK}})
+    # Optional for archived 0.2 sources; current production requires it in Tools.
+    result["properties"]["direction"]=PLAN_SCHEMA
     return result

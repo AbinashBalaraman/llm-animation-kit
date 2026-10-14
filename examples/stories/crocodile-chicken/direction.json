@@ -1,0 +1,183 @@
+{
+  "schema_version": "kit.direction/1.0",
+  "brief": "create a story of a crocodile and chicken and how they become friends",
+  "mode": "narrative",
+  "premise": "A protective hen mistakes a lonely crocodile for a threat, until his careful rescue of her egg gives her a reason to trust him.",
+  "answers": {
+    "who": "Poppy is a protective hen guarding one egg. Moss is a gentle crocodile whose large teeth make him look dangerous. Their unequal size creates the initial misunderstanding.",
+    "what": "Poppy wants to keep her egg safe. A gust rolls it toward the river. Moss catches it, brings it back intact, and receives a flower from Poppy as a voluntary gesture of trust.",
+    "when": "One quiet morning, in a continuous encounter lasting about twenty-two seconds on screen. There is no time jump to a different day or unexplained new family.",
+    "where": "A grassy riverbank with a nest on the dry left side and water to the right. Wide shots establish that geography; the catch and the hen reaction receive closer views.",
+    "why": "Poppy recoils because she sees teeth beside her vulnerable egg. Moss helps because he is gentle, despite his appearance. Poppy changes her judgment after watching him return the egg instead of eating it.",
+    "how": "A gust dislodges the egg; Poppy reaches but cannot catch it; Moss rises underneath and cushions it on his broad snout; he lowers it into the nest. Poppy relaxes, plucks a nearby flower, and hops over the nest to offer it to him."
+  },
+  "story_text": "Poppy has chosen a sunny patch beside the river for her nest. She stands close to her egg, pleased with her little corner of the world. Then Moss raises his broad snout from the water. He opens his mouth, revealing a row of enormous teeth. Poppy recoils and tucks her wing close. To her, those teeth mean danger. Moss closes his mouth and stays back.\n\nA gust bends across the bank. The egg rocks, tips over the straw rim, and rolls downhill. Poppy rushes after it with an outstretched wing, but the egg crosses the bank before she can reach it. It is falling toward the river.\n\nMoss sees the falling egg. He moves underneath it and lifts his snout, keeping his mouth closed. The egg lands on top. He dips slightly to cushion it, then steadies himself. The egg is intact. For a moment he holds still, giving Poppy time to see what has happened.\n\nIn a closer view, Poppy's raised wing lowers and her tense head relaxes. Moss comes to the bank and carefully lowers the egg into its nest. He then withdraws, leaving the choice to approach with Poppy.\n\nPoppy notices the flower beside her. She plucks it and makes a joyful hop over the safe nest toward Moss. This time she chooses to get close to those teeth. She offers the flower; Moss accepts it and closes his eye softly. The egg remains safe behind them. They finish side by side: her fear has changed into trust because of something he actually did.",
+  "beats": [
+    {
+      "id": "misunderstanding",
+      "role": "setup",
+      "cause": "The hen sees a large mouth opening beside her vulnerable egg.",
+      "visible_action": "Moss opens his jaw; Poppy recoils and folds her wing while remaining beside the nest.",
+      "change": "They begin separated by fear, despite being neighbors on the same bank."
+    },
+    {
+      "id": "egg_in_danger",
+      "role": "inciting_event",
+      "cause": "A visible gust rocks the egg beyond the rim of its nest.",
+      "visible_action": "The egg rolls downhill and starts falling over the bank; Poppy reaches too late.",
+      "change": "The egg is no longer protected by the nest, and Poppy cannot retrieve it alone."
+    },
+    {
+      "id": "careful_catch",
+      "role": "turn",
+      "cause": "Moss sees the egg falling within his reach.",
+      "visible_action": "He moves underneath, catches it on his closed snout, dips to cushion it, and balances it safely.",
+      "change": "The apparent threat becomes the only character able to prevent the loss."
+    },
+    {
+      "id": "reconsider",
+      "role": "attempt",
+      "cause": "Poppy sees the intact egg on the crocodile who has chosen not to eat it.",
+      "visible_action": "A close view shows her raised wing lower, a soft blink and a relaxed head.",
+      "change": "Alarm becomes relief; the audience sees the emotional response before the ending."
+    },
+    {
+      "id": "return",
+      "role": "attempt",
+      "cause": "Saving the egg is incomplete until it is safely back with its parent.",
+      "visible_action": "Moss lowers his snout to the nest, deposits the egg and retreats.",
+      "change": "Poppy now has concrete evidence of kindness, with nothing demanded in return."
+    },
+    {
+      "id": "reciprocity",
+      "role": "resolution",
+      "cause": "The returned egg gives Poppy a reason to trust Moss.",
+      "visible_action": "She plucks a flower, hops across the nest to approach voluntarily, and offers it. He accepts with a soft eye closure.",
+      "change": "They choose to stay close together; the saved egg remains visible and safe."
+    }
+  ],
+  "shots": [
+    {
+      "id": "strangers",
+      "beats": [
+        "misunderstanding"
+      ],
+      "seconds": 4,
+      "framing": "Shared wide view of the bank, nest and two distinct silhouettes.",
+      "action": "The hen guards her egg; the croc opens and closes his jaw.",
+      "reaction": "She recoils and folds her wing.",
+      "continuity_in": "Establish the hen left, river right, and the egg in the nest.",
+      "continuity_out": "The egg remains in the nest; they are still apart.",
+      "dialogue": ""
+    },
+    {
+      "id": "danger",
+      "beats": [
+        "egg_in_danger"
+      ],
+      "seconds": 3,
+      "framing": "Medium-wide view keeping the nest, sloping bank and water together.",
+      "action": "Wind sweeps across the bank and the egg rolls toward water.",
+      "reaction": "The hen reaches and rushes after it without making contact.",
+      "continuity_in": "Same bank and egg; a gust is visible before movement.",
+      "continuity_out": "Cut while the egg is falling, retaining its approximate world position and rotation.",
+      "dialogue": ""
+    },
+    {
+      "id": "rescue",
+      "beats": [
+        "careful_catch"
+      ],
+      "seconds": 4,
+      "framing": "Close water-level view, with the snout and falling egg large in frame.",
+      "action": "Moss rises underneath; the egg switches to snout-relative movement at contact.",
+      "reaction": "He cushions the landing and holds still to show the egg is safe.",
+      "continuity_in": "The egg continues falling; no pass through the body or unexplained reversal.",
+      "continuity_out": "The intact egg is balanced on a closed snout, high above the water.",
+      "dialogue": ""
+    },
+    {
+      "id": "relief",
+      "beats": [
+        "reconsider"
+      ],
+      "seconds": 2,
+      "framing": "Closer two-shot centered on the hen, including the saved egg at frame right.",
+      "action": "The hen looks at the intact egg that Moss is carrying toward her.",
+      "reaction": "Her wing lowers, head relaxes and eyes soften.",
+      "continuity_in": "Egg remains on the snout; the hen still waits on dry land.",
+      "continuity_out": "Her relief is established before the return and gift.",
+      "dialogue": ""
+    },
+    {
+      "id": "return",
+      "beats": [
+        "return"
+      ],
+      "seconds": 4,
+      "framing": "Medium two-shot with both the nest and snout contact visible.",
+      "action": "Moss lowers the egg into the nest, then withdraws to give her space.",
+      "reaction": "Poppy watches, lowers her wing, and stays near the flower.",
+      "continuity_in": "Keep egg on the snout until the deposit; plant the flower beside her before pickup.",
+      "continuity_out": "Egg is in the nest at the same position used in the next shot; Moss has backed away.",
+      "dialogue": ""
+    },
+    {
+      "id": "friends",
+      "beats": [
+        "reciprocity"
+      ],
+      "seconds": 5,
+      "framing": "Shared view showing the safe nest, approach arc, flower handoff and faces.",
+      "action": "Poppy lifts the flower, hops over the nest, and offers it at his snout.",
+      "reaction": "Moss accepts, closes his eye softly, and stays beside her.",
+      "continuity_in": "The flower starts at its planted position; the egg and nest do not teleport.",
+      "continuity_out": "Hold their chosen proximity and the safe egg; end text is optional support, not the reason for friendship.",
+      "dialogue": ""
+    }
+  ],
+  "self_review": [
+    {
+      "focus": "motivation",
+      "question": "Why does the hen fear him, and what concrete evidence changes her mind?",
+      "answer": "The opening teeth and recoil establish fear. His gentle catch, intact return and retreat supply evidence of kindness. Her later approach is voluntary.",
+      "verdict": "pass",
+      "revision": "Added an explicit relief close-up before the gift."
+    },
+    {
+      "focus": "causality",
+      "question": "Can a viewer follow the rescue without captions, and does each event cause the next?",
+      "answer": "The gust precedes the rolling egg, the bank precedes the fall, his rise precedes contact, and the return precedes her gift. Each shot has a visible cause and changed condition.",
+      "verdict": "pass",
+      "revision": "Kept the egg falling in the same direction across the rescue cut and removed explanatory captions."
+    },
+    {
+      "focus": "stakes",
+      "question": "What could be lost, and why does this matter to these characters?",
+      "answer": "The single egg is visibly guarded from the start. Losing it to the river matters to the protective hen. The crocodile risks continued rejection, not a world-ending disaster.",
+      "verdict": "pass",
+      "revision": "The nest and egg stay visible in the resolution."
+    },
+    {
+      "focus": "clarity",
+      "question": "Which exact images prove rescue, return and friendship rather than announcing them?",
+      "answer": "Egg resting intact on the snout proves the catch; egg separated from him inside the nest proves return; her unforced approach and flower handoff express trust.",
+      "verdict": "pass",
+      "revision": "Added closer contact and reaction framing; removed scene-heading captions."
+    },
+    {
+      "focus": "ending",
+      "question": "Does the ending pay off the opening relationship through a choice?",
+      "answer": "She first moves away from his teeth and finally moves toward him with a gift. He does not demand it. The ending resolves the same relationship that the opening established.",
+      "verdict": "pass",
+      "revision": "Hold the shared final pose after the handoff."
+    },
+    {
+      "focus": "filmability",
+      "question": "Can this shot script be staged with the actual 2D tools, and what must still be inspected?",
+      "answer": "Yes: joint poses, a sampled arc, snout-anchor tracks and discrete matched handoffs. Exact contact, cut positions and readable reactions still require rendered inspection; this plan alone cannot prove them.",
+      "verdict": "pass",
+      "revision": "Use temporal strips around catch, egg deposit, flower pickup and handoff; disclose that normal-speed playback is unassessed."
+    }
+  ]
+}

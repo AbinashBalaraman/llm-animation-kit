@@ -1,6 +1,6 @@
 {
   "id": "gesture",
-  "version": "2.0",
+  "version": "3.0",
   "backend": "authored2d_v2",
   "keywords": [
     "gesture",
@@ -16,6 +16,7 @@
   "rules": [
     "Author anticipation, action, contact and settle with per-part transforms; motion is not restricted to named preset gestures.",
     "Keep the root and prop movement coordinated at contact. There is no contact solver: inspect the actual overlap frame.",
+    "Host SDK helpers motion.arc and follow_anchor compile trajectories and held-object points into tracks. Use a shared parent or matched handoff when appropriate; inspect exact contact and neighboring frames.",
     "Use small offsets for tail, ears and follow-through, while the main pose stays readable.",
     "Use scale_y around a sensible pivot for blink/squash, and rotation around the shoulder/elbow for a paw gesture.",
     "Evaluate any frame independently. Use keyframe tracks rather than mutable step-by-step state."

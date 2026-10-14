@@ -4,11 +4,11 @@ The host LLM does the creative work. The package does not hide a remote model, a
 
 ## Terminal agents
 
-Clone/install the repository and have the agent read `agent-kit/code-animation/SKILL.md`. The authoring reference is progressively loaded when it needs geometry/keyframe syntax. The agent can write a Python authoring script, save a v2 document, and call CLI tools with JSON argument files. The original script, generated JSON and render evidence are all reviewable.
+Clone/install the repository and have the agent read `agent-kit/code-animation/SKILL.md`, then its story-development reference before artwork. The host writes and questions a complete story and shot script; `plan_story` structurally checks it before production. Keep it as `scene.direction`. Load the authoring reference when geometry/keyframe syntax is needed. The prose, self-review, generated JSON and render evidence are reviewable artifacts.
 
 ## MCP hosts
 
-Configure the stdio entry in `agent-kit/mcp.example.json` with an absolute Python path and workspace. Use `discover_capabilities` for the compact inventory and `get_schema` when constructing a document. `get_context` retrieves relevant original recipes without injecting a stock scene. `inspect_artifact`/`preview_frames` return PNG image content when requested through MCP; the host still needs to actually inspect it.
+Configure the stdio entry in `agent-kit/mcp.example.json` with an absolute Python path and workspace. Use `discover_capabilities`, then `get_schema` with `version: direction` to develop the writing plan. `get_context` retrieves guidance without injecting a stock scene. `inspect_artifact`, `preview_frames` and `preview_motion` return PNG content through MCP; the host still needs to inspect it. CLI, MCP and provider loops use the same planning and review gates.
 
 ## Optional provider loop
 
